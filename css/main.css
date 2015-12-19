@@ -73,9 +73,179 @@ table {
 html,
 body {
   height: 100%;
-  font: 17px/1.4 'Segoe UI', 'Segoe', Verdana, Arial, sans-serif; }
+  font-family: "Segoe UI", Verdana, Arial, sans-serif;
+  font-size: 66.67%; }
 
 body {
   background: #fff; }
+
+.TMP-header {
+  background: #1a1a1a;
+  width: 100%;
+  height: 90px;
+  padding-top: 20px; }
+  .TMP-header header {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto; }
+
+.wrapper {
+  width: 100%;
+  min-width: 960px; }
+
+.panel {
+  background: #ddd;
+  width: 100%; }
+
+.panel--content {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border: 1px dotted rgba(0, 0, 0, 0.1); }
+
+.navigation {
+  width: 100%;
+  background: #fff;
+  padding: 50px 0; }
+  .navigation nav {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto; }
+    .navigation nav ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      /* Combination of flex-direction AND flex-wrap, default is row AND nowrap */
+      -webkit-flex-flow: row nowrap;
+      -moz-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap; }
+      .navigation nav ul li {
+        -webkit-box-flex: 1 0 auto;
+        -moz-box-flex: 1 0 auto;
+        -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+        text-align: center;
+        border: 1px dashed #eee;
+        padding: 20px;
+        margin: 0 5px;
+        color: #00bcf2;
+        font-weight: 600;
+        font-size: 1.4rem; }
+
+.hero {
+  width: 100%;
+  background: #fff;
+  background: url(../img/hero--homepage.jpg) 0 0 no-repeat #fff;
+  background-position: center; }
+  .hero--content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    /* Combination of flex-direction AND flex-wrap, default is row AND nowrap */
+    -webkit-flex-flow: row nowrap;
+    -moz-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    height: 550px;
+    min-height: 550px;
+    padding: 75px 0;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto; }
+    .hero--content__text {
+      -webkit-box-flex: 1 0 500px;
+      -moz-box-flex: 1 0 500px;
+      -webkit-flex: 1 0 500px;
+      -ms-flex: 1 0 500px;
+      flex: 1 0 500px;
+      color: #fff;
+      padding: 0 100px 0 0;
+      font-weight: 200; }
+      .hero--content__text h1 {
+        font-size: 5rem;
+        line-height: 6rem;
+        letter-spacing: -.2rem;
+        font-weight: 200; }
+      .hero--content__text p {
+        font-size: 1.6rem;
+        line-height: 2.1rem; }
+    .hero--content__video {
+      -webkit-box-flex: 1 1 auto;
+      -moz-box-flex: 1 1 auto;
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      height: 100%; }
+      .hero--content__video p {
+        background: #eee;
+        font-size: 3rem;
+        min-width: 300px;
+        height: 200px;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+
+.quotes {
+  width: 100%;
+  background: #fff;
+  background: #dedede; }
+  .quotes--content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    /* Combination of flex-direction AND flex-wrap, default is row AND nowrap */
+    -webkit-flex-flow: row nowrap;
+    -moz-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    padding: 75px 0; }
+    .quotes--content__1, .quotes--content__2 {
+      -webkit-box-flex: 1 1 auto;
+      -moz-box-flex: 1 1 auto;
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      width: auto;
+      color: #686868;
+      height: 100%; }
+      .quotes--content__1 p, .quotes--content__2 p {
+        font-size: 2.4rem;
+        line-height: 2.5rem;
+        font-style: italic;
+        font-weight: 100;
+        color: #686868;
+        height: 200px;
+        border-left: 5px solid #eee;
+        padding-left: 15px;
+        margin-left: 75px;
+        margin-right: 100px; }
+
+.intro {
+  width: 100%;
+  background: #00bcf2; }
+  .intro--content {
+    padding: 75px 0; }
+    .intro--content__text {
+      color: #fff;
+      width: 50%; }
+      .intro--content__text h1 {
+        font-size: 5rem;
+        line-height: 6rem;
+        letter-spacing: -.2rem;
+        font-weight: 200; }
+      .intro--content__text p {
+        font-size: 1.6rem;
+        line-height: 2.1rem; }
 
 /*# sourceMappingURL=main.css.map */

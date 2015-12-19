@@ -1,0 +1,29 @@
+// 4 Item Navigation at top of document, just below the Microsoft wrapper
+
+.navigation {
+  width: 100%;
+  background: #fff;
+  padding: 50px 0;
+
+  nav {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+
+    ul {
+      @include flexbox();
+      @include flex-flow(row nowrap);
+
+      li {
+        @include flex(1 0 auto);
+        text-align: center;
+        border: 1px dashed #eee;
+        padding: 20px;
+        margin: 0 5px;
+        color: #00bcf2;
+        font-weight: 600;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

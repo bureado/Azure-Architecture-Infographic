@@ -9,14 +9,45 @@
 html, 
 body { 
   height: 100%; 
-  font: 17px/1.4 'Segoe UI', 'Segoe', Verdana, Arial, sans-serif;
+  font-family: $segoe;
+  font-size: 66.67%;
 }
 
 body {
   background: #fff;
 }
 
-.wrapper {                        // Wrapper around all block content
+// Temporary header filling in for microsoft's wrapper
+.TMP-header {
+  background: #1a1a1a;
+  width: 100%;
+  height: 90px;
+  padding-top: 20px;
 
+  header {
+    width: 100%;
+    max-width: 960px;  
+    margin: 0 auto;
+  }
 }
 
+
+
+// Global panel style
+.wrapper {                        // Wrapper around all block content
+  width: 100%;
+  min-width: 960px;
+}
+
+.panel {
+  background: #ddd;
+  width: 100%;
+}
+
+.panel--content {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border: 1px dotted rgba(0,0,0,.1);
+}

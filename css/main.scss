@@ -2,9 +2,12 @@
 @import "partials/__reset.scss";          // Boilerplate globals
 @import "partials/__mixins.scss";         // SASS Mixins
 @import "partials/__fonts-segoe";         // Fonts: Segoe UI
-@import "partials/__retina";         	  // Retina display
+
 // Globals
 @import "partials/__globals";             // Sitewide Globals.
 
-// Individual Pages
+// Individual Modules
 @import "partials/__navigation";          // Header
+@import "partials/__hero";                // Hero graphic on each page
+@import "partials/__quotes";              // Quotes panel
+@import "partials/__intro";               // Page Intro panel
