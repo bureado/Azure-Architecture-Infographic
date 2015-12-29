@@ -1,0 +1,116 @@
+// The panels for each section of the infographic, 
+// includes the graphic and the sliding section attached
+
+
+// Hero infographic, no interaction
+.infographic1 {
+  width: 100%;
+  background: #fff;
+
+  &--content {
+    padding-top: 75px;
+    padding-bottom: 25px;
+
+    img {    
+
+    }
+  }
+}
+
+
+// First interactive panel, 3 click points
+.question--infographic2 {
+  width: 100%;
+  background: #fff;
+
+
+  &__content {
+    #infographic2 g:hover path,
+    #infographic2 g:hover rect, {
+      cursor: pointer;
+    }
+
+    #infographic2 g:hover path {
+      fill: #00bcf2;
+    }
+  }
+}
+
+// Answers to 3 click points
+.answer {
+  background: #dedede;
+  margin-bottom: 75px;
+  
+  .answer--infographic2__content {
+    padding: 50px 0;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    @include flexbox();
+    @include flex-flow(row nowrap);
+
+    .answer--nav {
+      @include flex(1 0 200px);
+      width: 200px;
+      min-height: 200px;
+
+      ul {
+
+        li {
+          font-size: 2em;
+          padding: 15px;
+          border: 3px solid #dedede;
+          margin: 0 0 5px 0;
+          color: #686868;
+          font-weight: 600;
+
+          &.active,
+          &.active:hover {
+            border: 3px solid #fff;
+            cursor: default;
+          }
+
+          &:hover {
+            border: 3px solid #e8e8e8;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .answer--details {
+      @include flex(1 1 auto);
+      margin-left: 50px;
+      color: #686868;
+
+      h1 {
+        font-size: 5rem;
+        line-height: 6rem;
+        letter-spacing: -.2rem;
+        font-weight: 200;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 2em;
+        line-height: 1.5em;
+      }
+
+      ul {
+        margin: 20px 0 20px 20px;
+        list-style-type: decimal;
+
+        li {
+          font-size: 2em;
+          margin-bottom: 8px;
+        }
+      }
+    } 
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
