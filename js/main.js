@@ -7,7 +7,8 @@ $(document).ready(function(){
 
   // SVG Class toggling
 
-  $('#infographic2--optionA').hover(function() {
-    console.log('hovered');
+  $('.question--infographic2 .icons').click(function() {
+    $('.answer--infographic2').show();
+    $(this).toggleClass('active').siblings().removeClass('active');
   });
 });

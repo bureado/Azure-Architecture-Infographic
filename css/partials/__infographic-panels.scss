@@ -8,8 +8,8 @@
   background: #fff;
 
   &--content {
-    padding-top: 75px;
-    padding-bottom: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 
     img {    
 
@@ -18,30 +18,25 @@
 }
 
 
-// First interactive panel, 3 click points
-.question--infographic2 {
-  width: 100%;
-  background: #fff;
+.question {
+  margin-bottom: 0px;
 
-
-  &__content {
-    #infographic2 g:hover path,
-    #infographic2 g:hover rect, {
-      cursor: pointer;
-    }
-
-    #infographic2 g:hover path {
-      fill: #00bcf2;
-    }
+  .panel--content {
+    position: relative;
   }
 }
 
-// Answers to 3 click points
+
+
+// Answers Panel
 .answer {
+  display:none;
   background: #dedede;
   margin-bottom: 75px;
+  z-index: 1;
+  position: relative;
   
-  .answer--infographic2__content {
+  > div {
     padding: 50px 0;
     width: 100%;
     max-width: 960px;
@@ -111,6 +106,59 @@
       content: "";
       display: table;
       clear: both;
+    }
+  }
+}
+
+
+
+// Question 1 image positioning
+.question--infographic2__content {
+
+  // Container that the icons for each panels lives within
+  // This contains both the active, and inactive states of the icons 
+  .icons {
+    position: absolute;
+    width: 95px;
+    height: 330px;
+
+    // Toggling active/inactive icons
+    .icons--active {
+      display: none;
+    }
+
+    &.active {
+      svg { display: none; }
+      img { display: block; }
+    }
+
+    // Setting to standard sizing for each icon SVG file
+    img,
+    svg {
+      width: 95px;
+      height: 330px;
+
+    }
+
+    svg:hover {
+      fill: #00bcf2;
+      cursor: pointer;
+    }
+
+    // Positiong each of the clickable icons on the panel
+    &.icons-2A {
+      top: -200px;
+      left: 327px;
+    }
+
+    &.icons-2B {
+      top: -255px;
+      left: 435px;
+    }
+
+    &.icons-2C {
+      top: -200px;
+      left: 550px;
     }
   }
 }
