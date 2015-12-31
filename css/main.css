@@ -264,6 +264,15 @@ body {
   margin-bottom: 75px;
   z-index: 1;
   position: relative; }
+  .answer i {
+    font-size: 20px;
+    position: absolute;
+    right: 10%;
+    top: 25px;
+    color: #686868; }
+    .answer i:hover {
+      cursor: pointer;
+      color: #000; }
   .answer > div {
     padding: 50px 0;
     width: 100%;
@@ -294,13 +303,14 @@ body {
         margin: 0 0 5px 0;
         color: #686868;
         font-weight: 600; }
-        .answer > div .answer--nav ul li.active, .answer > div .answer--nav ul li.active:hover {
+        .answer > div .answer--nav ul li.active-nav, .answer > div .answer--nav ul li.active:hover {
           border: 3px solid #fff;
           cursor: default; }
         .answer > div .answer--nav ul li:hover {
           border: 3px solid #e8e8e8;
           cursor: pointer; }
     .answer > div .answer--details {
+      display: none;
       -webkit-box-flex: 1 1 auto;
       -moz-box-flex: 1 1 auto;
       -webkit-flex: 1 1 auto;

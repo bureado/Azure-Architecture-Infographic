@@ -35,7 +35,20 @@
   margin-bottom: 75px;
   z-index: 1;
   position: relative;
-  
+
+  i {
+    font-size: 20px;
+    position: absolute;
+    right: 10%;
+    top: 25px;
+    color: #686868;  
+    
+    &:hover {
+      cursor: pointer;
+      color: #000;
+    }
+  }
+
   > div {
     padding: 50px 0;
     width: 100%;
@@ -59,7 +72,7 @@
           color: #686868;
           font-weight: 600;
 
-          &.active,
+          &.active-nav,
           &.active:hover {
             border: 3px solid #fff;
             cursor: default;
@@ -74,6 +87,7 @@
     }
 
     .answer--details {
+      display: none;
       @include flex(1 1 auto);
       margin-left: 50px;
       color: #686868;
