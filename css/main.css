@@ -253,11 +253,6 @@ body {
     padding-top: 0px;
     padding-bottom: 0px; }
 
-.question {
-  margin-bottom: 0px; }
-  .question .panel--content {
-    position: relative; }
-
 .answer {
   display: none;
   background: #dedede;
@@ -303,12 +298,12 @@ body {
         margin: 0 0 5px 0;
         color: #686868;
         font-weight: 600; }
-        .answer > div .answer--nav ul li.active-nav, .answer > div .answer--nav ul li.active:hover {
-          border: 3px solid #fff;
-          cursor: default; }
         .answer > div .answer--nav ul li:hover {
           border: 3px solid #e8e8e8;
           cursor: pointer; }
+        .answer > div .answer--nav ul li.active-nav, .answer > div .answer--nav ul li.active:hover {
+          border: 3px solid #fff;
+          cursor: default; }
     .answer > div .answer--details {
       display: none;
       -webkit-box-flex: 1 1 auto;
@@ -316,6 +311,7 @@ body {
       -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
       flex: 1 1 auto;
+      width: 100%;
       margin-left: 50px;
       color: #686868; }
       .answer > div .answer--details h1 {
@@ -338,31 +334,66 @@ body {
       display: table;
       clear: both; }
 
-.question--infographic2__content .icons {
-  position: absolute;
-  width: 95px;
-  height: 330px; }
-  .question--infographic2__content .icons .icons--active {
-    display: none; }
-  .question--infographic2__content .icons.active svg {
-    display: none; }
-  .question--infographic2__content .icons.active img {
-    display: block; }
-  .question--infographic2__content .icons img,
-  .question--infographic2__content .icons svg {
+.question {
+  margin-bottom: 0px; }
+  .question .icons {
+    position: absolute;
+    background: url("../img/svg-ie10-fix.png") 0 0 repeat; }
+    .question .icons .icons--inactive {
+      z-index: -1; }
+    .question .icons .icons--active {
+      display: none; }
+    .question .icons.active svg {
+      display: none; }
+    .question .icons.active img {
+      display: block; }
+    .question .icons:hover svg {
+      fill: #00bcf2;
+      cursor: pointer; }
+  .question .panel--content {
+    position: relative; }
+
+.question--infographic2__content {
+  margin-bottom: 40px; }
+  .question--infographic2__content .icons {
     width: 95px;
     height: 330px; }
-  .question--infographic2__content .icons svg:hover {
-    fill: #00bcf2;
-    cursor: pointer; }
-  .question--infographic2__content .icons.icons-2A {
-    top: -200px;
-    left: 327px; }
-  .question--infographic2__content .icons.icons-2B {
-    top: -255px;
-    left: 435px; }
-  .question--infographic2__content .icons.icons-2C {
-    top: -200px;
-    left: 550px; }
+    .question--infographic2__content .icons img,
+    .question--infographic2__content .icons svg {
+      width: 95px;
+      height: 330px; }
+    .question--infographic2__content .icons.icons-A {
+      top: -200px;
+      left: 327px; }
+    .question--infographic2__content .icons.icons-B {
+      top: -255px;
+      left: 435px; }
+    .question--infographic2__content .icons.icons-C {
+      top: -200px;
+      left: 550px; }
+
+.question--infographic3__content .icons {
+  width: 129px;
+  height: 329px; }
+  .question--infographic3__content .icons img,
+  .question--infographic3__content .icons svg {
+    width: 129px;
+    height: 329px; }
+  .question--infographic3__content .icons.icons-A {
+    top: -225px;
+    left: 247px; }
+  .question--infographic3__content .icons.icons-B {
+    top: -170px;
+    left: 345px; }
+  .question--infographic3__content .icons.icons-C {
+    top: -280px;
+    left: 420px;
+    z-index: 1; }
+  .question--infographic3__content .icons.icons-D {
+    top: -174px;
+    left: 488px; }
+  .question--infographic3__content .icons.icons-E {
+    top: -225px;
+    left: 580px; }
 
 /*# sourceMappingURL=main.css.map */

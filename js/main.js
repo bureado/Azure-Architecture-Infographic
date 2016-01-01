@@ -4,50 +4,67 @@ $(document).ready(function(){
   if(Function('/*@cc_on return document.documentMode===10@*/')()){ $("html").addClass("ie10"); }
 
 
-
-  // 'X' icon to close the panels
+  // 'X' icon to close the answer panels
   $('.fa-close').click(function() {
      $(this).closest('.answer').hide();
      $('.icons').removeClass('active');
   });
 
+  // Function to toggle the answers
+  function doTheThing(whichPanel, whichQuestionIcon, whichAnswerContainer) {        
+    // Showing the corresponding answer container
+    $(whichAnswerContainer).show()
 
-  // Toggling SVG icons when clicked
-  $('.question--infographic2 .icons').click(function() {
-    $('.answer--infographic2').show();
-    $(this).toggleClass('active').siblings().removeClass('active');
+    // Scrolling the corresponding answer container to the top
+    $('html, body').animate({
+        scrollTop: $(whichAnswerContainer).offset().top -0
+    }, 0);
+
+    // Hiding the open answer, so that no more than 1 are open at a time
+    $(whichAnswerContainer).find('.answer--details').hide()
+
+    // Setting active icons, and showing active answer
+    if(whichPanel.hasClass('icons-A') || whichPanel.hasClass('answer--nav__A'))  {
+      $(whichQuestionIcon).find('.icons-A').addClass('active').siblings().removeClass('active');                    // Setting active icon
+      $(whichAnswerContainer).find('.answer--details-A').show();                                                    // Showing answer 
+      $(whichAnswerContainer).find('.answer--nav__A').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
+    }
+
+    if(whichPanel.hasClass('icons-B') || whichPanel.hasClass('answer--nav__B')) {
+      $(whichQuestionIcon).find('.icons-B').addClass('active').siblings().removeClass('active');                    // Setting active icon
+      $(whichAnswerContainer).find('.answer--details-B').show();                                                    // Showing answer 
+      $(whichAnswerContainer).find('.answer--nav__B').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
+    }
+
+    if(whichPanel.hasClass('icons-C') || whichPanel.hasClass('answer--nav__C')) {
+      $(whichQuestionIcon).find('.icons-C').addClass('active').siblings().removeClass('active');                    // Setting active icon
+      $(whichAnswerContainer).find('.answer--details-C').show();                                                    // Showing answer 
+      $(whichAnswerContainer).find('.answer--nav__C').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
+    }
+
+    if(whichPanel.hasClass('icons-D') || whichPanel.hasClass('answer--nav__D')) {
+      $(whichQuestionIcon).find('.icons-D').addClass('active').siblings().removeClass('active');                    // Setting active icon
+      $(whichAnswerContainer).find('.answer--details-D').show();                                                    // Showing answer 
+      $(whichAnswerContainer).find('.answer--nav__D').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
+    }
+
+    if(whichPanel.hasClass('icons-E') || whichPanel.hasClass('answer--nav__E')) {
+      $(whichQuestionIcon).find('.icons-E').addClass('active').siblings().removeClass('active');                    // Setting active icon
+      $(whichAnswerContainer).find('.answer--details-E').show();                                                    // Showing answer 
+      $(whichAnswerContainer).find('.answer--nav__E').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
+    }
+  }
+
+  // Calling the Toggle function with customizations for each panel.
+
+  // Infographic 1.2
+  $('.question--infographic2 .icons, .answer--infographic2 .answer--nav ul li').click(function() {
+    doTheThing($(this), '.question--infographic2', '.answer--infographic2');
   });
 
-
-  // Toggling content via icons
-  $('.question--infographic2 .icons, .answer--nav ul li').click(function() {
-    $('.answer--infographic2 .answer--details').hide();
-
-    // Scrolling answer container to top of screen    
-    $('html, body').animate({
-        scrollTop: $(".answer--infographic2").offset().top -0
-    }, 500);
-    
-
-
-    if($(this).hasClass('icons-2A') || $(this).hasClass('answer--nav__2A'))  {
-      $('.icons-2A').addClass('active').siblings().removeClass('active');               // Showing corresponding active icon below answers
-      $('.answer--details-2A').show();                                                  // Showing corresponding answer panel
-      $('.answer--nav__2A').addClass('active-nav').siblings().removeClass('active-nav');  // Toggling corresponding answer side-nav
-      
-    }
-
-    if($(this).hasClass('icons-2B') || $(this).hasClass('answer--nav__2B')) {
-      $('.icons-2B').addClass('active').siblings().removeClass('active'); 
-      $('.answer--details-2B').show();
-      $('.answer--nav__2B').addClass('active-nav').siblings().removeClass('active-nav');    
-    }
-
-    if($(this).hasClass('icons-2C') || $(this).hasClass('answer--nav__2C')) {
-      $('.icons-2C').addClass('active').siblings().removeClass('active'); 
-      $('.answer--details-2C').show();
-      $('.answer--nav__2C').addClass('active-nav').siblings().removeClass('active-nav');    
-    }
+  // Infographic 1.3
+  $('.question--infographic3 .icons, .answer--infographic3 .answer--nav ul li').click(function() {
+    doTheThing($(this), '.question--infographic3', '.answer--infographic3');
   });
 
 });

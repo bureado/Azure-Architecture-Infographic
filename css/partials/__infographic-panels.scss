@@ -18,17 +18,7 @@
 }
 
 
-.question {
-  margin-bottom: 0px;
-
-  .panel--content {
-    position: relative;
-  }
-}
-
-
-
-// Answers Panel
+// [Globals] Answers Panels ///////////////////////////////////////////////////////////////////////////////////////
 .answer {
   display:none;
   background: #dedede;
@@ -72,15 +62,15 @@
           color: #686868;
           font-weight: 600;
 
+          &:hover {
+            border: 3px solid #e8e8e8;
+            cursor: pointer;
+          }
+
           &.active-nav,
           &.active:hover {
             border: 3px solid #fff;
             cursor: default;
-          }
-
-          &:hover {
-            border: 3px solid #e8e8e8;
-            cursor: pointer;
           }
         }
       }
@@ -89,6 +79,7 @@
     .answer--details {
       display: none;
       @include flex(1 1 auto);
+      width: 100%;
       margin-left: 50px;
       color: #686868;
 
@@ -125,54 +116,76 @@
 }
 
 
+// [Global] Question panels ///////////////////////////////////////////////////////////////////////////////////////
+.question {
+  margin-bottom: 0px;
 
-// Question 1 image positioning
-.question--infographic2__content {
-
-  // Container that the icons for each panels lives within
-  // This contains both the active, and inactive states of the icons 
   .icons {
     position: absolute;
-    width: 95px;
-    height: 330px;
+    background: url('../img/svg-ie10-fix.png') 0 0 repeat; // IE10 does not like hovering over SVGs, but behaves if
+                                                        // it's container has a background of some sort.
+    .icons--inactive {
+      z-index: -1;
+    }
 
-    // Toggling active/inactive icons
-    .icons--active {
+    .icons--active {                          // Hiding Inactive / Showing Active
       display: none;
     }
 
-    &.active {
+    &.active {                                // Showing Active / Hiding inactive
       svg { display: none; }
       img { display: block; }
     }
-
-    // Setting to standard sizing for each icon SVG file
-    img,
-    svg {
-      width: 95px;
-      height: 330px;
-
-    }
-
-    svg:hover {
+    
+    &:hover svg {                             // Changing icons to blue when hovered
       fill: #00bcf2;
       cursor: pointer;
     }
+  }
 
-    // Positiong each of the clickable icons on the panel
-    &.icons-2A {
-      top: -200px;
-      left: 327px;
-    }
-
-    &.icons-2B {
-      top: -255px;
-      left: 435px;
-    }
-
-    &.icons-2C {
-      top: -200px;
-      left: 550px;
-    }
+ .panel--content {
+    position: relative;
   }
 }
+
+// [Custom] Question 1 ///////////////////////////////////////////////////////////////////////////////////////////
+// Just the overview image.
+
+
+// [Custom] Question 2 ///////////////////////////////////////////////////////////////////////////////////////////
+.question--infographic2__content {  
+  margin-bottom: 40px;
+
+  .icons {                                    // Container that the icons for each panels lives within, 
+    width: 95px;                              // this contains both the active, and inactive states of the icons 
+    height: 330px;
+
+    img,                                      // Setting to standard sizing for each icon SVG file
+    svg { width: 95px; height: 330px;     }
+
+    &.icons-A { top: -200px; left: 327px; }   // Custom positioning for each icon
+    &.icons-B { top: -255px; left: 435px; }
+    &.icons-C { top: -200px; left: 550px; }
+  }
+}
+
+
+// [Custom] Question 3 ///////////////////////////////////////////////////////////////////////////////////////////
+.question--infographic3__content {  
+  .icons {                                    // Container that the icons for each panels lives within, 
+    width: 129px;                             // this contains both the active, and inactive states of the icons 
+    height: 329px;
+
+    img,                                      // Setting to standard sizing for each icon SVG file
+    svg { width: 129px; height: 329px;    }
+
+    &.icons-A { top: -225px; left: 247px; }   // Custom positioning for each icon
+    &.icons-B { top: -170px; left: 345px; }
+    &.icons-C { top: -280px; left: 420px; z-index: 1;}
+    &.icons-D { top: -174px; left: 488px; }
+    &.icons-E { top: -225px; left: 580px; }
+  }
+}
+
+
+// [Custom] Question 4 ///////////////////////////////////////////////////////////////////////////////////////////
