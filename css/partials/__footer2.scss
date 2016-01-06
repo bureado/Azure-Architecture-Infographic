@@ -1,0 +1,50 @@
+// Top full-width hero graphic / copy
+
+.footer2 {
+  width: 100%;
+  background: #686868;
+
+  &--content {
+    padding: 75px 0;
+    
+    &__text {
+      color: #fff;
+
+      h1 {
+        font-size: 4.4rem;
+        line-height: 6rem;
+        letter-spacing: -.2rem;
+        font-weight: 200;
+        display: inline-block;
+        float: left;
+        width: 340px;
+      }
+
+      ul {
+          float: left;
+          margin-top: 10px;
+          max-width: 60%;
+
+        li {
+          font-size: 1.3rem;
+          font-weight: 200;
+          float: left;
+          width: 275px;
+          display: block;
+          position: relative;
+          min-height: 30px;
+          margin-bottom: 10px;
+          margin-right: 5px;
+          
+          img {
+            width: 10px;
+            height: 18px;
+            position: absolute;
+            right: 15px;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}

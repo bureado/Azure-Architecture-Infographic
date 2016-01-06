@@ -13,12 +13,12 @@ $(document).ready(function(){
   // Function to toggle the answers
   function doTheThing(whichPanel, whichQuestionIcon, whichAnswerContainer) {        
     // Showing the corresponding answer container
-    $(whichAnswerContainer).show()
+    $(whichAnswerContainer).show();
 
     // Scrolling the corresponding answer container to the top
-    $('html, body').animate({
-        scrollTop: $(whichAnswerContainer).offset().top -0
-    }, 0);
+    // $('html, body').animate({
+    //     scrollTop: $(whichAnswerContainer).offset().top -0
+    // }, 0);
 
     // Hiding the open answer, so that no more than 1 are open at a time
     $(whichAnswerContainer).find('.answer--details').hide()
@@ -53,6 +53,30 @@ $(document).ready(function(){
       $(whichAnswerContainer).find('.answer--details-E').show();                                                    // Showing answer 
       $(whichAnswerContainer).find('.answer--nav__E').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
     }
+
+    if(whichPanel.hasClass('icons-F') || whichPanel.hasClass('answer--nav__F')) {
+      $(whichQuestionIcon).find('.icons-F').addClass('active').siblings().removeClass('active');                    // Setting active icon
+      $(whichAnswerContainer).find('.answer--details-F').show();                                                    // Showing answer 
+      $(whichAnswerContainer).find('.answer--nav__F').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
+    }
+
+    if(whichPanel.hasClass('icons-G') || whichPanel.hasClass('answer--nav__G')) {
+      $(whichQuestionIcon).find('.icons-G').addClass('active').siblings().removeClass('active');                    // Setting active icon
+      $(whichAnswerContainer).find('.answer--details-G').show();                                                    // Showing answer 
+      $(whichAnswerContainer).find('.answer--nav__G').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
+    }
+
+    if(whichPanel.hasClass('icons-H') || whichPanel.hasClass('answer--nav__H')) {
+      $(whichQuestionIcon).find('.icons-H').addClass('active').siblings().removeClass('active');                    // Setting active icon
+      $(whichAnswerContainer).find('.answer--details-H').show();                                                    // Showing answer 
+      $(whichAnswerContainer).find('.answer--nav__H').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
+    }
+
+    if(whichPanel.hasClass('icons-I') || whichPanel.hasClass('answer--nav__I')) {
+      $(whichQuestionIcon).find('.icons-I').addClass('active').siblings().removeClass('active');                    // Setting active icon
+      $(whichAnswerContainer).find('.answer--details-I').show();                                                    // Showing answer 
+      $(whichAnswerContainer).find('.answer--nav__I').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
+    }
   }
 
   // Calling the Toggle function with customizations for each panel.
@@ -65,6 +89,31 @@ $(document).ready(function(){
   // Infographic 1.3
   $('.question--infographic3 .icons, .answer--infographic3 .answer--nav ul li').click(function() {
     doTheThing($(this), '.question--infographic3', '.answer--infographic3');
+  });
+
+  // Infographic 1.4
+  $('.question--infographic4 .icons, .answer--infographic4 .answer--nav ul li').click(function() {
+    doTheThing($(this), '.question--infographic4', '.answer--infographic4');
+  });
+
+  // Infographic 1.5
+  $('.question--infographic5 .icons, .answer--infographic5 .answer--nav ul li').click(function() {
+    doTheThing($(this), '.question--infographic5', '.answer--infographic5');
+  });
+
+  // Infographic 1.6
+  $('.question--infographic6 .icons, .answer--infographic6 .answer--nav ul li').click(function() {
+    doTheThing($(this), '.question--infographic6', '.answer--infographic6');
+  });
+
+  // Infographic 1.7
+  $('.question--infographic7 .icons, .answer--infographic7 .answer--nav ul li').click(function() {
+    doTheThing($(this), '.question--infographic7', '.answer--infographic7');
+  });
+
+  // Infographic 1.8
+  $('.question--infographic8 .icons, .answer--infographic8 .answer--nav ul li').click(function() {
+    doTheThing($(this), '.question--infographic8', '.answer--infographic8');
   });
 
 });
