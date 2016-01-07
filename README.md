@@ -6,7 +6,7 @@ Interactive infographic site built from a collection of .AI files being exported
 
 
 
-# File naming / Directory structure
+## File naming / Directory structure
 
 There are a ton of .svg files used with this site, here is a breakdown of how they are being named / used.
 
@@ -16,14 +16,17 @@ There are a ton of .svg files used with this site, here is a breakdown of how th
 Default image directory
 
 
+
 ###### `img/infographic*`
 
 5 of these directories, each one associated with one of the 5 infographic pages
 
 
+
 ###### `img/infographic#/fullwidth--infographic__[A].svg`
 
 These are the full width (960px) images displaying any static content for each of the panels of the infographic
+
 
 
 ###### `img/infographic#/infographic-[A]__icon[B].svg`
@@ -39,6 +42,7 @@ These are the inactive states of each of the clickable areas.
 * **Must match the same dimensions as the inactive state SVG, to maintain alignment with the *active state***
 
 
+
 ###### `img/infographic#/infographic-[A]__icon[B]-active.svg`
 
 These are the active states of each of the clickable areas, active being defined as *after a user has clicked*
@@ -48,6 +52,11 @@ The active state...
 * Matches the same color used on :hover
 * Adds a grey vertical line connected the selected icon to the grey panel above
 * **Must match the same dimensions as the inactive state SVG, to maintain alignment with the *inactive state***
+
+
+
+
+
 
 
 ---
