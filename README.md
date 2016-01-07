@@ -1,5 +1,5 @@
 # Interactive Infographic
-**Open Source on Azure Depth and Breadth Marketing**
+### Open Source on Azure Depth and Breadth Marketing
 
 Interactive infographic site built from a collection of .AI files being exported to SVGs.  The site has 5 sub-pages, and needs to be mobile friendly.
 
@@ -7,39 +7,41 @@ Interactive infographic site built from a collection of .AI files being exported
 
 ## File naming / Directory structure
 
-There are a ton of .svg files used with this site, here is a breakdown of how they are being named / used.
+*There are a ton of .svg files used with this site, here is a breakdown of how they are being named / used.*
 
 
 ###### `/img/`
 
-Default image directory
+*Default image directory*
 
 
 
 ###### `/img/infographic*/`
 
-5 of these directories, each one associated with one of the 5 infographic pages
+*5 of these directories, each one associated with one of the 5 infographic pages*
 
 
 
 ###### `/img/infographic#/fullwidth--infographic__[A].svg`
 
-These are the full width (960px) images displaying any static content for each of the panels of the infographic
-
+*These are the full width (960px) images displaying any static content for each of the panels of the infographic*
 
 
 ###### `/img/infographic#/infographic-[A]__icon[B].svg`
+*These are the inactive states of each of the clickable areas.*
 
-These are the inactive states of each of the clickable areas.
+Creating an icon / image is done by...
+- Extracting the vector art from the comp into a new file
+- Converting all type to outlines
+- Saved as an SVG
+- Code extracted from SVG and Minified 
+- Placed inline as an **<svg>** with the class "icon--inactive"
+- * **The exported SVG MUST match the same dimensions as the "icon--active" state SVG, to maintain alignment with the "active state"**
 
-* Applying these involves a few steps
-  - They are assets taken from the comp
-  - Saved as an SVG
-  - Placed inline with the class **icon--inactive**
-* The inactive state SVG also toggles on :hover
-  - The color toggle is achieved by applying **fill: #00bcf2;** to the **path / circle / rect / etc** of the inline SVG
-* **Must match the same dimensions as the inactive state SVG, to maintain alignment with the *active state***
-
+This icon will also need a **:hover** state...
+- By default the :hover should be functional if it has the "icon--inactive" class
+- If the :hover is not functioning, or is missing some pieces, the individual SVG will need to be targetted with custom CSS
+  - This can be achieved by applying **fill: #00bcf2;** to the specific **path / circle / rect / etc** of the inline SVG
 
 
 ###### `/img/infographic#/infographic-[A]__icon[B]-active.svg`
@@ -50,16 +52,14 @@ The active state...
 * Is shown using an <img> tag, rather than an inline <svg> like the inactive state
 * Matches the same color used on :hover
 * Adds a grey vertical line connected the selected icon to the grey panel above
-* **Must match the same dimensions as the inactive state SVG, to maintain alignment with the *inactive state***
-
-
-
-
-
-
+* **Must match the same dimensions as the "icon--inactive" inline SVG that was exported, to maintain alignment with the "inactive state"**
 
 ---
+---
+---
+---
 
+## Links to project
 * *PWA link* - N/A
 
 * *Live Site* - N/A
