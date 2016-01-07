@@ -1,6 +1,5 @@
 # Interactive Infographic
-
-## Open Source on Azure Depth and Breadth Marketing
+**Open Source on Azure Depth and Breadth Marketing**
 
 Interactive infographic site built from a collection of .AI files being exported to SVGs.  The site has 5 sub-pages, and needs to be mobile friendly.
 
@@ -11,25 +10,25 @@ Interactive infographic site built from a collection of .AI files being exported
 There are a ton of .svg files used with this site, here is a breakdown of how they are being named / used.
 
 
-###### `img`
+###### `/img/`
 
 Default image directory
 
 
 
-###### `img/infographic*`
+###### `/img/infographic*/`
 
 5 of these directories, each one associated with one of the 5 infographic pages
 
 
 
-###### `img/infographic#/fullwidth--infographic__[A].svg`
+###### `/img/infographic#/fullwidth--infographic__[A].svg`
 
 These are the full width (960px) images displaying any static content for each of the panels of the infographic
 
 
 
-###### `img/infographic#/infographic-[A]__icon[B].svg`
+###### `/img/infographic#/infographic-[A]__icon[B].svg`
 
 These are the inactive states of each of the clickable areas.
 
@@ -43,7 +42,7 @@ These are the inactive states of each of the clickable areas.
 
 
 
-###### `img/infographic#/infographic-[A]__icon[B]-active.svg`
+###### `/img/infographic#/infographic-[A]__icon[B]-active.svg`
 
 These are the active states of each of the clickable areas, active being defined as *after a user has clicked*
 
