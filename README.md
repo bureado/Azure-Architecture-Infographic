@@ -89,4 +89,3 @@ Microsoft
 * Azure subscription - Unknown
 * Azure resource group = Unknown
 * Deployment strategy - Unknown
-

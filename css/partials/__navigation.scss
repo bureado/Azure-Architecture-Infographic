@@ -16,14 +16,31 @@
 
       li {
         @include flex(1 0 auto);
-        text-align: center;
-        border: 1px dashed #eee;
-        padding: 20px;
-        margin: 0 5px;
-        color: #00bcf2;
-        font-weight: 600;
-        font-size: 1.4rem;
+
+
+
+        a {
+          text-decoration: none;
+          color: #00bcf2;
+          font-weight: 600;
+          font-size: 1.4rem;          
+          text-align: center;
+          border: 1px dashed #eee;
+          padding: 20px;
+          margin: 0 5px;
+        }
       }
     }
+  }
+
+  &--active {
+    a {
+      background: #00bcf2;
+      color: #fff !important;
+    }
+  }
+
+  &:hover a {
+    background: red;
   }
 }
