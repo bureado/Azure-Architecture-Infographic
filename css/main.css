@@ -164,14 +164,16 @@ body {
           font-weight: 600;
           font-size: 1.4rem;
           text-align: center;
-          border: 1px dashed #eee;
           padding: 20px;
           margin: 0 5px; }
         .navigation nav ul li:hover a {
-          background: pink; }
+          background: #EFFCFF; }
   .navigation .navigation--active a {
     background: #00bcf2;
     color: #fff !important; }
+  .navigation .navigation--active:hover a {
+    background: #00bcf2;
+    cursor: default; }
 
 .hero {
   width: 100%;

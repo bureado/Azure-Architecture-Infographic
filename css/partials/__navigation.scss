@@ -23,13 +23,12 @@
           font-weight: 600;
           font-size: 1.4rem;          
           text-align: center;
-          border: 1px dashed #eee;
           padding: 20px;
           margin: 0 5px;
         }
 
         &:hover a {
-          background: pink;
+          background: #EFFCFF;
         }
       }
     }
@@ -41,6 +40,11 @@
     a {
       background: #00bcf2;
       color: #fff !important;
+    }
+
+    &:hover a {
+      background: #00bcf2;
+      cursor: default;
     }
   }
 }
