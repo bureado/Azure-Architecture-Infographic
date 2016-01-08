@@ -5,7 +5,8 @@
   background: #fff;
   background: url(../img/homepage--hero.jpg) 0 0 no-repeat #fff;
   background-position: center;
-
+  background-size: cover;
+  
   &--content {
     @include flexbox();
     @include flex-flow(row nowrap);

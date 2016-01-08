@@ -32,6 +32,40 @@ body {
 }
 
 
+// Temporary landing page style
+.TMP--wrapper {
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+ .TMP--wrapper__options {
+  @include vertical-align();
+  text-align:center;
+  width: 450px;
+  height: 400px;
+  margin: 0 auto;
+
+  a {
+    display: block;
+    font-size: 2rem;
+    padding: 25px;
+    text-decoration: none;
+    color: #00bcf2;
+    font-weight: 600;
+    font-size: 1.4rem;          
+    text-align: center;
+    border: 1px dashed #eee;
+    padding: 20px;
+    margin: 0 5px;
+    
+    &:hover {
+      background: #00bcf2;
+      color: #fff !important;
+    }
+  }
+}
+
 
 // Global panel style
 .wrapper {                        // Wrapper around all block content

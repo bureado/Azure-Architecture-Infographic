@@ -17,8 +17,6 @@
       li {
         @include flex(1 0 auto);
 
-
-
         a {
           text-decoration: none;
           color: #00bcf2;
@@ -29,18 +27,20 @@
           padding: 20px;
           margin: 0 5px;
         }
+
+        &:hover a {
+          background: pink;
+        }
       }
     }
   }
 
-  &--active {
+
+
+  .navigation--active {
     a {
       background: #00bcf2;
       color: #fff !important;
     }
-  }
-
-  &:hover a {
-    background: red;
   }
 }
