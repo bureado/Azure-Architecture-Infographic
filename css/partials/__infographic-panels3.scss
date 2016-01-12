@@ -2,12 +2,8 @@
 // The panels for infographic 1 of 5 (architecture1.html)
 ////////////////////////////////////////////////////////////
 
-.architecture-1 {
+.architecture-3 {
 
-  // [Custom] Answer 7 ///////////////////////////////////////////////////////////////////////////////////////
-  .answer.answer--infographic7 {
-    margin-bottom: 25px;
-  }
  
   // [Custom] Question 2 ///////////////////////////////////////////////////////////////////////////////////////////
   .question--infographic2__content {  
@@ -36,175 +32,188 @@
       img,                                      // Setting to standard sizing for each icon SVG file
       svg { width: 129px; height: 329px;    }
 
-      &.icons-A { top: -225px; left: 247px; }   // Custom positioning for each icon
-      &.icons-B { top: -170px; left: 345px; }
-      &.icons-C { top: -280px; left: 420px; z-index: 1;}
-      &.icons-D { top: -174px; left: 488px; }
-      &.icons-E { top: -225px; left: 580px; }
+      &.icons-A { top: -200px; left: 200px; }   // Custom positioning for each icon
+      &.icons-B { top: -145px; left: 290px; }
+      &.icons-C { top: -125px; left: 415px; }
+      &.icons-D { top: -280px; left: 415px; z-index: 1;}
+      &.icons-E { top: -145px; left: 543px; }
+      &.icons-F { top: -185px; left: 640px; }
     }
   }
 
 
   // [Custom] Question 4 ///////////////////////////////////////////////////////////////////////////////////////////
-  .question--infographic4__content {  
-    .icons {                                    // Container that the icons for each panels lives within, 
-      width: 90px; height: 171px;                // this contains both the active, and inactive states of the icons 
+  // .question--infographic4__content {  
+  //   .icons {                                    // Container that the icons for each panels lives within, 
+  //     width: 90px; height: 171px;                // this contains both the active, and inactive states of the icons 
       
-      &:hover svg circle,
-      &:hover .svg-labeltext {                  // Custom selection of SVG objects for this grouping
-        fill: #00bcf2;
-        cursor: pointer;
-      }
+  //     &:hover svg circle,
+  //     &:hover .svg-labeltext {                  // Custom selection of SVG objects for this grouping
+  //       fill: #00bcf2;
+  //       cursor: pointer;
+  //     }
 
-      img,                                      // Setting to standard sizing for each icon SVG file
-      svg { width: 90px; height: 171px; }
+  //     img,                                      // Setting to standard sizing for each icon SVG file
+  //     svg { width: 90px; height: 171px; }
 
-      &.icons-A { right: 225px; top: -113px;}     // Custom positioning for each icon
-    }
-  }
+  //     &.icons-A { right: 225px; top: -113px;}     // Custom positioning for each icon
+  //   }
+  // }
 
   // [Custom] Question 5 ///////////////////////////////////////////////////////////////////////////////////////////
-  .question--infographic5__content {  
-    .icons {                                    // Container that the icons for each panels lives within, 
-      width: 157px;                             // this contains both the active, and inactive states of the icons 
-      height: 329px;
+  // .question--infographic5__content {  
+  //   .icons {                                    // Container that the icons for each panels lives within, 
+  //     width: 157px;                             // this contains both the active, and inactive states of the icons 
+  //     height: 329px;
 
-      &:hover g {                               // Custom selection of SVG objects for this grouping
-        fill: #00bcf2;
-        cursor: pointer;
-      }
+  //     &:hover g {                               // Custom selection of SVG objects for this grouping
+  //       fill: #00bcf2;
+  //       cursor: pointer;
+  //     }
 
-      img,                                      // Setting to standard sizing for each icon SVG file
-      svg { width: 157px; height: 329px;    }
+  //     img,                                      // Setting to standard sizing for each icon SVG file
+  //     svg { width: 157px; height: 329px;    }
 
-      &.icons-A { top: -291px; left: 407px; z-index: 1;}   // Custom positioning for each icon
-      &.icons-B { top: -180px; left: 325px; }
-      &.icons-C { top: -177px; left: 495px; }
-    }
-  }
+  //     &.icons-A { top: -291px; left: 407px; z-index: 1;}   // Custom positioning for each icon
+  //     &.icons-B { top: -180px; left: 325px; }
+  //     &.icons-C { top: -177px; left: 495px; }
+  //   }
+  // }
 
   // [Custom] Question 6 ///////////////////////////////////////////////////////////////////////////////////////////
-  .question--infographic6__content {  
-  z-index: 2;
-    .icons {                                    // Container that the icons for each panels lives within, 
-      width: 105px; height: 220px;              // this contains both the active, and inactive states of the icons 
+  // .question--infographic6__content {  
+  //   z-index: 2;
+  //   .icons {                                    // Container that the icons for each panels lives within, 
+  //     width: 105px; height: 220px;              // this contains both the active, and inactive states of the icons 
 
-      img,                                      // Setting to standard sizing for each icon SVG file
-      svg { width: 105px; height: 220px; }
+  //     img,                                      // Setting to standard sizing for each icon SVG file
+  //     svg { width: 105px; height: 220px; }
 
-      &.icons-A { left: 230px; top: -115px;}     // Custom positioning for each icon
-    }
-  }
+  //     &.icons-A { left: 230px; top: -115px;}     // Custom positioning for each icon
+  //   }
+  // }
 
   // [Custom] Question 7 ///////////////////////////////////////////////////////////////////////////////////////////
-  .question--infographic7 {
-    margin-bottom: 50px;
-  }
+  // .question--infographic7 {
+  //   margin-bottom: 50px;
+  // }
 
-  .question--infographic7__content {  
-    .icons {                                    // Container that the icons for each panels lives within, 
-      width: 105px; height: 220px;              // this contains both the active, and inactive states of the icons 
+  // .question--infographic7__content {  
+  //   .icons {                                    // Container that the icons for each panels lives within, 
+  //     width: 105px; height: 220px;              // this contains both the active, and inactive states of the icons 
       
-      img,                                      // Setting to standard sizing for each icon SVG file
-      svg { width: 55px; height: 284px; }
+  //     img,                                      // Setting to standard sizing for each icon SVG file
+  //     svg { width: 55px; height: 284px; }
 
-      &.icons-A {                               // Custom sizing / position for the 'Azure Virtual Network' image
-        width: 193px;
-        height: 256px;
+  //     &.icons-A {                               // Custom sizing / position for the 'Azure Virtual Network' image
+  //       width: 193px;
+  //       height: 256px;
 
-        img,
-        svg {
-          width: 193px;
-          height: 256px;
-        }
-      }
+  //       img,
+  //       svg {
+  //         width: 193px;
+  //         height: 256px;
+  //       }
+  //     }
 
-      &.icons-H {                               // Custom sizing / position for the 'Azure Virtual Network' image
-        width: 194px;
-        height: 256px;
+  //     &.icons-H {                               // Custom sizing / position for the 'Azure Virtual Network' image
+  //       width: 194px;
+  //       height: 256px;
 
-        img,
-        svg {
-          width: 194px;
-          height: 256px;
-        }
-      }
+  //       img,
+  //       svg {
+  //         width: 194px;
+  //         height: 256px;
+  //       }
+  //     }
 
-      &.icons-I {                               // Custom sizing / position for the 'Azure Virtual Network' image
-        width: 279px;
-        height: 256px;
+  //     &.icons-I {                               // Custom sizing / position for the 'Azure Virtual Network' image
+  //       width: 279px;
+  //       height: 256px;
 
-        img,
-        svg {
-          width: 279px;
-          height: 491px;
-        }
-      }
+  //       img,
+  //       svg {
+  //         width: 279px;
+  //         height: 491px;
+  //       }
+  //     }
 
 
-      &.icons-A { left: 406px; top: -169px; z-index: 2; }    // Custom positioning for each icon
-      &.icons-B { left: 194px; top:  -48px; }    // Custom positioning for each icon    
-      &.icons-C { left: 215px; top:  -97px; }    // Custom positioning for each icon
-      &.icons-D { left: 248px; top: -142px; }    // Custom positioning for each icon
-      &.icons-E { left: 690px; top: -142px; z-index: 2;}    // Custom positioning for each icon
-      &.icons-F { left: 724px; top: -102px; z-index: 1; }    // Custom positioning for each icon
-      &.icons-G { left: 747px; top:  -52px; }    // Custom positioning for each icon
-      &.icons-H { left: 369px; top: -101px; z-index: 1; }    // Custom positioning for each icon
-      &.icons-I { left: 272px; top:  -81px; }    // Custom positioning for each icon
-    }
-  }
+  //     &.icons-A { left: 406px; top: -169px; z-index: 2; }    // Custom positioning for each icon
+  //     &.icons-B { left: 194px; top:  -48px; }    // Custom positioning for each icon    
+  //     &.icons-C { left: 215px; top:  -97px; }    // Custom positioning for each icon
+  //     &.icons-D { left: 248px; top: -142px; }    // Custom positioning for each icon
+  //     &.icons-E { left: 690px; top: -142px; z-index: 2;}    // Custom positioning for each icon
+  //     &.icons-F { left: 724px; top: -102px; z-index: 1; }    // Custom positioning for each icon
+  //     &.icons-G { left: 747px; top:  -52px; }    // Custom positioning for each icon
+  //     &.icons-H { left: 369px; top: -101px; z-index: 1; }    // Custom positioning for each icon
+  //     &.icons-I { left: 272px; top:  -81px; }    // Custom positioning for each icon
+  //   }
+  // }
 
   // [Custom] Question 8 ///////////////////////////////////////////////////////////////////////////////////////////
-  .question--infographic8__content {  
-    .icons {                                    // Container that the icons for each panels lives within, 
-      width: 127px;                             // this contains both the active, and inactive states of the icons 
-      height: 250px;
+  // .question--infographic8__content {  
+  //   .icons {                                    // Container that the icons for each panels lives within, 
+  //     width: 127px;                             // this contains both the active, and inactive states of the icons 
+  //     height: 250px;
 
-      img,                                      // Setting to standard sizing for each icon SVG file
-      svg { 
-        width: 127px; 
-        height: 250px;    
-      }
+  //     img,                                      // Setting to standard sizing for each icon SVG file
+  //     svg { 
+  //       width: 127px; 
+  //       height: 250px;    
+  //     }
 
-      &.icons-B {                               // Custom sizing / position for the 'Azure Management Tools' image
-        width: 160px;
-        height: 475px;
+  //     &.icons-B {                               // Custom sizing / position for the 'Azure Management Tools' image
+  //       width: 160px;
+  //       height: 475px;
 
-        img,
-        svg {
-          width: 160px;
-          height: 475px;
-        }
-      }
+  //       img,
+  //       svg {
+  //         width: 160px;
+  //         height: 475px;
+  //       }
+  //     }
 
-      &.icons-C {                               // Custom sizing / position for the 'OMS For Linux' image
-        width: 217px;
-        height: 475px;
+  //     &.icons-C {                               // Custom sizing / position for the 'OMS For Linux' image
+  //       width: 217px;
+  //       height: 475px;
 
-        img,
-        svg {
-          width: 217px;
-          height: 475px;
-        }
-      }
+  //       img,
+  //       svg {
+  //         width: 217px;
+  //         height: 475px;
+  //       }
+  //     }
 
-      &.icons-D {                               // Custom sizing / position for the 'Docker' image
-        width: 188px;
-        height: 475px;
+  //     &.icons-D {                               // Custom sizing / position for the 'Docker' image
+  //       width: 188px;
+  //       height: 475px;
 
-        img,
-        svg {
-          width: 188px;
-          height: 475px;
-        }
-      }
+  //       img,
+  //       svg {
+  //         width: 188px;
+  //         height: 475px;
+  //       }
+  //     }
 
 
-      &.icons-A { top: -156px; left: 431px; z-index: 1;}   // Custom positioning for each icon
-      &.icons-B { top: -100px; left: 200px; }
-      &.icons-C { top: -100px; left: 350px; }
-      &.icons-D { top: -101px; left: 605px; }
-    }
+  //     &.icons-A { top: -156px; left: 431px; z-index: 1;}   // Custom positioning for each icon
+  //     &.icons-B { top: -100px; left: 200px; }
+  //     &.icons-C { top: -100px; left: 350px; }
+  //     &.icons-D { top: -101px; left: 605px; }
+  //   }
+  // }
+
+
+  .question--infographic4,
+  .question--infographic5,
+  .question--infographic6,
+  .question--infographic7,
+  .question--infographic8 {
+    display: none;
   }
 
+  .footer1 {
+    margin-top: 400px;
+  }
 }

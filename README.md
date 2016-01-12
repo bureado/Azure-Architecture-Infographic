@@ -22,37 +22,24 @@ Interactive infographic site built from a collection of .AI files being exported
 
 
 
-###### `/img/infographic#/fullwidth--infographic__[A].svg`
+###### `/img/infographic#/infographic--[A]__fullwidth.svg`
 
 *These are the full width (960px) images displaying any static content for each of the panels of the infographic*
 
 
-###### `/img/infographic#/infographic-[A]__icon[B].svg`
-*These are the inactive states of each of the clickable areas.*
+###### `/img/infographic#/infographic--[A]__icon[B].svg`
+*These files contain the SVG code for the clickable icons in 3 states (inactive, hovered, active)*
 
 Creating an icon / image is done by...
-- Extracting the vector art from the comp into a new file
+- Copy & Pasting the vector art from the comp into a new file
 - Converting all type to outlines
 - Saved as an SVG
-- Code extracted from SVG and Minified 
-- Placed inline as an **<svg>** with the class "icon--inactive"
-- * **The exported SVG MUST match the same dimensions as the "icon--active" state SVG, to maintain alignment with the "active state"**
-
-This icon will also need a **:hover** state...
-- By default the :hover should be functional if it has the "icon--inactive" class
-- If the :hover is not functioning, or is missing some pieces, the individual SVG will need to be targetted with custom CSS
-  - This can be achieved by applying **fill: #00bcf2;** to the specific **path / circle / rect / etc** of the inline SVG
+  - SVG Profiles: SVG 1.1
+  - CSS Properties: Style Attributes
+- Minify the SVG file using the Sublime Minify plugin
+- Copy & Paste the minified code into the corresponding .icons
 
 
-###### `/img/infographic#/infographic-[A]__icon[B]-active.svg`
-
-These are the active states of each of the clickable areas, active being defined as *after a user has clicked*
-
-The active state...
-* Is shown using an <img> tag, rather than an inline <svg> like the inactive state
-* Matches the same color used on :hover
-* Adds a grey vertical line connected the selected icon to the grey panel above
-* **Must match the same dimensions as the "icon--inactive" inline SVG that was exported, to maintain alignment with the "inactive state"**
 
 ---
 ---

@@ -119,33 +119,48 @@
 // [Global] Question panels ///////////////////////////////////////////////////////////////////////////////////////
 .question {
   margin-bottom: 0px;
+  
+  .panel--content {
+    position: relative;
+  }
 
   .icons {
     position: absolute;
-    background: url('../img/svg-ie10-fix.png') 0 0 repeat; // IE10 does not like hovering over SVGs, but behaves if
-                                                        // it's container has a background of some sort.
-    .icons--inactive {
+    background: url('../img/svg-ie10-fix.png') 0 0 repeat;  // IE10 does not like hovering over SVGs, but behaves if
+                                                            // it's container has a background of some sort.
+
+    svg {                                      // This is the inline SVG icon shown as black, until hovered or clicked
       z-index: -1;
+
+
+      *[stroke="#dedede"],
+      *[stroke="#dfdfde"] {
+        display: none;
+      }
     }
 
-    .icons--active {                          // Hiding Inactive / Showing Active
-      display: none;
-    }
-
-    &.active {                                // Showing Active / Hiding inactive
-      svg { display: none; }
-      img { display: block; }
-    }
-    
     &:hover svg,
-    &:hover svg *[fill="#010101"] {                             // Changing icons to blue when hovered
+    &:hover svg *[fill="#010101"] {                         // This changes the SVG icon to a light blue on hover
       fill: #00bcf2;
       cursor: pointer;
     }
-  }
 
- .panel--content {
-    position: relative;
+    &.active {
+
+      svg,
+      svg *[fill="#010101"] {                  // This changes the icon to maintain the light blue after receiving
+        fill: #00bcf2;                         // .active class
+        cursor: pointer;
+      }                                        
+                                               
+
+      *[stroke="#dedede"],
+      *[stroke="#dfdfde"] {                                   // This toggles the vertical line above the selected icon after receiving
+        display: block;                        // the .active class
+        stroke: #dedede;
+        fill: none;
+      }
+    }
   }
 }
 
