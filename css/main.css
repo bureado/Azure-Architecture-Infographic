@@ -818,7 +818,8 @@ body {
     z-index: 2; }
   .architecture-3 .question--infographic7__content .icons.icons-F {
     left: 653px;
-    top: -180px; }
+    top: -180px;
+    z-index: 1; }
   .architecture-3 .question--infographic7__content .icons.icons-G {
     left: 690px;
     top: -142px;
