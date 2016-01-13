@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="129.2px" height="329.2px" viewBox="0 0 129.2 329.2" enable-background="new 0 0 129.2 329.2" xml:space="preserve">
-<rect x="20" y="225" fill-opacity="0" width="94.8" height="104.2"/>
+	 width="129.2px" height="329.2px" viewBox="0 0 129.2 329.2" style="enable-background:new 0 0 129.2 329.2;" xml:space="preserve"
+	>
 <g id="Layer_2">
 </g>
 <g>
@@ -44,4 +44,6 @@
 		62.9,265.5 66.5,262 66.5,273.3 55.5,273.3 58.9,269.5 51,261.5 47.4,265 47.4,279.5 57.4,289.9 69.7,289.9 60.3,280.3 58.5,282.3 
 		58.5,276.4 64,276.4 62.4,278.3 72.6,288.9 78.8,282.5 	"/>
 </g>
+<line style="fill:none;stroke:#DEDEDE;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="64.1" y1="-40" x2="64.5" y2="225.9"/>
+<circle style="fill:none;stroke:#DEDEDE;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" cx="64.5" cy="231.4" r="5"/>
 </svg>

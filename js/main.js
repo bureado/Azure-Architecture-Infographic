@@ -77,6 +77,18 @@ $(document).ready(function(){
       $(whichAnswerContainer).find('.answer--details-I').show();                                                    // Showing answer 
       $(whichAnswerContainer).find('.answer--nav__I').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
     }
+
+    if(whichPanel.hasClass('icons-J') || whichPanel.hasClass('answer--nav__J')) {
+      $(whichQuestionIcon).find('.icons-J').addClass('active').siblings().removeClass('active');                    // Setting active icon
+      $(whichAnswerContainer).find('.answer--details-J').show();                                                    // Showing answer 
+      $(whichAnswerContainer).find('.answer--nav__J').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
+    }
+
+    if(whichPanel.hasClass('icons-K') || whichPanel.hasClass('answer--nav__K')) {
+      $(whichQuestionIcon).find('.icons-K').addClass('active').siblings().removeClass('active');                    // Setting active icon
+      $(whichAnswerContainer).find('.answer--details-K').show();                                                    // Showing answer 
+      $(whichAnswerContainer).find('.answer--nav__K').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
+    }
   }
 
   // Calling the Toggle function with customizations for each panel.
