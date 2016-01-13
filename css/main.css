@@ -658,6 +658,13 @@ body {
     top: -101px;
     left: 605px; }
 
+svg.infographic--2__fullwidth .icons {
+  cursor: pointer; }
+  svg.infographic--2__fullwidth .icons .button:hover *[stroke="#000"], svg.infographic--2__fullwidth .icons .button.active *[stroke="#000"] {
+    stroke: #00bcf2; }
+  svg.infographic--2__fullwidth .icons .button:hover .text, svg.infographic--2__fullwidth .icons .button:hover .icon, svg.infographic--2__fullwidth .icons .button.active .text, svg.infographic--2__fullwidth .icons .button.active .icon {
+    fill: #00bcf2; }
+
 .architecture-3 .question--infographic2__content {
   margin-bottom: 40px; }
   .architecture-3 .question--infographic2__content .icons {

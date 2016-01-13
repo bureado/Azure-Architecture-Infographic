@@ -1,0 +1,24 @@
+.architecture-2 {
+
+
+
+}
+
+$color__primary: #00bcf2; 
+
+svg.infographic--2__fullwidth .icons {
+  cursor: pointer; 
+
+  .button {
+    &:hover, &.active {
+      *[stroke="#000"] {
+        stroke: $color__primary; 
+      }
+
+      .text, .icon {
+        fill: $color__primary; 
+      }
+    }
+  }
+
+}
