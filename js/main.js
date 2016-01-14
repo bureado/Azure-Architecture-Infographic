@@ -123,6 +123,23 @@ $(document).ready(function(){
     doTheThing($(this), '.question--infographic7', '.answer--infographic7');
   });
 
+  // Infographic 1.7 Left half circle
+  $('.question--infographic7left .icons, .answer--infographic7left .answer--nav ul li').click(function() {
+    doTheThing($(this), '.question--infographic7left', '.answer--infographic7left');
+    $('.answer--infographic7right').hide();
+    $('.question--infographic7right .icons').removeClass('active');
+    $('.question--infographic7left .icons').addClass('active');
+  });
+
+  // Infographic 1.7 Right half circle
+  $('.question--infographic7right .icons, .answer--infographic7right .answer--nav ul li').click(function() {
+    doTheThing($(this), '.question--infographic7right', '.answer--infographic7right');
+    $('.answer--infographic7left').hide();
+    $('.question--infographic7left .icons').removeClass('active');
+    $('.question--infographic7right .icons').addClass('active');
+
+  });
+
   // Infographic 1.8
   $('.question--infographic8 .icons, .answer--infographic8 .answer--nav ul li').click(function() {
     doTheThing($(this), '.question--infographic8', '.answer--infographic8');
