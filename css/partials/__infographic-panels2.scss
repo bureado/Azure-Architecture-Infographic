@@ -6,10 +6,6 @@
       svg {
         width: 100%; 
 
-        &.infographic--1__fullwidth {
-          height: 124px; 
-        }
-
         &.infographic--2__fullwidth {
           height: 381.3px; 
         }
@@ -19,7 +15,7 @@
         }
 
         &.infographic--4__fullwidth {
-          height: 573.1px; 
+          height: 382.7px; 
         }
 
         &.infographic--5__fullwidth {
@@ -39,12 +35,20 @@
 
     &.question { 
 
+      &--infographic2 {
+        margin-top: -13px; 
+      }
+
       &--infographic3 {
-        margin-top: -1px; 
+        margin-top: -5px; 
+      }
+
+      &--infographic4 {
+        margin-top: -13px; 
       }
 
       &--infographic5 {
-        margin-top: -10px;
+        margin-top: -16px;
       }
 
       &--infographic6 {

@@ -660,24 +660,26 @@ body {
 
 .architecture-2 .panel--content svg {
   width: 100%; }
-  .architecture-2 .panel--content svg.infographic--1__fullwidth {
-    height: 124px; }
   .architecture-2 .panel--content svg.infographic--2__fullwidth {
     height: 381.3px; }
   .architecture-2 .panel--content svg.infographic--3__fullwidth {
     height: 382.6px; }
   .architecture-2 .panel--content svg.infographic--4__fullwidth {
-    height: 573.1px; }
+    height: 382.7px; }
   .architecture-2 .panel--content svg.infographic--5__fullwidth {
     height: 573.1px; }
   .architecture-2 .panel--content svg.infographic--6__fullwidth {
     height: 341px; }
 .architecture-2 .panel.infographic1 {
   margin-top: 70px; }
+.architecture-2 .panel.question--infographic2 {
+  margin-top: -13px; }
 .architecture-2 .panel.question--infographic3 {
-  margin-top: -1px; }
+  margin-top: -5px; }
+.architecture-2 .panel.question--infographic4 {
+  margin-top: -13px; }
 .architecture-2 .panel.question--infographic5 {
-  margin-top: -10px; }
+  margin-top: -16px; }
 .architecture-2 .panel.question--infographic6 {
   margin-top: -18px;
   padding-bottom: 90px; }
