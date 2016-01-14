@@ -658,12 +658,55 @@ body {
     top: -101px;
     left: 605px; }
 
-svg.infographic--2__fullwidth .icons {
+.architecture-2 .panel--content svg {
+  width: 100%; }
+  .architecture-2 .panel--content svg.infographic--1__fullwidth {
+    height: 124px; }
+  .architecture-2 .panel--content svg.infographic--2__fullwidth {
+    height: 381.3px; }
+  .architecture-2 .panel--content svg.infographic--3__fullwidth {
+    height: 382.6px; }
+  .architecture-2 .panel--content svg.infographic--4__fullwidth {
+    height: 573.1px; }
+  .architecture-2 .panel--content svg.infographic--5__fullwidth {
+    height: 573.1px; }
+  .architecture-2 .panel--content svg.infographic--6__fullwidth {
+    height: 341px; }
+.architecture-2 .panel.infographic1 {
+  margin-top: 70px; }
+.architecture-2 .panel.question--infographic3 {
+  margin-top: -1px; }
+.architecture-2 .panel.question--infographic5 {
+  margin-top: -10px; }
+.architecture-2 .panel.question--infographic6 {
+  margin-top: -18px;
+  padding-bottom: 90px; }
+.architecture-2 .answer {
+  margin-bottom: 0; }
+
+.architecture-2 svg .icons {
   cursor: pointer; }
-  svg.infographic--2__fullwidth .icons .button:hover *[stroke="#000"], svg.infographic--2__fullwidth .icons .button.active *[stroke="#000"] {
+  .architecture-2 svg .icons .line {
+    stroke: transparent; }
+  .architecture-2 svg .icons .button:hover *[stroke="#000"] {
     stroke: #00bcf2; }
-  svg.infographic--2__fullwidth .icons .button:hover .text, svg.infographic--2__fullwidth .icons .button:hover .icon, svg.infographic--2__fullwidth .icons .button.active .text, svg.infographic--2__fullwidth .icons .button.active .icon {
+  .architecture-2 svg .icons .button:hover .text, .architecture-2 svg .icons .button:hover .icon {
     fill: #00bcf2; }
+  .architecture-2 svg .icons .button.bubble:hover {
+    fill: #00bcf2; }
+  .architecture-2 svg .icons.icons-C:hover .text {
+    fill: #00bcf2; }
+
+.architecture-2 svg .icons.active .line {
+  stroke: #DEDEDE; }
+.architecture-2 svg .icons.active .button *[stroke="#000"] {
+  stroke: #00bcf2; }
+.architecture-2 svg .icons.active .button .text, .architecture-2 svg .icons.active .button .icon {
+  fill: #00bcf2; }
+.architecture-2 svg .icons.active .bubble {
+  fill: #00bcf2; }
+.architecture-2 svg .icons.active.icons-C .text {
+  fill: #00bcf2; }
 
 .architecture-3 .question--infographic2__content {
   margin-bottom: 40px; }

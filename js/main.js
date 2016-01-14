@@ -25,7 +25,7 @@ $(document).ready(function(){
 
     // Setting active icons, and showing active answer
     if(whichPanel.hasClass('icons-A') || whichPanel.hasClass('answer--nav__A'))  {
-      $(whichQuestionIcon).find('.icons-A').addClass('active').siblings().removeClass('active');                    // Setting active icon
+      $(whichQuestionIcon).find('.icons-A').addClass('active').siblings().removeClass('active');                  // Setting active icon
       $(whichAnswerContainer).find('.answer--details-A').show();                                                    // Showing answer 
       $(whichAnswerContainer).find('.answer--nav__A').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
     }
@@ -118,3 +118,7 @@ $(document).ready(function(){
 
 });
 
+// $('.icons-A').on('click', function(){
+//   $('.icons-A').addClass('active').siblings().removeClass('button'); ; 
+//   console.log('clicked!');
+// });

@@ -1,16 +1,77 @@
 .architecture-2 {
 
+  .panel {
 
+    &--content {
+      svg {
+        width: 100%; 
+
+        &.infographic--1__fullwidth {
+          height: 124px; 
+        }
+
+        &.infographic--2__fullwidth {
+          height: 381.3px; 
+        }
+
+        &.infographic--3__fullwidth {
+          height: 382.6px; 
+        }
+
+        &.infographic--4__fullwidth {
+          height: 573.1px; 
+        }
+
+        &.infographic--5__fullwidth {
+          height: 573.1px; 
+        }
+
+        &.infographic--6__fullwidth {
+          height: 341px; 
+        }
+
+      }
+    }
+
+    &.infographic1 {
+      margin-top: 70px; 
+    }
+
+    &.question { 
+
+      &--infographic3 {
+        margin-top: -1px; 
+      }
+
+      &--infographic5 {
+        margin-top: -10px;
+      }
+
+      &--infographic6 {
+        margin-top: -18px;
+        padding-bottom: 90px; 
+      }
+    }
+  }
+
+  .answer {
+    margin-bottom: 0; 
+  }
 
 }
 
 $color__primary: #00bcf2; 
+$color__line: #DEDEDE; 
 
-svg.infographic--2__fullwidth .icons {
+.architecture-2 svg .icons {
   cursor: pointer; 
 
+  .line {
+    stroke: transparent; 
+  }
+
   .button {
-    &:hover, &.active {
+    &:hover {
       *[stroke="#000"] {
         stroke: $color__primary; 
       }
@@ -19,6 +80,42 @@ svg.infographic--2__fullwidth .icons {
         fill: $color__primary; 
       }
     }
+
+    &.bubble {
+      &:hover { 
+        fill: $color__primary;
+      }
+    }
+  }
+
+  &.icons-C:hover .text {
+    fill: $color__primary; 
+  }
+
+}
+
+.architecture-2 svg .icons.active {
+  
+  .line {
+    stroke: $color__line; 
+  }
+
+  .button {
+    *[stroke="#000"] {
+      stroke: $color__primary; 
+    }
+
+    .text, .icon {
+      fill: $color__primary; 
+    }
+  }
+
+  .bubble {
+    fill: $color__primary;
+  }
+
+  &.icons-C .text {
+    fill: $color__primary; 
   }
 
 }
