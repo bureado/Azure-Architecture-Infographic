@@ -145,5 +145,10 @@ $(document).ready(function(){
     doTheThing($(this), '.question--infographic8', '.answer--infographic8');
   });
 
+  // Infographic 1.9
+  $('.question--infographic9 .icons, .answer--infographic9 .answer--nav ul li').click(function() {
+    doTheThing($(this), '.question--infographic9', '.answer--infographic9');
+  });
+
 });
 

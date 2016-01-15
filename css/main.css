@@ -453,7 +453,8 @@ body {
     .question .icons svg {
       z-index: -1; }
       .question .icons svg *[stroke="#dedede"],
-      .question .icons svg *[stroke="#dfdfde"] {
+      .question .icons svg *[stroke="#dfdfde"],
+      .question .icons svg *[stroke="#dededd"] {
         display: none; }
     .question .icons:hover svg, .question .icons:hover svg *[fill="#010101"] {
       fill: #00bcf2;
@@ -463,7 +464,8 @@ body {
       fill: #00bcf2;
       cursor: pointer; }
     .question .icons.active *[stroke="#dedede"],
-    .question .icons.active *[stroke="#dfdfde"] {
+    .question .icons.active *[stroke="#dfdfde"],
+    .question .icons.active *[stroke="#dededd"] {
       display: block;
       stroke: #dedede;
       fill: none; }
@@ -1204,250 +1206,207 @@ body {
   .architecture-5 .question--infographic3__content .icons svg {
     width: 129px;
     height: 329px; }
-  .architecture-5 .question--infographic3__content .icons.icons-A {
-    top: -163px;
-    left: 365px; }
   .architecture-5 .question--infographic3__content .icons.icons-B {
-    top: -260px;
-    left: 420px;
+    width: 159px;
+    height: 329px; }
+    .architecture-5 .question--infographic3__content .icons.icons-B svg {
+      width: 159px;
+      height: 329px; }
+  .architecture-5 .question--infographic3__content .icons.icons-A {
+    top: -156px;
+    left: 335px; }
+  .architecture-5 .question--infographic3__content .icons.icons-B {
+    top: -267px;
+    left: 405px;
     z-index: 1; }
   .architecture-5 .question--infographic3__content .icons.icons-C {
-    top: -160px;
-    left: 477px; }
+    top: -157px;
+    left: 504px; }
 .architecture-5 .question--infographic4__content .icons {
-  width: 90px;
-  height: 171px; }
-  .architecture-5 .question--infographic4__content .icons:hover svg circle, .architecture-5 .question--infographic4__content .icons:hover .svg-labeltext {
-    fill: #00bcf2;
-    cursor: pointer; }
+  width: 94px;
+  height: 329px; }
   .architecture-5 .question--infographic4__content .icons img,
   .architecture-5 .question--infographic4__content .icons svg {
+    width: 94px;
+    height: 328px; }
+  .architecture-5 .question--infographic4__content .icons.icons-B {
+    width: 159px;
+    height: 329px; }
+    .architecture-5 .question--infographic4__content .icons.icons-B svg {
+      width: 159px;
+      height: 329px; }
+  .architecture-5 .question--infographic4__content .icons.icons-A {
+    right: 430px;
+    top: -270px;
+    z-index: 1; }
+  .architecture-5 .question--infographic4__content .icons.icons-B {
+    right: 620px;
+    top: -175px; }
+  .architecture-5 .question--infographic4__content .icons.icons-C {
+    right: 565px;
+    top: -155px; }
+  .architecture-5 .question--infographic4__content .icons.icons-D {
+    right: 480px;
+    top: -135px; }
+  .architecture-5 .question--infographic4__content .icons.icons-E {
+    right: 385px;
+    top: -135px; }
+  .architecture-5 .question--infographic4__content .icons.icons-F {
+    right: 300px;
+    top: -155px; }
+  .architecture-5 .question--infographic4__content .icons.icons-G {
+    right: 210px;
+    top: -175px; }
+.architecture-5 .question--infographic5__content .icons {
+  width: 90px;
+  height: 171px; }
+  .architecture-5 .question--infographic5__content .icons:hover svg circle, .architecture-5 .question--infographic5__content .icons:hover .svg-labeltext {
+    fill: #00bcf2;
+    cursor: pointer; }
+  .architecture-5 .question--infographic5__content .icons img,
+  .architecture-5 .question--infographic5__content .icons svg {
     width: 90px;
     height: 171px; }
-  .architecture-5 .question--infographic4__content .icons.icons-A {
+  .architecture-5 .question--infographic5__content .icons.icons-A {
     right: 225px;
     top: -113px; }
-.architecture-5 .question--infographic5__content {
-  margin-bottom: 50px; }
-  .architecture-5 .question--infographic5__content .icons {
+.architecture-5 .question--infographic6__content .icons {
+  width: 157px;
+  height: 329px; }
+  .architecture-5 .question--infographic6__content .icons:hover g {
+    fill: #00bcf2;
+    cursor: pointer; }
+  .architecture-5 .question--infographic6__content .icons img,
+  .architecture-5 .question--infographic6__content .icons svg {
     width: 157px;
     height: 329px; }
-    .architecture-5 .question--infographic5__content .icons:hover g {
-      fill: #00bcf2;
-      cursor: pointer; }
-    .architecture-5 .question--infographic5__content .icons img,
-    .architecture-5 .question--infographic5__content .icons svg {
-      width: 157px;
-      height: 329px; }
-    .architecture-5 .question--infographic5__content .icons.icons-A {
-      top: -291px;
-      left: 404px;
-      z-index: 1; }
-    .architecture-5 .question--infographic5__content .icons.icons-B {
-      top: -180px;
-      left: 316px; }
-    .architecture-5 .question--infographic5__content .icons.icons-C {
-      top: -177px;
-      left: 491px; }
+  .architecture-5 .question--infographic6__content .icons.icons-A {
+    top: -278px;
+    left: 422px;
+    z-index: 1; }
+  .architecture-5 .question--infographic6__content .icons.icons-B {
+    top: -180px;
+    left: 394px; }
 .architecture-5 .answer--infographic7 {
-  margin-bottom: 35px; }
-.architecture-5 .question--infographic7 {
-  margin-bottom: 50px;
-  margin-top: -20px; }
-.architecture-5 .question--infographic7__content img[src="img/infographic4/infographic--7__background-circle.svg"] {
-  position: absolute;
-  top: 120px;
-  left: -40px;
-  z-index: -1; }
+  margin-bottom: 0; }
 .architecture-5 .question--infographic7__content .icons {
-  width: 105px;
-  height: 220px; }
+  width: 166px;
+  height: 268px; }
   .architecture-5 .question--infographic7__content .icons img,
   .architecture-5 .question--infographic7__content .icons svg {
-    width: 55px;
-    height: 284px; }
+    width: 166px;
+    height: 268px; }
   .architecture-5 .question--infographic7__content .icons.icons-A {
-    width: 230px;
-    height: 256px; }
-    .architecture-5 .question--infographic7__content .icons.icons-A img,
-    .architecture-5 .question--infographic7__content .icons.icons-A svg {
-      width: 230px;
-      height: 256px; }
-  .architecture-5 .question--infographic7__content .icons.icons-B, .architecture-5 .question--infographic7__content .icons.icons-I {
-    width: 56px;
-    height: 325px; }
-    .architecture-5 .question--infographic7__content .icons.icons-B img,
-    .architecture-5 .question--infographic7__content .icons.icons-B svg, .architecture-5 .question--infographic7__content .icons.icons-I img,
-    .architecture-5 .question--infographic7__content .icons.icons-I svg {
-      width: 56px;
-      height: 325px; }
-  .architecture-5 .question--infographic7__content .icons.icons-J {
-    width: 194px;
-    height: 256px; }
-    .architecture-5 .question--infographic7__content .icons.icons-J img,
-    .architecture-5 .question--infographic7__content .icons.icons-J svg {
-      width: 194px;
-      height: 256px; }
-  .architecture-5 .question--infographic7__content .icons.icons-K {
-    width: 279px;
-    height: 256px; }
-    .architecture-5 .question--infographic7__content .icons.icons-K img,
-    .architecture-5 .question--infographic7__content .icons.icons-K svg {
-      width: 279px;
-      height: 491px; }
-  .architecture-5 .question--infographic7__content .icons.icons-A {
-    left: 348px;
-    top: -140px;
-    z-index: 3; }
+    left: 395px;
+    top: 525px; }
   .architecture-5 .question--infographic7__content .icons.icons-B {
-    left: 171px;
-    top: -74px; }
-  .architecture-5 .question--infographic7__content .icons.icons-C {
-    left: 192px;
-    top: -77px; }
-  .architecture-5 .question--infographic7__content .icons.icons-D {
-    left: 225px;
-    top: -122px; }
-  .architecture-5 .question--infographic7__content .icons.icons-E {
-    left: 262px;
-    top: -150px;
-    z-index: 2; }
-  .architecture-5 .question--infographic7__content .icons.icons-F {
-    left: 630px;
-    top: -160px;
+    left: 451px;
+    top: 616px;
     z-index: 1; }
-  .architecture-5 .question--infographic7__content .icons.icons-G {
-    left: 667px;
-    top: -122px;
-    z-index: 2; }
-  .architecture-5 .question--infographic7__content .icons.icons-H {
-    left: 701px;
-    top: -82px;
-    z-index: 1; }
-  .architecture-5 .question--infographic7__content .icons.icons-I {
-    left: 724px;
-    top: -75px; }
-  .architecture-5 .question--infographic7__content .icons.icons-J {
-    left: 346px;
-    top: -81px;
-    z-index: 2; }
-  .architecture-5 .question--infographic7__content .icons.icons-K {
-    left: 284px;
-    top: -61px; }
-.architecture-5 .question--infographic7left__content {
-  height: 300px; }
-  .architecture-5 .question--infographic7left__content .icons {
-    width: 480px;
-    height: initial; }
-    .architecture-5 .question--infographic7left__content .icons img,
-    .architecture-5 .question--infographic7left__content .icons svg {
-      width: 480px;
-      height: initial; }
-    .architecture-5 .question--infographic7left__content .icons.icons-A {
-      left: 0px;
-      top: -64px;
-      z-index: 3; }
-.architecture-5 .question--infographic7right__content {
-  height: 300px;
-  margin-top: -300px; }
-  .architecture-5 .question--infographic7right__content .icons {
-    width: 480px;
-    height: initial; }
-    .architecture-5 .question--infographic7right__content .icons img,
-    .architecture-5 .question--infographic7right__content .icons svg {
-      width: 480px;
-      height: initial; }
-    .architecture-5 .question--infographic7right__content .icons.icons-A {
-      right: 0px;
-      top: -64px;
-      z-index: 3; }
+.architecture-5 .answer--infographic8 {
+  margin-bottom: 10px;
+  margin-top: 50px; }
 .architecture-5 .question--infographic8__content .icons {
-  width: 127px;
-  height: 250px; }
+  width: 166px;
+  height: 268px; }
   .architecture-5 .question--infographic8__content .icons img,
   .architecture-5 .question--infographic8__content .icons svg {
-    width: 127px;
-    height: 250px; }
+    width: 166px;
+    height: 268px; }
+  .architecture-5 .question--infographic8__content .icons.icons-A {
+    width: 369px;
+    height: 119px; }
+    .architecture-5 .question--infographic8__content .icons.icons-A img,
+    .architecture-5 .question--infographic8__content .icons.icons-A svg {
+      width: 369px;
+      height: 119px; }
   .architecture-5 .question--infographic8__content .icons.icons-B {
-    width: 160px;
-    height: 475px; }
+    width: 369px;
+    height: 239px; }
     .architecture-5 .question--infographic8__content .icons.icons-B img,
     .architecture-5 .question--infographic8__content .icons.icons-B svg {
-      width: 160px;
-      height: 475px; }
-    .architecture-5 .question--infographic8__content .icons.icons-B:hover svg g[fill="#686868"] {
-      fill: #00bcf2; }
-    .architecture-5 .question--infographic8__content .icons.icons-B:hover svg g[stroke="#010101"] {
-      stroke: #00bcf2; }
-    .architecture-5 .question--infographic8__content .icons.icons-B:hover svg g[stroke="#000"] {
-      stroke: #00bcf2; }
-    .architecture-5 .question--infographic8__content .icons.icons-B.active svg g[fill="#686868"] {
-      fill: #00bcf2; }
-    .architecture-5 .question--infographic8__content .icons.icons-B.active svg g[stroke="#010101"] {
-      stroke: #00bcf2; }
-    .architecture-5 .question--infographic8__content .icons.icons-B.active svg g[stroke="#000"] {
-      stroke: #00bcf2; }
+      width: 369px;
+      height: 239px; }
   .architecture-5 .question--infographic8__content .icons.icons-C {
-    width: 160px;
-    height: 475px; }
+    width: 110px;
+    height: 463px; }
     .architecture-5 .question--infographic8__content .icons.icons-C img,
     .architecture-5 .question--infographic8__content .icons.icons-C svg {
-      width: 160px;
-      height: 475px; }
-    .architecture-5 .question--infographic8__content .icons.icons-C:hover svg g[fill="#686969"] {
-      fill: #00bcf2; }
-    .architecture-5 .question--infographic8__content .icons.icons-C:hover svg g[stroke="#010101"] {
-      stroke: #00bcf2; }
-    .architecture-5 .question--infographic8__content .icons.icons-C.active svg g[fill="#686969"] {
-      fill: #00bcf2; }
-    .architecture-5 .question--infographic8__content .icons.icons-C.active svg g[stroke="#010101"] {
-      stroke: #00bcf2; }
+      width: 110px;
+      height: 463px; }
   .architecture-5 .question--infographic8__content .icons.icons-D {
-    width: 160px;
-    height: 475px; }
-    .architecture-5 .question--infographic8__content .icons.icons-D img,
-    .architecture-5 .question--infographic8__content .icons.icons-D svg {
-      width: 160px;
-      height: 475px; }
-    .architecture-5 .question--infographic8__content .icons.icons-D:hover svg g[fill="#000"] {
-      fill: #00bcf2; }
-    .architecture-5 .question--infographic8__content .icons.icons-D:hover svg g[stroke="#000"] {
-      stroke: #00bcf2; }
-    .architecture-5 .question--infographic8__content .icons.icons-D.active svg g[stroke="#000"] {
-      stroke: #00bcf2; }
-  .architecture-5 .question--infographic8__content .icons.icons-E {
-    width: 188px;
-    height: 475px; }
-    .architecture-5 .question--infographic8__content .icons.icons-E img,
-    .architecture-5 .question--infographic8__content .icons.icons-E svg {
-      width: 188px;
-      height: 475px; }
-    .architecture-5 .question--infographic8__content .icons.icons-E:hover svg g[fill="#000"],
-    .architecture-5 .question--infographic8__content .icons.icons-E:hover svg g[fill="#686868"] {
-      fill: #00bcf2; }
-    .architecture-5 .question--infographic8__content .icons.icons-E:hover svg g[stroke="#000"] {
-      stroke: #00bcf2; }
-    .architecture-5 .question--infographic8__content .icons.icons-E.active svg g[stroke="#000"] {
-      stroke: #00bcf2; }
-    .architecture-5 .question--infographic8__content .icons.icons-E.active svg g[fill="#000"],
-    .architecture-5 .question--infographic8__content .icons.icons-E.active svg g[fill="#686868"] {
-      fill: #00bcf2; }
+    width: auto;
+    height: inherit; }
+    .architecture-5 .question--infographic8__content .icons.icons-D img {
+      width: auto;
+      height: inherit;
+      display: none; }
+    .architecture-5 .question--infographic8__content .icons.icons-D img.inactive-image {
+      display: block; }
+    .architecture-5 .question--infographic8__content .icons.icons-D:hover {
+      cursor: pointer; }
+      .architecture-5 .question--infographic8__content .icons.icons-D:hover img {
+        display: none; }
+      .architecture-5 .question--infographic8__content .icons.icons-D:hover .hover-image {
+        display: block; }
+    .architecture-5 .question--infographic8__content .icons.icons-D.active img {
+      display: none; }
+    .architecture-5 .question--infographic8__content .icons.icons-D.active .active-image {
+      display: block; }
+    .architecture-5 .question--infographic8__content .icons.icons-D.active:hover {
+      cursor: default; }
+      .architecture-5 .question--infographic8__content .icons.icons-D.active:hover img {
+        display: none; }
+      .architecture-5 .question--infographic8__content .icons.icons-D.active:hover .active-image {
+        display: block; }
   .architecture-5 .question--infographic8__content .icons.icons-A {
-    top: -190px;
-    left: 408px;
-    z-index: 1; }
+    left: 313px;
+    top: -40px;
+    z-index: 3; }
   .architecture-5 .question--infographic8__content .icons.icons-B {
-    top: -100px;
-    left: 100px; }
+    left: 315px;
+    top: -34px;
+    z-index: 2; }
   .architecture-5 .question--infographic8__content .icons.icons-C {
-    top: -100px;
-    left: 307px; }
+    left: 280px;
+    top: -175px; }
   .architecture-5 .question--infographic8__content .icons.icons-D {
-    top: -100px;
-    left: 497px; }
-  .architecture-5 .question--infographic8__content .icons.icons-E {
-    top: -101px;
-    left: 692px; }
+    left: 380px;
+    top: -56px;
+    z-index: 1; }
+.architecture-5 .answer--infographic9 {
+  margin-bottom: 0; }
+.architecture-5 .question--infographic9__content .icons {
+  height: 250px; }
+  .architecture-5 .question--infographic9__content .icons.icons-A {
+    width: 375px;
+    height: 154px; }
+    .architecture-5 .question--infographic9__content .icons.icons-A img,
+    .architecture-5 .question--infographic9__content .icons.icons-A svg {
+      width: 375px;
+      height: 154px; }
+  .architecture-5 .question--infographic9__content .icons.icons-B {
+    width: 294px;
+    height: 452px; }
+    .architecture-5 .question--infographic9__content .icons.icons-B img,
+    .architecture-5 .question--infographic9__content .icons.icons-B svg {
+      width: 294px;
+      height: 452px; }
+    .architecture-5 .question--infographic9__content .icons.icons-B:hover svg g[fill="#686969"] {
+      fill: #00bcf2; }
+    .architecture-5 .question--infographic9__content .icons.icons-B:hover svg g[stroke="#000"] {
+      stroke: #00bcf2; }
+    .architecture-5 .question--infographic9__content .icons.icons-B.active svg g[fill="#686969"] {
+      fill: #00bcf2; }
+    .architecture-5 .question--infographic9__content .icons.icons-B.active svg g[stroke="#000"] {
+      stroke: #00bcf2; }
+  .architecture-5 .question--infographic9__content .icons.icons-A {
+    top: -40px;
+    left: 310px;
+    z-index: 1; }
+  .architecture-5 .question--infographic9__content .icons.icons-B {
+    top: -80px;
+    left: 309px; }
 .architecture-5 .footer1 {
   margin-top: 400px; }
 
