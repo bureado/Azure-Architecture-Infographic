@@ -687,6 +687,14 @@ body {
   padding-bottom: 90px; }
 .architecture-2 .answer {
   margin-bottom: 0; }
+  .architecture-2 .answer > div .answer--details p {
+    margin-bottom: 20px; }
+  .architecture-2 .answer > div .answer--details ul {
+    line-height: 1.4; }
+  .architecture-2 .answer.answer--infographic6 strong {
+    font-weight: bold; }
+  .architecture-2 .answer.answer--infographic6 .answer--details-A ul {
+    list-style-type: disc; }
 
 .architecture-2 svg .icons {
   cursor: pointer; }
@@ -723,19 +731,24 @@ svg.infographic--5__fullwidth .button:hover .icon {
   fill: #00bcf2; }
 svg.infographic--5__fullwidth .icons.active .button .icon {
   fill: #00bcf2; }
-svg.infographic--5__fullwidth .icons-C:hover .text {
-  fill: #00bcf2; }
-svg.infographic--5__fullwidth .icons-C.active .text {
+svg.infographic--5__fullwidth .icons-C:hover .text, svg.infographic--5__fullwidth .icons-C.active .text,
+svg.infographic--5__fullwidth .icons-D:hover .text, svg.infographic--5__fullwidth .icons-D.active .text,
+svg.infographic--5__fullwidth .icons-E:hover .text, svg.infographic--5__fullwidth .icons-E.active .text,
+svg.infographic--5__fullwidth .icons-F:hover .text.black, svg.infographic--5__fullwidth .icons-F.active .text.black {
   fill: #00bcf2; }
 svg.infographic--5__fullwidth .icons-B:hover .bubble .icon, svg.infographic--5__fullwidth .icons-B.active .bubble .icon {
   fill: #FFF; }
 
-svg.infographic--6__fullwidth .icons-A .button:hover *[stroke="#000"] {
+svg.infographic--6__fullwidth .icons-A .button:hover > .text, svg.infographic--6__fullwidth .icons-A .button:hover > .icon {
+  fill: #00bcf2; }
+svg.infographic--6__fullwidth .icons-A .button:hover .circle {
   stroke: #00bcf2;
-  fill: #FFF; }
-svg.infographic--6__fullwidth .icons-A.active .button *[stroke="#000"] {
+  fill: none; }
+svg.infographic--6__fullwidth .icons-A.active .button > .text, svg.infographic--6__fullwidth .icons-A.active .button > .icon {
+  fill: #00bcf2; }
+svg.infographic--6__fullwidth .icons-A.active .button .circle {
   stroke: #00bcf2;
-  fill: #FFF; }
+  fill: none; }
 
 .architecture-3 .question--infographic2__content {
   margin-bottom: 40px; }
