@@ -659,7 +659,8 @@ body {
     left: 605px; }
 
 .architecture-2 .panel--content svg {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: -7px; }
   .architecture-2 .panel--content svg.infographic--2__fullwidth {
     height: 381.3px; }
   .architecture-2 .panel--content svg.infographic--3__fullwidth {
@@ -667,21 +668,22 @@ body {
   .architecture-2 .panel--content svg.infographic--4__fullwidth {
     height: 382.7px; }
   .architecture-2 .panel--content svg.infographic--5__fullwidth {
-    height: 573.1px; }
+    height: 573.1px;
+    margin-bottom: -11px; }
   .architecture-2 .panel--content svg.infographic--6__fullwidth {
     height: 341px; }
 .architecture-2 .panel.infographic1 {
   margin-top: 70px; }
 .architecture-2 .panel.question--infographic2 {
-  margin-top: -13px; }
+  margin-top: -6px; }
 .architecture-2 .panel.question--infographic3 {
-  margin-top: -13px; }
+  margin-top: -6px; }
 .architecture-2 .panel.question--infographic4 {
-  margin-top: -13px; }
+  margin-top: -6px; }
 .architecture-2 .panel.question--infographic5 {
-  margin-top: -16px; }
+  margin-top: -9px; }
 .architecture-2 .panel.question--infographic6 {
-  margin-top: -18px;
+  margin-top: -7px;
   padding-bottom: 90px; }
 .architecture-2 .answer {
   margin-bottom: 0; }
@@ -691,24 +693,49 @@ body {
   .architecture-2 svg .icons .line {
     stroke: transparent; }
   .architecture-2 svg .icons .button:hover *[stroke="#000"] {
-    stroke: #00bcf2; }
-  .architecture-2 svg .icons .button:hover .text, .architecture-2 svg .icons .button:hover .icon {
+    stroke: #00bcf2;
+    fill: #00bcf2; }
+  .architecture-2 svg .icons .button:hover .text:not(*[fill="#FFF"]), .architecture-2 svg .icons .button:hover .icon {
     fill: #00bcf2; }
   .architecture-2 svg .icons .button.bubble:hover {
-    fill: #00bcf2; }
-  .architecture-2 svg .icons.icons-C:hover .text {
     fill: #00bcf2; }
 
 .architecture-2 svg .icons.active .line {
   stroke: #DEDEDE; }
 .architecture-2 svg .icons.active .button *[stroke="#000"] {
-  stroke: #00bcf2; }
-.architecture-2 svg .icons.active .button .text, .architecture-2 svg .icons.active .button .icon {
+  stroke: #00bcf2;
+  fill: #00bcf2; }
+.architecture-2 svg .icons.active .button .text:not(*[fill="#FFF"]), .architecture-2 svg .icons.active .button .icon {
   fill: #00bcf2; }
 .architecture-2 svg .icons.active .bubble {
   fill: #00bcf2; }
-.architecture-2 svg .icons.active.icons-C .text {
+
+.architecture-2 svg .static .bubble {
+  fill: #DEDEDE; }
+  .architecture-2 svg .static .bubble .icon {
+    fill: #898989; }
+.architecture-2 svg .static .outline .text {
+  fill: #898989; }
+.architecture-2 svg .static .azureBlue {
+  fill: #898989; }
+
+svg.infographic--5__fullwidth .button:hover .icon {
   fill: #00bcf2; }
+svg.infographic--5__fullwidth .icons.active .button .icon {
+  fill: #00bcf2; }
+svg.infographic--5__fullwidth .icons-C:hover .text {
+  fill: #00bcf2; }
+svg.infographic--5__fullwidth .icons-C.active .text {
+  fill: #00bcf2; }
+svg.infographic--5__fullwidth .icons-B:hover .bubble .icon, svg.infographic--5__fullwidth .icons-B.active .bubble .icon {
+  fill: #FFF; }
+
+svg.infographic--6__fullwidth .icons-A .button:hover *[stroke="#000"] {
+  stroke: #00bcf2;
+  fill: #FFF; }
+svg.infographic--6__fullwidth .icons-A.active .button *[stroke="#000"] {
+  stroke: #00bcf2;
+  fill: #FFF; }
 
 .architecture-3 .question--infographic2__content {
   margin-bottom: 40px; }

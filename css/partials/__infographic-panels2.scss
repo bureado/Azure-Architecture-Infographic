@@ -5,6 +5,7 @@
     &--content {
       svg {
         width: 100%; 
+        margin-bottom: -7px; 
 
         &.infographic--2__fullwidth {
           height: 381.3px; 
@@ -20,6 +21,7 @@
 
         &.infographic--5__fullwidth {
           height: 573.1px; 
+          margin-bottom: -11px; 
         }
 
         &.infographic--6__fullwidth {
@@ -36,23 +38,23 @@
     &.question { 
 
       &--infographic2 {
-        margin-top: -13px; 
+        margin-top: -6px; 
       }
 
       &--infographic3 {
-        margin-top: -13px; 
+        margin-top: -6px; 
       }
 
       &--infographic4 {
-        margin-top: -13px; 
+        margin-top: -6px; 
       }
 
       &--infographic5 {
-        margin-top: -16px;
+        margin-top: -9px;
       }
 
       &--infographic6 {
-        margin-top: -18px;
+        margin-top: -7px;
         padding-bottom: 90px; 
       }
     }
@@ -65,7 +67,9 @@
 }
 
 $color__primary: #00bcf2; 
-$color__line: #DEDEDE; 
+$color__grey--light: #DEDEDE;
+$color__grey: #A8A8A8; 
+$color__grey--dark: #898989; 
 
 .architecture-2 svg .icons {
   cursor: pointer; 
@@ -78,11 +82,13 @@ $color__line: #DEDEDE;
     &:hover {
       *[stroke="#000"] {
         stroke: $color__primary; 
+        fill: $color__primary;
       }
 
-      .text, .icon {
+      .text:not(*[fill="#FFF"]), .icon {
         fill: $color__primary; 
       }
+
     }
 
     &.bubble {
@@ -91,35 +97,105 @@ $color__line: #DEDEDE;
       }
     }
   }
-
-  &.icons-C:hover .text {
-    fill: $color__primary; 
-  }
-
 }
 
 .architecture-2 svg .icons.active {
   
   .line {
-    stroke: $color__line; 
+    stroke: $color__grey--light; 
   }
 
   .button {
     *[stroke="#000"] {
       stroke: $color__primary; 
+      fill: $color__primary;
     }
 
-    .text, .icon {
+    .text:not(*[fill="#FFF"]), .icon {
       fill: $color__primary; 
     }
+
   }
 
   .bubble {
     fill: $color__primary;
   }
 
-  &.icons-C .text {
+}
+
+.architecture-2 svg .static {
+
+  .bubble {
+    fill: $color__grey--light; 
+
+    .icon {
+      fill: $color__grey--dark; 
+    }
+  }
+
+  .outline {
+
+    .text {
+      fill: $color__grey--dark; 
+    }
+  }
+
+  .azureBlue {
+    fill: $color__grey--dark; 
+  }
+
+}
+
+svg.infographic--5__fullwidth {
+
+  .button:hover {
+    .icon {
+      fill: $color__primary; 
+    }
+  }
+
+  .icons.active {
+    .button {
+      .icon {
+        fill: $color__primary; 
+      }
+    }
+  }
+
+  .icons-C:hover .text {
     fill: $color__primary; 
+  }
+
+  .icons-C.active .text {
+    fill: $color__primary; 
+  }
+
+  .icons-B:hover, .icons-B.active {
+    .bubble .icon {
+      fill: #FFF; 
+    }
+  }
+
+}
+
+svg.infographic--6__fullwidth {
+
+  .icons-A .button {
+    &:hover {
+      *[stroke="#000"] {
+        stroke: $color__primary; 
+        fill: #FFF;
+      }
+    }
+  }
+
+  .icons-A.active {
+    .button {
+      *[stroke="#000"] {
+        stroke: $color__primary; 
+        fill: #FFF;
+      }
+    }
   }
 
 }
