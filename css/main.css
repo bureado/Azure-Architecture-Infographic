@@ -379,9 +379,9 @@ body {
       color: #000; }
   .answer > div {
     padding: 50px 0;
-    width: 100%;
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
+    min-height: 500px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -455,7 +455,15 @@ body {
       .question .icons svg *[stroke="#dedede"],
       .question .icons svg *[stroke="#dfdfde"],
       .question .icons svg *[stroke="#dededd"] {
-        display: none; }
+        filter: alpha(opactiy=0);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -moz-opacity: 0;
+        -khtml-opacity: 0;
+        opacity: 0;
+        -webkit-transition: opacity 200ms ease 75ms;
+        -moz-transition: opacity 200ms ease 75ms;
+        -o-transition: opacity 200ms ease 75ms;
+        transition: opacity 200ms ease 75ms; }
     .question .icons:hover svg, .question .icons:hover svg *[fill="#010101"] {
       fill: #00bcf2;
       cursor: pointer; }
@@ -466,9 +474,17 @@ body {
     .question .icons.active *[stroke="#dedede"],
     .question .icons.active *[stroke="#dfdfde"],
     .question .icons.active *[stroke="#dededd"] {
-      display: block;
       stroke: #dedede;
-      fill: none; }
+      fill: none;
+      filter: alpha(opactiy=100);
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      -moz-opacity: 1;
+      -khtml-opacity: 1;
+      opacity: 1;
+      -webkit-transition: opacity 200ms ease 200ms;
+      -moz-transition: opacity 200ms ease 200ms;
+      -o-transition: opacity 200ms ease 200ms;
+      transition: opacity 200ms ease 200ms; }
 
 .architecture-1 .answer.answer--infographic7 {
   margin-bottom: 25px; }

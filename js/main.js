@@ -6,14 +6,16 @@ $(document).ready(function(){
 
   // 'X' icon to close the answer panels
   $('.fa-close').click(function() {
-     $(this).closest('.answer').hide();
+     $(this).closest('.answer').slideUp(500);
      $('.icons').removeClass('active');
   });
+
+
 
   // Function to toggle the answers
   function doTheThing(whichPanel, whichQuestionIcon, whichAnswerContainer) {        
     // Showing the corresponding answer container
-    $(whichAnswerContainer).show();
+    $(whichAnswerContainer).slideDown(500);
 
     // Scrolling the corresponding answer container to the top
     // $('html, body').animate({

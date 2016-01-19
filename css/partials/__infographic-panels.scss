@@ -41,9 +41,9 @@
 
   > div {
     padding: 50px 0;
-    width: 100%;
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
+    min-height: 500px;
     @include flexbox();
     @include flex-flow(row nowrap);
 
@@ -136,7 +136,8 @@
       *[stroke="#dedede"],
       *[stroke="#dfdfde"],
       *[stroke="#dededd"] {
-        display: none;
+        @include opacity(0);
+        @include simpleTransition(opacity 200ms ease 75ms);
       }
     }
 
@@ -158,9 +159,11 @@
       *[stroke="#dedede"],
       *[stroke="#dfdfde"],
       *[stroke="#dededd"] {                                   // This toggles the vertical line above the selected icon after receiving
-        display: block;                        // the .active class
+                           // the .active class
         stroke: #dedede;
         fill: none;
+        @include opacity(1);
+        @include simpleTransition(opacity 200ms ease 200ms);
       }
     }
   }
