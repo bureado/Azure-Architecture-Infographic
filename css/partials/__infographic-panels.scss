@@ -134,7 +134,8 @@
 
 
       *[stroke="#dedede"],
-      *[stroke="#dfdfde"] {
+      *[stroke="#dfdfde"],
+      *[stroke="#dededd"] {
         display: none;
       }
     }
@@ -155,7 +156,8 @@
                                                
 
       *[stroke="#dedede"],
-      *[stroke="#dfdfde"] {                                   // This toggles the vertical line above the selected icon after receiving
+      *[stroke="#dfdfde"],
+      *[stroke="#dededd"] {                                   // This toggles the vertical line above the selected icon after receiving
         display: block;                        // the .active class
         stroke: #dedede;
         fill: none;

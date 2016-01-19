@@ -1,0 +1,312 @@
+////////////////////////////////////////////////////////////
+// The panels for infographic 1 of 5 (architecture1.html)
+////////////////////////////////////////////////////////////
+
+.architecture-5 {
+
+ 
+  // [Custom] Question 2 ///////////////////////////////////////////////////////////////////////////////////////////
+  .question--infographic2__content {  
+    margin-bottom: 40px;
+
+    .icons {                                    // Container that the icons for each panels lives within, 
+      width: 95px;                              // this contains both the active, and inactive states of the icons 
+      height: 330px;
+
+      img,                                      // Setting to standard sizing for each icon SVG file
+      svg { width: 95px; height: 330px;     }
+
+      &.icons-A { top: -200px; left: 327px; }   // Custom positioning for each icon
+      &.icons-B { top: -255px; left: 435px; }
+      &.icons-C { top: -200px; left: 550px; }
+    }
+  }
+
+
+  // [Custom] Question 3 ///////////////////////////////////////////////////////////////////////////////////////////
+  .question--infographic3__content {  
+    .icons {                                    // Container that the icons for each panels lives within, 
+      width: 129px;                             // this contains both the active, and inactive states of the icons 
+      height: 329px;
+
+      img,                                      // Setting to standard sizing for each icon SVG file
+      svg { width: 129px; height: 329px;    }
+
+      &.icons-B {
+        width:159px;
+        height: 329px;
+
+        svg {
+          width:159px;
+          height: 329px;
+        }
+      }
+
+      &.icons-A { top: -156px; left: 335px; }   // Custom positioning for each icon
+      &.icons-B { top: -267px; left: 405px; z-index: 1; }
+      &.icons-C { top: -157px; left: 504px;  }
+
+    }
+  }
+
+
+  // [Custom] Question 4 ///////////////////////////////////////////////////////////////////////////////////////////
+  .question--infographic4__content {  
+    .icons {                                    // Container that the icons for each panels lives within, 
+      width: 94px; 
+      height: 329px;                // this contains both the active, and inactive states of the icons 
+
+      img,                                      // Setting to standard sizing for each icon SVG file
+      svg { width: 94px; height: 328px; }
+
+      &.icons-B {
+        width:159px;
+        height: 329px;
+
+        svg {
+          width:159px;
+          height: 329px;
+        }
+      }
+
+      &.icons-A { right: 430px; top: -270px; z-index: 1; }     // Custom positioning for each icon
+      &.icons-B { right: 620px; top: -175px; }     // Custom positioning for each icon
+      &.icons-C { right: 565px; top: -155px; }     // Custom positioning for each icon
+      &.icons-D { right: 480px; top: -135px; }     // Custom positioning for each icon
+      &.icons-E { right: 385px; top: -135px; }     // Custom positioning for each icon
+      &.icons-F { right: 300px; top: -155px; }     // Custom positioning for each icon
+      &.icons-G { right: 210px; top: -175px; }     // Custom positioning for each icon
+    }
+  }
+
+  // [Custom] Question 5 ///////////////////////////////////////////////////////////////////////////////////////////
+  .question--infographic5__content {  
+    .icons {                                    // Container that the icons for each panels lives within, 
+      width: 90px; height: 171px;                // this contains both the active, and inactive states of the icons 
+      
+      &:hover svg circle,
+      &:hover .svg-labeltext {                  // Custom selection of SVG objects for this grouping
+        fill: #00bcf2;
+        cursor: pointer;
+      }
+
+      img,                                      // Setting to standard sizing for each icon SVG file
+      svg { width: 90px; height: 171px; }
+
+      &.icons-A { right: 225px; top: -113px;}     // Custom positioning for each icon
+    }
+  }
+
+  // [Custom] Question 6 ///////////////////////////////////////////////////////////////////////////////////////////
+  .question--infographic6__content {  
+    
+    .icons {                                    // Container that the icons for each panels lives within, 
+      width: 157px;                             // this contains both the active, and inactive states of the icons 
+      height: 329px;
+
+      &:hover g {                               // Custom selection of SVG objects for this grouping
+        fill: #00bcf2;
+        cursor: pointer;
+      }
+
+      img,                                      // Setting to standard sizing for each icon SVG file
+      svg { width: 157px; height: 329px;    }
+
+      &.icons-A { top: -278px; left: 422px; z-index: 1;}   // Custom positioning for each icon
+      &.icons-B { top: -180px; left: 394px; }
+    }
+  }
+
+  // [Custom] Question 7 ///////////////////////////////////////////////////////////////////////////////////////////
+  .answer--infographic7 {
+    margin-bottom: 0;
+  }  
+
+  .question--infographic7__content {  
+
+    // img[src="img/infographic4/infographic--7__background-top"] {
+    //   position: absolute;
+    //   top: 120px;
+    //   left: -40px;
+    //   z-index: -1;
+    // }
+
+    .icons {                                    // Container that the icons for each panels lives within, 
+      width: 166px; height: 268px;              // this contains both the active, and inactive states of the icons 
+      
+      img,                                      // Setting to standard sizing for each icon SVG file
+      svg { width: 166px; height: 268px; }
+
+
+      &.icons-A { left: 395px; top: 525px; }   // Custom positioning for each icon
+      &.icons-B { left: 451px; top: 616px; z-index: 1;}               // Custom positioning for each icon    
+    }
+  }
+
+  // [Custom] Question 8 ///////////////////////////////////////////////////////////////////////////////////////////
+  .answer--infographic8 {
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+
+  .question--infographic8__content {  
+
+    .icons {                                    // Container that the icons for each panels lives within, 
+      width: 166px; height: 268px;              // this contains both the active, and inactive states of the icons 
+      
+      img,                                      // Setting to standard sizing for each icon SVG file
+      svg { width: 166px; height: 268px; }
+
+
+      &.icons-A {
+        width: 369px;
+        height: 119px;
+        img,
+        svg {
+          width: 369px;
+          height: 119px;
+        }
+      }
+
+      &.icons-B {
+        width: 369px;
+        height: 239px;
+        img,
+        svg {
+          width: 369px;
+          height: 239px;
+        }
+      }
+
+      &.icons-C {
+        width: 110px;
+        height: 463px;
+        img,
+        svg {
+          width: 110px;
+          height: 463px;
+        }
+      }
+
+      &.icons-D {
+        width: auto;
+        height: inherit;
+
+        img {
+          width: auto;
+          height: inherit;
+          display: none;
+        }
+
+        img.inactive-image {
+          display: block;
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          img {
+            display: none;
+          }
+
+          .hover-image {
+            display: block;
+          }
+        }
+
+        &.active {
+          img {
+            display: none;
+          }
+
+          .active-image {
+            display: block;
+          }
+
+          &:hover {
+            cursor: default;
+
+            img {
+              display: none;
+            }
+
+            .active-image {
+              display: block;
+            }
+          }
+        }
+      }
+
+      &.icons-A { left: 313px; top: -40px; z-index: 3; }   // Custom positioning for each icon
+      &.icons-B { left: 315px; top: -34px;  z-index: 2}               // Custom positioning for each icon    
+      &.icons-C { left: 280px; top: -175px; }
+      &.icons-D { left: 380px; top: -56px;  z-index: 1;}
+    } 
+  }
+
+  // [Custom] Question 9 ///////////////////////////////////////////////////////////////////////////////////////////
+  .answer--infographic9 {
+    margin-bottom: 0;
+  }
+
+  .question--infographic9__content {  
+
+    .icons {                                    // Container that the icons for each panels lives within, 
+                                                // this contains both the active, and inactive states of the icons 
+      height: 250px;
+
+      &.icons-A {                               // Custom sizing / position for the 'Azure Management Tools' image
+        width: 375px;
+        height: 154px;
+
+        img,
+        svg {
+          width: 375px;
+          height: 154px;
+        }
+      }
+
+      &.icons-B {                               // Custom sizing / position for the 'Azure Management Tools' image
+        width: 294px;
+        height: 452px;
+
+        img,
+        svg {
+          width: 294px;
+          height: 452px;
+        }
+
+        &:hover {
+          svg g[fill="#686969"] {
+            fill: #00bcf2;
+          }
+
+          svg g[stroke="#000"] {
+            stroke: #00bcf2;
+          }
+        }
+
+        &.active {
+          svg g[fill="#686969"] {
+            fill: #00bcf2;
+          }
+
+          svg g[stroke="#000"] {
+            stroke: #00bcf2;
+          }
+        }
+      }
+
+
+
+
+      &.icons-A { top: -40px; left: 310px; z-index: 1;}   // Custom positioning for each icon
+      &.icons-B { top: -80px; left: 309px; }
+    }
+  }
+
+  .footer1 {
+    margin-top: 400px;
+  }
+
+}

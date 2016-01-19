@@ -77,6 +77,18 @@ $(document).ready(function(){
       $(whichAnswerContainer).find('.answer--details-I').show();                                                    // Showing answer 
       $(whichAnswerContainer).find('.answer--nav__I').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
     }
+
+    if(whichPanel.hasClass('icons-J') || whichPanel.hasClass('answer--nav__J')) {
+      $(whichQuestionIcon).find('.icons-J').addClass('active').siblings().removeClass('active');                    // Setting active icon
+      $(whichAnswerContainer).find('.answer--details-J').show();                                                    // Showing answer 
+      $(whichAnswerContainer).find('.answer--nav__J').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
+    }
+
+    if(whichPanel.hasClass('icons-K') || whichPanel.hasClass('answer--nav__K')) {
+      $(whichQuestionIcon).find('.icons-K').addClass('active').siblings().removeClass('active');                    // Setting active icon
+      $(whichAnswerContainer).find('.answer--details-K').show();                                                    // Showing answer 
+      $(whichAnswerContainer).find('.answer--nav__K').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
+    }
   }
 
   // Calling the Toggle function with customizations for each panel.
@@ -111,9 +123,31 @@ $(document).ready(function(){
     doTheThing($(this), '.question--infographic7', '.answer--infographic7');
   });
 
+  // Infographic 1.7 Left half circle
+  $('.question--infographic7left .icons, .answer--infographic7left .answer--nav ul li').click(function() {
+    doTheThing($(this), '.question--infographic7left', '.answer--infographic7left');
+    $('.answer--infographic7right').hide();
+    $('.question--infographic7right .icons').removeClass('active');
+    $('.question--infographic7left .icons').addClass('active');
+  });
+
+  // Infographic 1.7 Right half circle
+  $('.question--infographic7right .icons, .answer--infographic7right .answer--nav ul li').click(function() {
+    doTheThing($(this), '.question--infographic7right', '.answer--infographic7right');
+    $('.answer--infographic7left').hide();
+    $('.question--infographic7left .icons').removeClass('active');
+    $('.question--infographic7right .icons').addClass('active');
+
+  });
+
   // Infographic 1.8
   $('.question--infographic8 .icons, .answer--infographic8 .answer--nav ul li').click(function() {
     doTheThing($(this), '.question--infographic8', '.answer--infographic8');
+  });
+
+  // Infographic 1.9
+  $('.question--infographic9 .icons, .answer--infographic9 .answer--nav ul li').click(function() {
+    doTheThing($(this), '.question--infographic9', '.answer--infographic9');
   });
 
 });
