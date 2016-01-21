@@ -45,7 +45,10 @@
         font-size: 3rem;
         min-width: 300px;
         height: 200px;
-        @include vertical-align();
+        text-align: center;
+        @include respond-to(bigger) {
+          @include vertical-align();
+        }
       }
     }
   }

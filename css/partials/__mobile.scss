@@ -1,0 +1,58 @@
+// Toggling content for mobile design
+
+@include respond-to(mobile) {
+
+  .wrapper {
+    min-width: auto;
+
+    .navigation {
+
+    }
+
+    .hero {
+      background: none;
+      
+
+      &--content {
+        @include flex-flow(column);
+        height: inherit;
+        min-height: inherit;
+        padding: 15px 0;
+
+        &__text {
+          @include flex(1);
+          padding: 15px;
+          color: #686868;
+
+          h1 {
+            margin-bottom: 15px;
+            line-height: 5rem;
+          }
+
+          p {
+            font-weight: 400;
+            line-height: 2.4rem;
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  // Hiding quotes panel
+  .quotes {
+    display: none;
+  }
+
+  .intro {
+    display: none;
+  }
+
+  // Hiding all infographics
+  section[class*="info"] {
+    display: none;
+  }
+
+
+
+}

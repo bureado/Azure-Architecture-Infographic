@@ -4,6 +4,14 @@ $(document).ready(function(){
   if(Function('/*@cc_on return document.documentMode===10@*/')()){ $("html").addClass("ie10"); }
 
 
+  // Mobile navigation
+  $('.navigation--mobile .navigation--active a').click(function() {
+    $(this).toggleClass('navigation--active-clicked');
+    $('.navigation--mobile li').toggleClass('expanded');
+  });
+
+
+
   // 'X' icon to close the answer panels
   $('.fa-close').click(function() {
      $(this).closest('.answer').slideUp(500);

@@ -65,6 +65,8 @@
 
   // [Custom] Question 5 ///////////////////////////////////////////////////////////////////////////////////////////
   .question--infographic5__content {  
+    margin-bottom: 15px;
+    
     .icons {                                    // Container that the icons for each panels lives within, 
       width: 157px;                             // this contains both the active, and inactive states of the icons 
       height: 329px;
@@ -85,7 +87,8 @@
 
   // [Custom] Question 6 ///////////////////////////////////////////////////////////////////////////////////////////
   .question--infographic6__content {  
-  z-index: 2;
+    z-index: 2;
+
     .icons {                                    // Container that the icons for each panels lives within, 
       width: 105px; height: 220px;              // this contains both the active, and inactive states of the icons 
 

@@ -1,9 +1,15 @@
 // 4 Item Navigation at top of document, just below the Microsoft wrapper
 
-.navigation {
+// Desktop Navigation
+.navigation--mobile {
+  display: none;
+}
+
+.navigation--desktop {
   width: 100%;
   background: #fff;
   padding: 50px 0;
+  display: block;
 
   nav {
     width: 100%;
@@ -34,8 +40,6 @@
     }
   }
 
-
-
   .navigation--active {
     a {
       background: #00bcf2;
@@ -48,3 +52,75 @@
     }
   }
 }
+
+
+
+// Mobile Navigation
+@include respond-to(mobile) {
+
+  .navigation--desktop {
+    display: none;
+  }
+
+  .navigation--mobile {
+    display: block;
+
+    nav {
+      width: 100%;
+
+      li {
+        display: none;
+
+        a {
+          text-align: center;
+          padding: 20px;
+          display: block;
+          text-decoration: none;
+          color: #00bcf2;
+          font-weight: 600;
+          font-size: 1.4rem; 
+          position: relative;
+
+          &:after {
+            @include rotate(45deg);
+            border: 3px solid #fff;
+            border-width: 0 1px 1px 0;
+            box-sizing: border-box;
+            content: "";
+            display: block;
+            height: 10px;
+            margin: 0;
+            padding: 0;
+            width: 10px;
+            position: absolute;
+            margin-top: -7px;
+            right: 15px;
+            top: 50%;
+          }
+
+          &.navigation--active-clicked:after {
+            border-width: 0 3px 3px 0;
+          }
+        }
+      }
+
+      li.expanded {
+        display: block;
+        border-bottom: 1px solid #eee;
+
+      }
+
+      li.navigation--active {
+        background: #00bcf2;
+        display: block;
+
+        a {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+
+
