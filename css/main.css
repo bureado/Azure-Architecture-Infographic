@@ -1613,6 +1613,10 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
     display: none; }
 
   section[class*="info"] {
-    display: none; } }
+    display: none; }
+
+  .azuremediaplayer {
+    width: 100% !important;
+    height: auto !important; } }
 
 /*# sourceMappingURL=main.css.map */
