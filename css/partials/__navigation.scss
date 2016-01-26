@@ -21,20 +21,28 @@
       @include flex-flow(row nowrap);
 
       li {
-        @include flex(1 0 auto);
+        @include flex(1 1 auto);
 
         a {
           text-decoration: none;
           color: #00bcf2;
           font-weight: 600;
-          font-size: 1.4rem;          
+          font-size: 1.2rem;
+          line-height: 1.6rem;
           text-align: center;
-          padding: 20px;
-          margin: 0 5px;
+          padding: 10px;
+          margin: 0;
+          display: block;
+          max-width: 220px;
+          height: 55px;
         }
 
         &:hover a {
           background: #EFFCFF;
+        }
+
+        &:last-child a {
+          padding-top: 18px;
         }
       }
     }
@@ -73,13 +81,14 @@
 
         a {
           text-align: center;
-          padding: 20px;
+          padding: 15px 50px;
           display: block;
           text-decoration: none;
           color: #00bcf2;
           font-weight: 600;
-          font-size: 1.4rem; 
+          font-size: 1.2rem;
           position: relative;
+          line-height: 1.6rem;
 
           &:after {
             @include rotate(45deg);
