@@ -91,9 +91,17 @@
         margin-bottom: 10px;
       }
 
+      h2 {
+        font-size: 1.4rem;
+        margin-bottom: 5px;
+        margin-top: 25px;
+        font-weight: 700;
+      }
+
       p {
         font-size: 2em;
         line-height: 1.5em;
+        margin-bottom: 15px;
       }
 
       ul {
@@ -103,6 +111,7 @@
         li {
           font-size: 2em;
           margin-bottom: 8px;
+          line-height: 1.3em;
         }
       }
     } 
@@ -120,7 +129,7 @@
 .question {
   margin-bottom: 0px;
   z-index: -1;
-  
+
   .panel--content {
     position: relative;
   }

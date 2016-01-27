@@ -6,13 +6,28 @@
 
  
   // [Custom] Question 2 ///////////////////////////////////////////////////////////////////////////////////////////
+  .answer--infographic2 {
+    margin-bottom: 25px;
+  }
+
   .question--infographic2 {
     margin-top: -1px;
     margin-left: 0px;
   }
 
+  .question--infographic2__fullwidth {
+    z-index: -1;
+  }
+
+  .question--infographic2__fullwidth-bottom {
+    position: absolute;
+    top: 235px;
+    z-index: -1;
+  }
+
   .question--infographic2__content {  
     margin-bottom: 40px;
+    height: 600px;
 
     .icons {                                    // Container that the icons for each panels lives within, 
       width: 95px;                              // this contains both the active, and inactive states of the icons 
@@ -21,9 +36,83 @@
       img,                                      // Setting to standard sizing for each icon SVG file
       svg { width: 95px; height: 330px;     }
 
-      &.icons-A { top: -200px; left: 327px; }   // Custom positioning for each icon
-      &.icons-B { top: -255px; left: 435px; }
-      &.icons-C { top: -200px; left: 550px; }
+      &.icons-A {
+        width: 129px;
+        height: 329px;
+
+        img,
+        svg {
+          width: 129px;
+          height: 329px;
+        }
+      }
+
+
+      &.icons-A { top: -273px; left: 420px; z-index: 3; }
+      &.icons-B { top: -200px; left: 327px; z-index: 3; }   // Custom positioning for each icon
+      &.icons-C { top: -200px; left: 550px; z-index: 3; }
+
+      &.icons-D { top: -260px; left: 168px; z-index: 2; }
+      &.icons-E { top:  -66px; left: 151px; z-index: 1; }
+      &.icons-F { top: -156px; left: 419px; }
+      &.icons-G { top:  -64px; left: 557px; z-index: 1; }
+      &.icons-H { top: -257px; left: 672px; z-index: 2; }
+
+      &.icons-D {
+        width: 129px;
+        height: 640px;
+
+        img, 
+        svg {
+          width: 129px;
+          height: 640px;
+        }
+      }
+
+      &.icons-E {
+        width: 260px;
+        height: 500px;
+
+        img, 
+        svg {
+          width: 260px;
+          height: 500px;
+        }
+      }
+
+      &.icons-F {
+        width: 129px;
+        height: 600px;
+
+        img, 
+        svg {
+          width: 129px;
+          height: 600px;
+        }
+      }
+
+      &.icons-G {
+        width: 260px;
+        height: 500px;
+
+        img, 
+        svg {
+          width: 260px;
+          height: 500px;
+        }
+      }
+
+      &.icons-H {
+        width: 129px;
+        height: 640px;
+
+        img, 
+        svg {
+          width: 129px;
+          height: 640px;
+        }
+      }
+
     }
   }
 
@@ -37,12 +126,26 @@
       img,                                      // Setting to standard sizing for each icon SVG file
       svg { width: 129px; height: 329px;    }
 
-      &.icons-A { top: -200px; left: 200px; }   // Custom positioning for each icon
-      &.icons-B { top: -145px; left: 290px; }
-      &.icons-C { top: -125px; left: 415px; }
-      &.icons-D { top: -280px; left: 415px; z-index: 1;}
-      &.icons-E { top: -145px; left: 543px; }
-      &.icons-F { top: -185px; left: 640px; }
+      &.icons-D,
+      &.icons-E,
+      &.icons-F,
+      &.icons-G,
+      &.icons-H {
+        width: 129px;
+        height: 329px;
+
+        img, 
+        svg {
+          width: 129px;
+          height: 329px;
+        }
+      }
+
+      &.icons-D { top: -145px; left: 290px; }
+      &.icons-E { top: -125px; left: 415px; }
+      &.icons-F { top: -280px; left: 415px; z-index: 1;}
+      &.icons-G { top: -145px; left: 543px; }
+      &.icons-H { top: -185px; left: 640px; }
     }
   }
 

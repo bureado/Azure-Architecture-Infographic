@@ -25,7 +25,7 @@
       img,                                      // Setting to standard sizing for each icon SVG file
       svg { width: 95px; height: 330px;     }
 
-      &.icons-B {
+      &.icons-A {
         svg {
           width: 135px;
         }
@@ -42,8 +42,8 @@
         }
       }
 
-      &.icons-A { top: -200px; left: 327px; z-index: 2; }   // Custom positioning for each icon
-      &.icons-B { top: -275px; left: 416px; z-index: 2; }
+      &.icons-A { top: -275px; left: 416px; z-index: 2; }   // Custom positioning for each icon
+      &.icons-B { top: -200px; left: 327px; z-index: 2; }
       &.icons-C { top: -200px; left: 550px; z-index: 2; }
       &.icons-D { top: -175px; left: 61px; }
       &.icons-E { top: -175px; left: 477px;  }
@@ -124,22 +124,26 @@
       z-index: -1;
     }
 
+    .icons--title {                               // Custom sizing / position for the 'Azure Virtual Network' image
+      width: 230px;
+      height: 256px;
+      position: absolute; 
+      left: 348px; 
+      top: -140px; 
+
+      img,
+      svg {
+        width: 230px;
+        height: 256px;
+
+      }
+    }
+
     .icons {                                    // Container that the icons for each panels lives within, 
       width: 105px; height: 220px;              // this contains both the active, and inactive states of the icons 
       
       img,                                      // Setting to standard sizing for each icon SVG file
       svg { width: 55px; height: 284px; }
-
-      &.icons-A {                               // Custom sizing / position for the 'Azure Virtual Network' image
-        width: 230px;
-        height: 256px;
-
-        img,
-        svg {
-          width: 230px;
-          height: 256px;
-        }
-      }
 
       &.icons-B,
       &.icons-I {                               // Custom sizing / position for the 'Azure Virtual Network' image
@@ -176,7 +180,6 @@
       }
 
 
-      &.icons-A { left: 348px; top: -140px; z-index: 3; }   // Custom positioning for each icon
       &.icons-B { left: 171px; top:  -74px; }               // Custom positioning for each icon    
       &.icons-C { left: 192px; top:  -77px; }               // Custom positioning for each icon
       &.icons-D { left: 225px; top: -122px; }               // Custom positioning for each icon
