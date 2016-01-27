@@ -21,8 +21,20 @@
       img,                                      // Setting to standard sizing for each icon SVG file
       svg { width: 95px; height: 330px;     }
 
+      &.icons-B {
+        width:129px;
+        height: 329px;
+
+        svg {
+          width:129px;
+          height: 329px;
+        }
+      }
+
+
+
       &.icons-A { top: -200px; left: 327px; }   // Custom positioning for each icon
-      &.icons-B { top: -255px; left: 435px; }
+      &.icons-B { top: -273px; left: 419px; }
       &.icons-C { top: -200px; left: 550px; }
     }
   }

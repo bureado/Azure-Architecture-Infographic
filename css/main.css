@@ -1464,12 +1464,18 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
     .architecture-5 .question--infographic2__content .icons svg {
       width: 95px;
       height: 330px; }
+    .architecture-5 .question--infographic2__content .icons.icons-B {
+      width: 129px;
+      height: 329px; }
+      .architecture-5 .question--infographic2__content .icons.icons-B svg {
+        width: 129px;
+        height: 329px; }
     .architecture-5 .question--infographic2__content .icons.icons-A {
       top: -200px;
       left: 327px; }
     .architecture-5 .question--infographic2__content .icons.icons-B {
-      top: -255px;
-      left: 435px; }
+      top: -273px;
+      left: 419px; }
     .architecture-5 .question--infographic2__content .icons.icons-C {
       top: -200px;
       left: 550px; }
