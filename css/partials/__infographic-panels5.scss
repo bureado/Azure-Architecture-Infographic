@@ -50,17 +50,17 @@
       svg { width: 129px; height: 329px;    }
 
       &.icons-B {
-        width:159px;
+        width: 156px;
         height: 329px;
 
         svg {
-          width:159px;
+          width: 156px;
           height: 329px;
         }
       }
 
       &.icons-A { top: -156px; left: 335px; }   // Custom positioning for each icon
-      &.icons-B { top: -267px; left: 405px; z-index: 1; }
+      &.icons-B { top: -267px; left: 405px; z-index: 2; }
       &.icons-C { top: -157px; left: 504px;  }
 
     }
