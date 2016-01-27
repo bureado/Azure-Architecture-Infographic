@@ -1027,6 +1027,19 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
       left: 511px; }
 .architecture-3 .question--infographic7 {
   margin-bottom: 50px; }
+.architecture-3 .question--infographic7__content .icons--title {
+  width: 230px;
+  height: 256px;
+  position: absolute;
+  left: 388px;
+  top: -169px; }
+  .architecture-3 .question--infographic7__content .icons--title img,
+  .architecture-3 .question--infographic7__content .icons--title svg {
+    width: 230px;
+    height: 256px; }
+    .architecture-3 .question--infographic7__content .icons--title img g[stroke="#dfdfde"],
+    .architecture-3 .question--infographic7__content .icons--title svg g[stroke="#dfdfde"] {
+      display: none; }
 .architecture-3 .question--infographic7__content .icons {
   width: 105px;
   height: 220px; }
@@ -1034,72 +1047,61 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
   .architecture-3 .question--infographic7__content .icons svg {
     width: 55px;
     height: 284px; }
-  .architecture-3 .question--infographic7__content .icons.icons-A {
-    width: 193px;
-    height: 256px; }
-    .architecture-3 .question--infographic7__content .icons.icons-A img,
-    .architecture-3 .question--infographic7__content .icons.icons-A svg {
-      width: 193px;
-      height: 256px; }
-  .architecture-3 .question--infographic7__content .icons.icons-B, .architecture-3 .question--infographic7__content .icons.icons-I {
+  .architecture-3 .question--infographic7__content .icons.icons-A, .architecture-3 .question--infographic7__content .icons.icons-H {
     width: 56px;
     height: 325px; }
-    .architecture-3 .question--infographic7__content .icons.icons-B img,
-    .architecture-3 .question--infographic7__content .icons.icons-B svg, .architecture-3 .question--infographic7__content .icons.icons-I img,
-    .architecture-3 .question--infographic7__content .icons.icons-I svg {
+    .architecture-3 .question--infographic7__content .icons.icons-A img,
+    .architecture-3 .question--infographic7__content .icons.icons-A svg, .architecture-3 .question--infographic7__content .icons.icons-H img,
+    .architecture-3 .question--infographic7__content .icons.icons-H svg {
       width: 56px;
       height: 325px; }
-  .architecture-3 .question--infographic7__content .icons.icons-J {
+  .architecture-3 .question--infographic7__content .icons.icons-I {
     width: 194px;
+    height: 256px; }
+    .architecture-3 .question--infographic7__content .icons.icons-I img,
+    .architecture-3 .question--infographic7__content .icons.icons-I svg {
+      width: 194px;
+      height: 256px; }
+  .architecture-3 .question--infographic7__content .icons.icons-J {
+    width: 279px;
     height: 256px; }
     .architecture-3 .question--infographic7__content .icons.icons-J img,
     .architecture-3 .question--infographic7__content .icons.icons-J svg {
-      width: 194px;
-      height: 256px; }
-  .architecture-3 .question--infographic7__content .icons.icons-K {
-    width: 279px;
-    height: 256px; }
-    .architecture-3 .question--infographic7__content .icons.icons-K img,
-    .architecture-3 .question--infographic7__content .icons.icons-K svg {
       width: 279px;
       height: 491px; }
   .architecture-3 .question--infographic7__content .icons.icons-A {
-    left: 406px;
-    top: -169px;
-    z-index: 2; }
-  .architecture-3 .question--infographic7__content .icons.icons-B {
     left: 194px;
     top: -94px; }
-  .architecture-3 .question--infographic7__content .icons.icons-C {
+  .architecture-3 .question--infographic7__content .icons.icons-B {
     left: 215px;
     top: -97px; }
-  .architecture-3 .question--infographic7__content .icons.icons-D {
+  .architecture-3 .question--infographic7__content .icons.icons-C {
     left: 248px;
     top: -142px; }
-  .architecture-3 .question--infographic7__content .icons.icons-E {
+  .architecture-3 .question--infographic7__content .icons.icons-D {
     left: 285px;
     top: -170px;
     z-index: 2; }
-  .architecture-3 .question--infographic7__content .icons.icons-F {
+  .architecture-3 .question--infographic7__content .icons.icons-E {
     left: 653px;
     top: -180px;
     z-index: 1; }
-  .architecture-3 .question--infographic7__content .icons.icons-G {
+  .architecture-3 .question--infographic7__content .icons.icons-F {
     left: 690px;
     top: -142px;
     z-index: 2; }
-  .architecture-3 .question--infographic7__content .icons.icons-H {
+  .architecture-3 .question--infographic7__content .icons.icons-G {
     left: 724px;
     top: -102px;
     z-index: 1; }
-  .architecture-3 .question--infographic7__content .icons.icons-I {
+  .architecture-3 .question--infographic7__content .icons.icons-H {
     left: 747px;
     top: -95px; }
-  .architecture-3 .question--infographic7__content .icons.icons-J {
+  .architecture-3 .question--infographic7__content .icons.icons-I {
     left: 369px;
     top: -101px;
     z-index: 1; }
-  .architecture-3 .question--infographic7__content .icons.icons-K {
+  .architecture-3 .question--infographic7__content .icons.icons-J {
     left: 307px;
     top: -81px; }
 .architecture-3 .question--infographic8__content .icons {

@@ -196,26 +196,37 @@
     margin-bottom: 50px;
   }
 
-  .question--infographic7__content {  
+  .question--infographic7__content {
+    .icons--title {                               // Custom sizing / position for the 'Azure Virtual Network' image
+      width: 230px;
+      height: 256px;
+      position: absolute; 
+      left: 388px; 
+      top: -169px; 
+
+      img,
+      svg {
+        width: 230px;
+        height: 256px;
+
+        g[stroke="#dfdfde"] {
+          display: none;
+        }
+      }
+    }
+
+
     .icons {                                    // Container that the icons for each panels lives within, 
       width: 105px; height: 220px;              // this contains both the active, and inactive states of the icons 
       
       img,                                      // Setting to standard sizing for each icon SVG file
       svg { width: 55px; height: 284px; }
 
-      &.icons-A {                               // Custom sizing / position for the 'Azure Virtual Network' image
-        width: 193px;
-        height: 256px;
 
-        img,
-        svg {
-          width: 193px;
-          height: 256px;
-        }
-      }
+    
 
-      &.icons-B,
-      &.icons-I {                               // Custom sizing / position for the 'Azure Virtual Network' image
+      &.icons-A,
+      &.icons-H {                               // Custom sizing / position for the 'Azure Virtual Network' image
         width: 56px;
         height: 325px;
 
@@ -226,7 +237,7 @@
         }
       }
 
-      &.icons-J {                               // Custom sizing / position for the 'Azure Virtual Network' image
+      &.icons-I {                               // Custom sizing / position for the 'Azure Virtual Network' image
         width: 194px;
         height: 256px;
 
@@ -237,7 +248,7 @@
         }
       }
 
-      &.icons-K {                               // Custom sizing / position for the 'Azure Virtual Network' image
+      &.icons-J {                               // Custom sizing / position for the 'Azure Virtual Network' image
         width: 279px;
         height: 256px;
 
@@ -249,17 +260,17 @@
       }
 
 
-      &.icons-A { left: 406px; top: -169px; z-index: 2; }    // Custom positioning for each icon
-      &.icons-B { left: 194px; top:  -94px; }    // Custom positioning for each icon    
-      &.icons-C { left: 215px; top:  -97px; }    // Custom positioning for each icon
-      &.icons-D { left: 248px; top: -142px; }    // Custom positioning for each icon
-      &.icons-E { left: 285px; top: -170px; z-index: 2;}    // Custom positioning for each icon
-      &.icons-F { left: 653px; top: -180px; z-index: 1; }    // Custom positioning for each icon      &.icons-E { left: 690px; top: -142px; z-index: 2;}    // Custom positioning for each icon
-      &.icons-G { left: 690px; top: -142px; z-index: 2;}    // Custom positioning for each icon      &.icons-E { left: 690px; top: -142px; z-index: 2;}    // Custom positioning for each icon
-      &.icons-H { left: 724px; top: -102px; z-index: 1; }    // Custom positioning for each icon
-      &.icons-I { left: 747px; top:  -95px; }    // Custom positioning for each icon
-      &.icons-J { left: 369px; top: -101px; z-index: 1; }    // Custom positioning for each icon
-      &.icons-K { left: 307px; top:  -81px; }    // Custom positioning for each icon
+      
+      &.icons-A { left: 194px; top:  -94px; }    // Custom positioning for each icon    
+      &.icons-B { left: 215px; top:  -97px; }    // Custom positioning for each icon
+      &.icons-C { left: 248px; top: -142px; }    // Custom positioning for each icon
+      &.icons-D { left: 285px; top: -170px; z-index: 2;}    // Custom positioning for each icon
+      &.icons-E { left: 653px; top: -180px; z-index: 1; }    // Custom positioning for each icon      &.icons-E { left: 690px; top: -142px; z-index: 2;}    // Custom positioning for each icon
+      &.icons-F { left: 690px; top: -142px; z-index: 2;}    // Custom positioning for each icon      &.icons-E { left: 690px; top: -142px; z-index: 2;}    // Custom positioning for each icon
+      &.icons-G { left: 724px; top: -102px; z-index: 1; }    // Custom positioning for each icon
+      &.icons-H { left: 747px; top:  -95px; }    // Custom positioning for each icon
+      &.icons-I { left: 369px; top: -101px; z-index: 1; }    // Custom positioning for each icon
+      &.icons-J { left: 307px; top:  -81px; }    // Custom positioning for each icon
     }
   }
 
