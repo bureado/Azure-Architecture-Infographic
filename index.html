@@ -79,60 +79,31 @@
 
         <div class="answer--nav">
           <ul>
-            <li class="answer--nav__A">Traffic Manager</li>
+            <li class="answer--nav__A" style="border: 2px solid red;">Traffic Manager</li>
             <li class="answer--nav__B">Azure Load Balancer</li>
           </ul>
         </div>
 
         <div class="answer--details answer--details-A">
-          <h1>Traffic Manager</h1>
-          
-          <ul>
-            <li>
-
-            </li>
-            <li>
-
-            </li>
-            <li>
-
-            </li>
-            <li>
-
-            </li>
-            <li>
-
-            </li>
-            <li>
-
-            </li>
-          </ul>
-          <p>More information, <a href="https://azure.microsoft.com/en-in/documentation/articles/expressroute-circuit-peerings/" target="_blank">click here</a>.</p> 
+          <h1 style="border: 2px solid red;">Traffic Manager</h1>
+          <p>Where's my copy?</p>
         </div>
 
         <div class="answer--details answer--details-B">
           <h1>Azure Load Balancer</h1>
-          <p>Azure Load Balancer delivers high availability and network performance to your applications with application instance health probe and automatically scalability with increasing traffic demand of applications to avoid bottle-necks. Once user requests your application hosted on Azure platform, traffic routes through scalable load balancer to distribute incoming traffic among healthy application instances in virtual machines. You can use Azure Load Balancer for TCP/UDP-based protocols such as HTTP, HTTPS, SMTP as well as protocols used for real-time voice, video messaging applications.</p>
-          <p>For more information about Azure Load Balancer, visit <a href="https://azure.microsoft.com/en-in/services/load-balancer/" target="_blank">here</a>.</p> 
+          <p>Azure Load Balancer delivers high availability and network performance enhancements to your applications. It provides health probes of instances and automatically scales with increasing traffic demand to avoid bottlenecks. Traffic routes through a scalable load balancer to distribute incoming traffic among healthy application instances in virtual machines. You can use Azure Load Balancer for TCP/UDP-based protocols such as HTTP, HTTPS, SMTP, as well as protocols for real-time voice and video messaging applications.</p>
+          <p>For more information: <a href="https://azure.microsoft.com/en-in/services/load-balancer/" target="_blank">Azure Load Balancer</a></p>
+          <p>To initiate load balancing on Azure virtual machines:</p>
           <ul>
-            <li>
-              Go to your Azure Subscription
-            </li>
-            <li>
-              Create the Load Balanced Set
-            </li>
-            <li>
-              Add virtual machines to the Load Balancer Set
-            </li>
-            <li>
-              Configure Distribution mode for Load Balancer
-            </li>
-            <li>
-              Check load balancer health status
-            </li>
+            <li>Access your Azure subscription</li>
+            <li>Create the load-balancer set</li>
+            <li>Add virtual machines to the load-balancer set</li>
+            <li>Configure the distribution mode for the load balancer</li>
+            <li>Check the health status of the load balancer</li>
           </ul>
-          <p>Note: You have to provision two or more web servers before configuring internet Azure Load Balancer. </p>
-          <p>More information: <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-load-balance/" target="_blank">click here</a>. 
+          <p><b>Note:</b> You must provision two or more web servers before configuring Azure Load Balancer.</p>
+          <p>For more information: <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-load-balance/" target="_blank">Load balancing for Azure infrastructure</a></p>
+          <p>To create a load balancer with inbound NAT rule: <a href="https://azure.microsoft.com/en-in/documentation/templates/101-internal-loadbalancer-create/" target="_blank">Azure Resource Manager template</a></p>
         </div>
 
       </div>
@@ -153,53 +124,27 @@
         <div class="answer--nav">
           <ul>
             <li class="answer--nav__A">Web Tier</li>
-            <li class="answer--nav__B">Surplus Traffic</li>
+            <li class="answer--nav__B" style="border: 2px solid red;">Surplus Traffic</li>
           </ul>
         </div>
 
         <div class="answer--details answer--details-A">
           <h1>Web Tier</h1>
-          <p>
-            Application front-end such as web and mobile services is critical part of any application that provides interface to users to interact. Azure provides platform to let you rapidly provision web and mobile applications on Azure Virtual Machine. Azure Virtual Machine supports Linux operating systems to 
-deploy your open source application. You can migrate existing application server virtual machine images (vhd) from on-premises to Azure or deploy application on newly provisioned Linux virtual machine.   
-
-          </p>
-          <p>
-            For high availability, two or more Linux virtual machines can be used under web tier in the same availability set. An availability set helps keep your virtual machines available during downtime providing redundancy needed to maintain availability of the applications or services that your virtual machine runs. Following are the high level steps to configure your Web Tier on Azure:
-          </p>
+          <p>Front-end web and mobile services are a critical part of any application. Azure allows you to rapidly provision web and mobile apps on Azure Virtual Machines (Azure VM). Azure VM supports Linux operating systems, so you can either migrate existing application server VHDs from on-premises to Azure or deploy applications on a newly provisioned Linux virtual machine.</p>
+          <p>To ensure high availability, two or more Linux virtual machines can be used in the same availability set. This helps keep your virtual machines available during downtime by providing redundancy for the apps or services that your virtual machines run.</p>
+          <p>To configure your web tier on Azure:</p>
           <ul>
-            <li>
-              Go to your Azure Subscription
-            </li>
-            <li>
-              Choose Azure Virtual Machine image created previously of your on-premises Web Server to provision new VM
-            </li>
-            <li>
-              Create two virtual machines within a single availability set to make your Web Tier highly available
-            </li>
-            <li>
-              Connect your virtual machines with SSH
-            </li>
-          </ul> 
+            <li>Access your Azure subscription</li>
+            <li>Choose the Azure VM image of your on-premises web server</li>
+            <li>Create two virtual machines within a single availability set</li>
+            <li>Connect your virtual machines with SSH</li>
+          </ul>
+          <p>To create a virtual machine from a specialized VHD: <a href="https://azure.microsoft.com/en-in/documentation/templates/201-vm-from-specialized-vhd/" target="_blank">Azure Resource Manager template</a></p>
         </div>
 
         <div class="answer--details answer--details-B">
-          <h1>Cloud Burst on-premises application traffic</h1>
-          <p>
-            This hybrid solution can provide cloud bursting for your lob application to the Azure cloud infrastructure to handle additional user demand in the peak time. To enable cloud bursting on Azure based application infrastructure, you need to configure thresholds on on-premises traffic manager to route web traffic to Azure hosted application servers. Whenever your application demand increases and breach threshold on on-premises traffic manager, it can route additional user traffic to your business application available on the Azure infrastructure. 
-          </p>
-          <p>
-            After successfully configuring Network Tier, Identity Tier, Web Tier, App Tier and Database Tier, you are almost ready with your application infrastructure on Azure. Now to enable cloud-burst scenario for your application follow below steps:
-          </p>
-          <ul>
-            <li>
-              Define limit for user traffic for your web application to be handled by your on-premises infrastructure
-            </li>
-            <li>
-              Configure thresholds for limiting user traffic for your on-premises application and define condition to route rest of the traffic to the application resides in Azure infrastructure
-            </li>
-          </ul>
-
+          <h1 style="border: 2px solid red;">Surplus traffic diverted to azure cloud</h1>
+          <p>Where's my copy?</p>
         </div>
 
       </div>
@@ -225,26 +170,16 @@ deploy your open source application. You can migrate existing application server
 
         <div class="answer--details answer--details-A">
           <h1>Application Tier</h1>
-          <p>
-            Your application servers with business logics will be paced as Azure Virtual Machines. Similar to web tier, you can migrate existing application server virtual machine images (vhd) from on-premises to Azure or deploy application on newly provisioned Linux virtual machine.
-          </p>
-          <p>
-            For high availability, two or more Linux virtual machines can be used under application tier in the same availability set. An availability set helps keep your virtual machines available during downtime providing redundancy needed to maintain availability of the applications or services that your virtual machine runs. Following are the high level steps to configure your App Tier on Azure:
-          </p>
+          <p>Similar to the web tier, you can migrate existing application server VHDs from on-premises to Azure or deploy applications on a newly provisioned Linux virtual machine.</p>
+          <p>To ensure high availability, two or more Linux virtual machines can be used in the same availability set. This helps keep your virtual machines available during downtime by providing redundancy for the apps or services that your virtual machines run.</p>
+          <p>To configure your application tier on Azure:</p>
           <ul>
-            <li>
-              Go to your Azure Subscription
-            </li>
-            <li>
-              Choose Azure Virtual Machine image created previously of your on-premises App Server to provision new VM
-            </li>
-            <li>
-              Create two virtual machines within a single availability set to make your App Tier highly available
-            </li>
-            <li>
-              Connect your virtual machines with SSH
-            </li>
-          </ul> 
+            <li>Access your Azure subscription</li>
+            <li>Choose the Azure VM image of your on-premises application server</li>
+            <li>Create two virtual machines within a single availability set</li>
+            <li>Connect your virtual machines with SSH</li>
+          </ul>
+          <p>To create a virtual machine from a specialized VHD: <a href="https://azure.microsoft.com/en-in/documentation/templates/201-vm-from-specialized-vhd/" target="_blank">Azure Resource Manager template</a></p>
         </div>
 
       </div>
@@ -266,146 +201,74 @@ deploy your open source application. You can migrate existing application server
           <ul>
             <li class="answer--nav__A">Database Tier</li>
             <li class="answer--nav__B">Scale Cloud</li>
-            <li class="answer--nav__C">Internet</li>
-            <li class="answer--nav__D">Express Router</li>
-            <li class="answer--nav__E">VPN</li>
-            <li class="answer--nav__F">Active Directory LDAP</li>
+            <li class="answer--nav__C" style="border: 2px solid red;">Internet</li>
+            <li class="answer--nav__D">Azure ExpressRoute</li>
+            <li class="answer--nav__E">Azure VPN</li>
+            <li class="answer--nav__F" style="border: 2px solid red;">Active Directory LDAP</li>
           </ul>
         </div>
 
         <div class="answer--details answer--details-A">
           <h1>Database Tier</h1>
-          <p>Your application open-source database servers will be deployed on Azure Virtual Machines. Azure provide preconfigured virtual machine images for different open source database such as MySQL, MariaDB, PostgreSQL, SQLite and other databases. You can provision preconfigured database virtual machine images or manually deploy database servers on Linux Azure Virtual Machines. Once database servers are provisioned, you can attach data vhd with backup of on-premises database of application.
-Different approaches available to deploy database servers with high availability. A multi-master cluster or traditional master slave cluster can be created to deploy robust, scalable, and reliable database tier for your application on Azure Virtual Machines.
-          </p>
-          <p>
-            Visit <a href="https://mariadb.com/mariadb-and-microsoft-azure" target="_blank">here</a> and <a href="https://azure.microsoft.com/en-in/documentation/articles/virtual-machines-mariadb-cluster/" target="_blank">here</a> to know more about database deployment and high availability in Azure. Follow below steps to provision and configure database server on freshly provisioned Linux Azure Virtual Machine:
-          </p>
-
+          <p>Azure provides preconfigured virtual machine images for different open source databases such as MySQL, MariaDB, PostgreSQL, and SQLite. You can provision preconfigured database virtual machine images or manually deploy database servers on Linux virtual machines. Once database servers are provisioned, you can attach data VHDs with backups of on-premises application databases.</p>
+          <p>There are different ways to deploy database servers with high availability. A multi-master cluster or traditional master-slave cluster can be created to deploy a robust, scalable, and reliable database tier for your application on Azure VM.</p>
+          <p>For more information: <a href="https://mariadb.com/mariadb-and-microsoft-azure" target="_blank">MariaDB and Microsoft Azure</a> or <a href="https://azure.microsoft.com/en-in/documentation/articles/virtual-machines-mariadb-cluster/" target="_blank">MariaDB Azure tutorial</a></p>
+          <p>To provision and configure a database server on a freshly provisioned Linux Azure virtual machine:</p>
           <ul>
-            <li>
-              Go to your Azure Subscription
-            </li>
-            <li>
-              Provision Linux Azure virtual machine from Azure Portal. Multiple Linux distributions are available on Azure, choose Linux virtual machine distribution and version you want to deploy database server on. Make sure you provision two virtual machines for your DB tier within the same availability group.
-            </li>
-            <li>
-              Attach data disk uploaded from on-premises 
-            </li>
-            <li>
-              Once your Linux virtual machine is provisioned, install database server on both of the virtual machines.
-            </li>
-            <li>
-              Configure database clustering.
-            </li>
-            <li>
-              Restore database data from your uploaded DB VHD to newly configured DB virtual machine on Azure
-            </li>
-            <li>
-              And synchronize your database server with the on-premises database servers.
-            </li>
+            <li>Access your Azure subscription</li>
+            <li>Provision two Linux Azure virtual machines from the Azure portal (multiple Linux distributions are available, so choose the distribution and version you want and be sure to provision two virtual machines within the same availability set)</li>
+            <li>Attach the data disk uploaded from on-premises</li>
+            <li>Install the database server on both virtual machines</li>
+            <li>Configure database clustering</li>
+            <li>Restore the database data from your uploaded VHD to the newly configured virtual machines and synchronize your database server with the on-premises database servers</li>
           </ul>
         </div>
 
         <div class="answer--details answer--details-B">
           <h1>Scale cloud application in case of disaster</h1>
-          <p>Microsoft Azure provides you scalability for your business critical application. Same web application solution can help you in ensuring high availability of your application in case of any disaster or failure on-premises. In case of any disaster or failure of your application on-premises, you can scale capacity of your Azure bases application to meet your on-premises application capacity. This scaling will allows you to route and accommodate entire users to Azure hosted application and get seamless user experience with no to minimum downtime.</p>
-          <p>
-            In case of Application failure at your on-premises, you can quickly respond and route your whole internal and external user traffic to the cloud-based application infrastructure with few additional configuration. Following are the high level steps to scale out cloud based application in case of disaster or application failure on-premises:
-          </p>
+          <p>Azure provides scalability for business-critical applications, and it also ensures high availability of applications in case of disaster or on-premises failure. In the event of an on-premises failure, you can easily scale the capacity of your Azure-based application to meet any demand. This scaling allows you to provide a seamless user experience with little or no downtime.</p>
+          <p>To scale out a cloud-based application in case of disaster or application failure on-premises:</p>
           <ul>
-            <li>Scale out your cloud-based application infrastructure to match your on-premises application server capacity. To know more details about manually scaling out your 
+            <li>Scale out your cloud-based application infrastructure to match your on-premises application server capacity (visit the Azure Cloud Services site to learn more about autoscaling an application)</li>
+            <li>Update your DNS records to resolve your application name with the Azure application network</li>
+            <li>Route users to the Azure-hosted application</li>
           </ul>
-          <p>Update DNS records to resolve your application name with the Azure application network.</a>. 
         </div>
 
         <div class="answer--details answer--details-C">
-          <h1>Internet</h1>
-          <p>Organizations are more concern about the security aspects of the cloud. Whether your application is private business application or public website or web app, Azure provides security option to provide robust security options. You can secure end-to-end connectivity between your datacenters and Azure cloud infrastructure for your business application. This enables you to build truly hybrid applications in Azure. Azure provides two ways to secure your connection either using directly connection to Azure from your existing WAN network or virtual private network (VPN) over public internet. Azure Virtual Private Network secures your connection with site-to-site VPN using IPsec. Azure ExpressRoute offers secure and faster direct connection to the Azure infrastructure without going over public internet. With ExpressRoute, you can establish connections to Azure at an ExpressRoute location, such as an Exchange provider facility or directly connect to Azure from your existing WAN network, such as a multi-protocol label switching (MPLS) VPN, provided by a network service provider.</p>
-          <p>
-            Visit <a href="https://azure.microsoft.com/en-in/services/virtual-network/" target="_blank">here</a> to know more about Azure VPN and <a href="https://azure.microsoft.com/en-in/services/expressroute/" target="_blank">here</a> to know more about Azure ExpressRoute.
-          </p>
+          <h1 style="border: 2px solid red;">Internet</h1>
+          <p>Where is my copy?</p>
         </div>
 
         <div class="answer--details answer--details-D">
-          <h1>Azure Express Route</h1>
-          <p>Create dedicated connection from your on-premises to Azure location without going through public internet. To configure ExpressRoute follow the below steps.</p>
+          <h1>Azure ExpressRoute</h1>
+          <p>This service establishes a connection between your on-premises datacenter and Azure without going through public Internet. To configure ExpressRoute:</p>
           <ul>
-            <li>
-              Gather information about connectivity providers and locations
-            </li>
-            <li>
-              Go to your Azure Subscription
-            </li>
-            <li>
-              Create an ExpressRoute circuit
-            </li>
-            <li>
-              Configure routing (circuit peering)
-            </li>
-            <li>
-              Link a VNet to an ExpressRoute circuit
-            </li>
+            <li>Gather information about connectivity providers and locations</li>
+            <li>Access your Azure subscription</li>
+            <li>Create an ExpressRoute circuit</li>
+            <li>Configure routing (circuit peering)</li>
+            <li>Link a VNet to an ExpressRoute circuit</li>
           </ul>
-          <p>More information, <a href="https://azure.microsoft.com/en-in/documentation/articles/expressroute-circuit-peerings/" target="_blank">click here</a>. 
+          <p>For more information: <a href="https://azure.microsoft.com/en-in/documentation/articles/expressroute-circuit-peerings/" target="_blank">ExpressRoute circuits and routing domains</a></p>
         </div>
 
         <div class="answer--details answer--details-E">
-          <h1>Azure VPN Gateway</h1>
-          <p>Create VPN connection over IPsec (IKE v1 and IKE v2). This type of connection requires a VPN device or RRAS. Following are the high level steps to configure Azure VPN Gateway.</p>
+          <h1>Azure VPN</h1>
+          <p>This type of gateway connection requires a VPN device or Routing and Remote Access Service (RRAS). To configure an Azure VPN gateway and create a VPN connection over IPsec (IKE v1 and IKE v2):</p>
           <ul>
-            <li>
-              Go to your Azure Subscription
-            </li>
-            <li>
-              Create a VPN gateway using Azure Portal
-            </li>
-            <li>
-              Gather information for your VPN device configuration
-            </li>
-            <li>
-              Configure your VPN device
-            </li>
-            <li>
-              Verify your local network ranges and VPN gateway IP address
-            </li>
+            <li>Access your Azure subscription</li>
+            <li>From the Azure portal, create a VPN gateway</li>
+            <li>Gather information for your VPN device configuration</li>
+            <li>Configure your VPN device</li>
+            <li>Verify your local network ranges and VPN gateway IP address</li>
           </ul>
-          <p>More information: <a href="https://azure.microsoft.com/en-in/documentation/articles/vpn-gateway-configure-vpn-gateway-mp/" target="_blank">click here</a>. 
+          <p>For more information: Configuring a VPN gateway</a></p>
         </div>
 
         <div class="answer--details answer--details-F">
-          <h1>Active Directory LDAP</h1>
-          <p>Organizations uses Windows Active Directory for user identity management and secure access to their applications. Azure provides multiple ways to extend identities to cloud with deploying own additional domain controller on Azure virtual machine (VMs) in an Azure virtual network or synchronizing with secure Azure Active Directory, a multi-tenant cloud based directory and identity management service.  
-Azure Active Directory with its Access Control lets you extend your users log in using identities from Facebook, Google, Microsoft, and other identity providers.
-</p>
-          <p>
-            To get more information, visit <a href="https://azure.microsoft.com/en-in/documentation/articles/fundamentals-identity/" target="_blank">here</a>. For Azure AD sync and <a href="https://azure.microsoft.com/en-in/documentation/articles/virtual-networks-install-replica-active-directory-domain-controller/" target="_blank">here</a> for deploying additional domain controller.
-          </p>
-          <p>Configure Azure Active Directory to extend your user identity and application access to cloud</p>
-          <ul>
-            <li>
-              Go to your Azure Subscription
-            </li>
-            <li>
-              Create a new Azure Active Directory (AAD)
-            </li>
-            <li>
-              Add and verify custom domain
-            </li>
-            <li>
-              Add a user to the custom domain or sync your on-premises identities using Azure AD Connect
-            </li>
-            <li>
-              Configure Authentication / Authorization for the Web App
-            </li>
-            <li>
-              Confirm / grant user access to application
-            </li>
-            <li>
-              Modify application to accept security token, if required
-            </li>
-          </ul>
-          <p>More information: <a href="https://azure.microsoft.com/en-in/documentation/articles/active-directory-aadconnect/" target="_blank">click here</a>. 
+          <h1 style="border: 2px solid red;">Active Directory LDAP</h1>
+          <p>Where's my copy?</p>
         </div>
       </div>
     </section>
@@ -424,57 +287,39 @@ Azure Active Directory with its Access Control lets you extend your users log in
 
         <div class="answer--nav">
           <ul>
-            <li class="answer--nav__A">Management</li>
+            <li class="answer--nav__A">Management Tier</li>
             <li class="answer--nav__B">Identity Tier</li>
           </ul>
         </div>
 
         <div class="answer--details answer--details-A">
-          <h1>Management</h1>
-          <p>To manage Azure resources, Microsoft provides different tools for different type of requirements and skillsets. Following are different management tools for Azure:</p>
+          <h1>Management Tier</h1>
+          <p>Microsoft provides a variety of tools for managing Azure resources. This section summarizes the different management tools for Azure.</p>
           <ul>
-            <li><strong>Azure Portal</strong>– Build, manage and monitor everything from simple web apps to complex cloud applications in a single, unified console.</li>
-            <li><strong>Azure CLI</strong>– The Azure CLI provides a set of open-source shell-based commands for creating and managing resources in Microsoft Azure.</li>
-            <li><strong>Rest APIs</strong>– Azure API Management provides a REST API for performing operations on selected entities, such as users, groups, products, and subscriptions.</li>
-            <li><strong>SDKs</strong>– Azure provides multiple language-specific SDKs to manage your Linux environment. These languages can be .NET, Java, Node.js, PHP and Python.</li>
-          </ul>
-
+            <li><b>Azure portal:</b> Lets you build, manage, and monitor everything from simple web apps to complex cloud apps from a single, unified console.</li>
+            <li><b>Azure CLI (command-line interface):</b> Offers a set of open source, shell-based commands for creating and managing resources in Azure.</li>
+            <li><b>Azure Resource Manager (ARM):</b> Enables you to work with the resources in your solution as a group. You can deploy, update or delete all of the resources for your solution in a single, coordinated operation. ARM provides a wide range of community-based templates built by ARM community members, who continuously contribute to new templates. These templates can be used for deployments or different environments such as testing, staging, and production.</li>
+            <li><b>Azure API Management:</b> Provides a REST API for performing operations on selected entities, including users, groups, products, and subscriptions.</li>
+            <li><b>Language-specific SDKs (.NET, Java, Node.js, PHP, and Python):</b> Helps manage your Linux environment.</li>
+          </ul> 
         </div>
 
         <div class="answer--details answer--details-B">
           <h1>Identity Tier</h1>
-          <p>Organizations uses Windows Active Directory for user identity management and secure access to their applications. Azure provides multiple ways to extend identities to cloud with deploying own additional domain controller on Azure virtual machine (VMs) in an Azure virtual network or synchronizing with secure Azure Active Directory, a multi-tenant cloud based directory and identity management service.  
-Azure Active Directory with its Access Control lets you extend your users log in using identities from Facebook, Google, Microsoft, and other identity providers.
-</p>
-          <p>To get more information, visit <a href="https://azure.microsoft.com/en-in/documentation/articles/fundamentals-identity/" target="_blank">here</a>. For Azure AD sync and <a href="https://azure.microsoft.com/en-in/documentation/articles/virtual-networks-install-replica-active-directory-domain-controller/" target="_blank">here</a> for deploying additional domain controller.</p>
-          <p>Configure Azure Active Directory to extend your user identity and application access to cloud</p>
+          <p>Azure provides multiple ways to extend identity management and application access to the cloud by deploying an additional domain controller on Azure virtual machines or by synchronizing with Azure Active Directory (AAD), a multi-tenant, cloud-based directory and identity management service. Access Control Services in AAD lets users log on with identities from Facebook, Google, Microsoft, and other identity providers.</p>
+          <p>For more information: <a href="https://azure.microsoft.com/en-in/documentation/articles/fundamentals-identity/" target="_blank">Azure identity management</a> and <a href="https://azure.microsoft.com/en-in/documentation/articles/virtual-networks-install-replica-active-directory-domain-controller/" target="_blank">Installing an additional domain controller</a></p>
+          <p>To configure AAD to extend user identity and application access to the cloud:</p>
           <ul>
-            <li>
-              Go to your Azure Subscription
-            </li>
-            <li>
-              Create a new Azure Active Directory (AAD)
-            </li>
-            <li>
-              Add and verify custom domain
-            </li>
-            <li>
-              Add a user to the custom domain or sync your on-premises identities using Azure AD Connect
-            </li>
-            <li>
-              Configure Authentication / Authorization for the Web App
-            </li>
-            <li>
-              Confirm / grant user access to application
-            </li>
-            <li>
-              Modify application to accept security token, if required
-            </li>
-    
+            <li>Access your Azure subscription</li>
+            <li>Create a new AAD</li>
+            <li>Add and verify a custom domain</li>
+            <li>Add a user to the custom domain, or sync your on-premises identities using AAD Connect</li>
+            <li>Configure authentication and authorization for the web app</li>
+            <li>Confirm and grant user access to the application</li>
+            <li>Modify the application to accept a security token, if required</li>
           </ul>
-          <p>More information: <a href="https://azure.microsoft.com/en-in/documentation/articles/active-directory-aadconnect/" target="_blank">click here</a>. 
+          <p>For more information: <a href="https://azure.microsoft.com/en-in/documentation/articles/active-directory-aadconnect/" target="_blank">Integrating on-premises identities with AAD</a></p>
         </div>
-
     </section>
 
 <!-- Panel 6 Questions -->
