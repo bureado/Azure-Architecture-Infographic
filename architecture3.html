@@ -52,22 +52,33 @@
       <div class="hero--content">
         <div class="hero--content__text">
           <h1>Container-based application architectures in Microsoft Azure</h1>
-          <p>The industry is beginning to move beyond the traditional model of application development and deployment to a cloud-based application approach characterized by easy packaging and unique deployment. This is beneficial whether you’re deploying an existing application to the cloud, integrating with cloud services, or building an application in the cloud. In application deployment, Linux containers are the next level of the virtualized platform approach. Containers are one step ahead of traditional virtual machines in their ability to isolate data and compute on shared resources. Containers can approximate the capabilities of a virtual machine by using kernel containment, rather than simulating and running a separate kernel with every virtual machine. Docker-based containers can help you in application deployment environments that require rapid provisioning. They can also help you securely isolate applications deployed on the same Docker host.</p>
-          <p>Microsoft Azure provides you with a platform to build cloud-based distributable and scalable applications, without the need to manage a complex infrastructure deployment. With Azure, you can create lightweight, private platform-as-a-service (PaaS) environments and automate the packaging and deployment of applications with Docker-based containers. Additionally, Azure gives you the ability to simplify the deployment of Docker Engine and manage remote communication with virtual machines using Docker Virtual Machine Extension.</p>
-          <a href="#"><img src="img/button-play.svg" alt="Watch Video" /> Watch Video</a>
+          <p>From Docker extensions for virtual machines to Azure Container Service, Microsoft Azure offers open flexibility in your container journey. </p>
         </div>
 
-        <div class="hero--content__subtext">
-          <h2>Solution Architecture</h2>
-          <p>Microsoft Azure provides an end-to-end solution for building and deploying Linux and open source applications with Docker containers. With Azure, you can build a platform for both your web and mobile applications. This solution, along with various Azure services, can help you build your own robust and scalable PaaS application platform on top of your infrastructure as a service (IaaS).</p>
-        </div>
+        <iframe src="https://player.vimeo.com/video/153839238?title=0&byline=0&portrait=0" width="400" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         <div class="clearfix"></div>
+
+      </div>
+    </section>
+
+<!-- Intro Copy -->
+    <section class="intro">
+      <div class="intro--content">
+        <div class="intro--content__text">
+          <h1>Solution Brief</h1>
+          <p class="intro--content__text-first">Microsoft Azure provides an end-to-end solution for building and deploying Linux and open source applications with Docker containers. With Azure, you can build a platform for both your web and mobile applications. This solution, along with various Azure services, can help you build your own robust and scalable PaaS application platform on top of your infrastructure as a service (IaaS).</p>
+          <p>The industry is beginning to move beyond the traditional model of application development and deployment to a cloud-based application approach characterized by easy packaging and unique deployment. This is beneficial whether you’re deploying an existing application to the cloud, integrating with cloud services, or building an application in the cloud. In application deployment, Linux containers are the next level of the virtualized platform approach. Containers are one step ahead of traditional virtual machines in their ability to isolate data and compute on shared resources. Containers can approximate the capabilities of a virtual machine by using kernel containment, rather than simulating and running a separate kernel with every virtual machine. Docker-based containers can help you in application deployment environments that require rapid provisioning. They can also help you securely isolate applications deployed on the same Docker host.</p>
+          <p>Microsoft Azure provides you with a platform to build cloud-based distributable and scalable applications, without the need to manage a complex infrastructure deployment. With Azure, you can create lightweight, private platform-as-a-service (PaaS) environments and automate the packaging and deployment of applications with Docker-based containers. Additionally, Azure gives you the ability to simplify the deployment of Docker Engine and manage remote communication with virtual machines using Docker Virtual Machine Extension.</p>
+          <div class="clearfix"></div>
+        </div>
       </div>
     </section>
 
 <!-- Panel 1: Overview header -->
     <section class="panel infographic1">
       <div class="panel--content infographic1--content">
+        <h1>OVERVIEW</h1>
+        <p>This scenario focuses on how Azure supports Linux and open source applications with Docker containers. Regardless of your Docker needs or readiness level, Azure has an offering for you.</p>
         <img src="img/infographic3/infographic--1__fullwidth.svg" />
       </div>
     </section>
@@ -81,9 +92,9 @@
           <ul>
             <li class="answer--nav__A">Network Tier</li>
             <li class="answer--nav__B">Azure Express Route</li>
-            <li class="answer--nav__C" style="border: 2px solid red;">VPN Point-to-Site or Site-to-Site</li>
+            <li class="answer--nav__C">Azure VPN</li>
             <li class="answer--nav__D">Azure Domain Name System</li>
-            <li class="answer--nav__E" style="border: 2px solid red;">Application Gateway</li>
+            <li class="answer--nav__E">Application Gateway</li>
             <li class="answer--nav__F">Content Delivery Network (CDN)</li>
             <li class="answer--nav__G">Azure Load Balancer</li>
             <li class="answer--nav__H">Azure Traffic Manager</li>
@@ -109,8 +120,16 @@
         </div>
 
         <div class="answer--details answer--details-C">
-          <h1 style="border: 2px solid red;">VPN Point-to-Site or Site-to-Site</h1>
-          <p>Which of the 2 VPN copy blocks goes here?
+          <h1>Azure VPN</h1>
+          <p>With Azure VPN Gateway, you can configure site-to-site and point-to-site VPN connections. Site-to-site VPN connections require a VPN device or routing and remote access service (RRAS).</p>
+          <p>To configure an Azure VPN gateway and create a VPN connection over IPsec (IKE v1 and IKE v2):</p>
+          <ul>
+            <li>Create a VPN gateway using the Microsoft Azure portal</li>
+            <li>Gather information for your VPN device configuration</li>
+            <li>Configure your VPN device</li>
+            <li>Verify your local network ranges and VPN gateway IP address</li>
+          </ul>
+          <p>For more information: <a href="https://azure.microsoft.com/en-in/documentation/articles/vpn-gateway-configure-vpn-gateway-mp/" target="_blank">Configuring a VPN gateway in the Azure Classic Portal</a></p>
         </div>
 
         <div class="answer--details answer--details-D">
@@ -129,8 +148,17 @@
         </div>
 
         <div class="answer--details answer--details-E">
-          <h1 style="border: 2px solid red;">Application Gateway</h1>
-          <p>Where's my copy??</p>
+          <h1>Application Gateway</h1>
+          <p>Microsoft Azure Application Gateway provides an Azure-managed HTTP load-balancing solution based on layer-7 load balancing. Application load balancing enables IT administrators and developers to create routing rules for network traffic based on HTTP. Azure Application Gateway currently supports layer-7 application delivery for HTTP load balancing, cookie-based session affinity, and Secure Sockets Layer (SSL) offload.</p>
+          <p>For more information: <a href="https://azure.microsoft.com/en-in/documentation/articles/application-gateway-introduction/" target="_blank">Application Gateway</a></p>
+          <p>To create an application gateway:</p>
+          <ul>
+            <li>Create an application gateway resource.</li>
+            <li>Create a configuration XML file or a configuration object.</li>
+            <li>Commit the configuration to the newly created application gateway resource.</li>
+            <li>Start the gateway and verify the gateway status</li>
+          </ul>
+          <p>For more details: <a href="https://azure.microsoft.com/en-in/documentation/articles/application-gateway-create-gateway/" target="_blank">Application Gateway</a></p>
         </div>
 
         <div class="answer--details answer--details-F">

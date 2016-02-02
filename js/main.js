@@ -11,7 +11,6 @@ $(document).ready(function(){
   });
 
 
-
   // 'X' icon to close the answer panels
   $('.fa-close').click(function() {
      $(this).closest('.answer').slideUp(500);
