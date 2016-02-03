@@ -370,12 +370,12 @@
 
 
       &.icons-D {                               // Custom sizing / position for the 'OMS For Linux' image
-        width: 160px;
+        width: 217px;
         height: 475px;
 
         img,
         svg {
-          width: 160px;
+          width: 217px;
           height: 475px;
         }
 
@@ -432,10 +432,9 @@
 
 
       &.icons-A { top: -190px; left: 408px; z-index: 1;}   // Custom positioning for each icon
-      &.icons-B { top: -100px; left: 100px; }
-      &.icons-C { top: -100px; left: 307px; }
-      &.icons-D { top: -100px; left: 497px; }
-      &.icons-E { top: -101px; left: 692px; }
+      &.icons-C { top: -100px; left: 197px; }
+      &.icons-D { top: -100px; left: 334px; }
+      &.icons-E { top: -101px; left: 587px; }
     }
   }
 

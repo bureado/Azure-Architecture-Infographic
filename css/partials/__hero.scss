@@ -1,12 +1,34 @@
 // Top full-width hero graphic / copy
 
+
+.architecture-4 .hero {
+  background-image: url(../img/hero--infographic1.jpg);
+  background-color: #fff;
+}
+
+.architecture-2 .hero {
+  background-image: url(../img/hero--infographic2.jpg);
+  background-color: #fff;
+}
+
+.architecture-3 .hero {
+  background-image: url(../img/hero--infographic3.jpg);
+  background-color: #fff;
+}
+
+.architecture-5 .hero {
+  background-image: url(../img/hero--infographic4.jpg);
+  background-color: #fff;
+}
+
+
+
 .hero {
   width: 100%;
-  background: #fff;
-  background: url(../img/homepage--hero.jpg) 0 0 no-repeat #fff;
   background-position: center;
   background-size: cover;
-  
+
+ 
   &--content {
     padding: 75px 0 115px 0;
     width: 100%;
