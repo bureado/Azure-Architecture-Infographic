@@ -15,7 +15,7 @@
         font-size: 3.6rem;
         line-height: 4.2rem;
         font-weight: 100;
-                
+
       color: #00bcf2;
 
       margin-bottom: 15px;
@@ -198,3 +198,16 @@
   }
 }
 
+
+
+.codesnip {
+  font-family: 'courier', 'courier new', sans-serif; 
+  color: #000; 
+  font-style: italic; 
+  font-size: 11px;
+  display: inline-block;
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 1px 5px 0 5px;
+  @include border-radius(3px);
+}

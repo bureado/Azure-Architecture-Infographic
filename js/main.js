@@ -98,6 +98,30 @@ $(document).ready(function(){
       $(whichAnswerContainer).find('.answer--details-K').show();                                                    // Showing answer 
       $(whichAnswerContainer).find('.answer--nav__K').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
     }
+
+    if(whichPanel.hasClass('icons-L') || whichPanel.hasClass('answer--nav__L')) {
+      $(whichQuestionIcon).find('.icons-L').addClass('active').siblings().removeClass('active');                    // Setting active icon
+      $(whichAnswerContainer).find('.answer--details-L').show();                                                    // Showing answer 
+      $(whichAnswerContainer).find('.answer--nav__L').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
+    }
+
+    if(whichPanel.hasClass('icons-M') || whichPanel.hasClass('answer--nav__M')) {
+      $(whichQuestionIcon).find('.icons-M').addClass('active').siblings().removeClass('active');                    // Setting active icon
+      $(whichAnswerContainer).find('.answer--details-M').show();                                                    // Showing answer 
+      $(whichAnswerContainer).find('.answer--nav__M').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
+    }
+
+    if(whichPanel.hasClass('icons-N') || whichPanel.hasClass('answer--nav__N')) {
+      $(whichQuestionIcon).find('.icons-N').addClass('active').siblings().removeClass('active');                    // Setting active icon
+      $(whichAnswerContainer).find('.answer--details-N').show();                                                    // Showing answer 
+      $(whichAnswerContainer).find('.answer--nav__N').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
+    }
+
+    if(whichPanel.hasClass('icons-O') || whichPanel.hasClass('answer--nav__O')) {
+      $(whichQuestionIcon).find('.icons-O').addClass('active').siblings().removeClass('active');                    // Setting active icon
+      $(whichAnswerContainer).find('.answer--details-O').show();                                                    // Showing answer 
+      $(whichAnswerContainer).find('.answer--nav__O').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
+    }
   }
 
   // Calling the Toggle function with customizations for each panel.
