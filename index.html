@@ -461,9 +461,9 @@
         <div class="answer--details answer--details-E"> 
           <h1>Azure Storage Plugin for Jenkins CI</h1>
 
-          <p>After you allow the PaaS over IaaS to complete with Docker, you can use Jenkins to automatically orchestrate the application’s continuous integration and delivery processes to accelerate the delivery. With Azure Storage Plugin for Jenkins, allows you to use Azure Blob service to host your agile development build artifacts with high availability. It also provides control over user access policies, with a choice between anonymous access, expiration-based shared access signature access, private access, etc.</p>
-          <p>For more information: <a href="https://azure.microsoft.com/en-in/documentation/articles/storage-java-jenkins-continuous-integration-solution/" target="_blank">Azure Storage Plugin for Jenkins CI</a></p>
-          <p>To download and configure Azure Storage Plugin for Jenkins CI follow the below steps:</p>
+          <p>After you allow the PaaS over IaaS to complete with Docker, you can use Jenkins to automatically orchestrate the application’s continuous integration and delivery processes to accelerate the delivery. With Azure storage plugin for Jenkins, you can use Azure Blob service to host your agile development build artifacts with high availability. It also provides control over user access policies, with choices such as anonymous access, expiration-based shared access, signature access, or private access.</p>
+          <p>For more information: <a href="https://azure.microsoft.com/en-in/documentation/articles/storage-java-jenkins-continuous-integration-solution/" target="_blank">Azure storage plugin for Jenkins CI</a></p>
+          <p>To download and configure Azure storage plugin for Jenkins CI:</p>
           <ul>
             <li>On a Java-enabled Azure machine, download jenkins.war from <a href="http://jenkins-ci.org/" target="_blank">http://jenkins-ci.org</a>.</li>
             <li>
@@ -471,65 +471,67 @@
               <span class="codesnip">java -jar jenkins.war</span>
             </li>
 
-            <li>In your browser, open http://localhost:8080/. This will open the Jenkins dashboard, which you will use to install and configure the Azure Storage plugin.</li>
-            <li>Alternatively you can deploy Jenkins machine from <a href="https://azure.microsoft.com/en-us/marketplace/?term=jenkins" target="_blank">Azure Marketplace</a></li>
-            <li>Now install the Azure Storage plugin for Jenkins
+            <li>In your browser, open http://localhost:8080/, which opens the Jenkins dashboard you will use to install and configure the Azure storage plugin</li>
+            <li>Alternatively, you can deploy Jenkins machine from <a href="https://azure.microsoft.com/en-us/marketplace/?term=jenkins" target="_blank">Azure Marketplace</a></li>
+            <li>Now install the Azure Storage plugin for Jenkins:
 
               <ul>
-                <li>Within the Jenkins dashboard, click Manage Jenkins.</li>
-                <li>In the Manage Jenkins page, click Manage Plugins.</li>
-                <li>Click the Available tab.</li>
-                <li>In the Artifact Uploaders section, check Microsoft Azure Storage plugin.</li>
-                <li>Click either Install without restart or Download now and install after restart.</li>
-                <li>Restart Jenkins.</li>
+                <li>Within the Jenkins dashboard, click <b>Manage Jenkins</b>.</li>
+                <li>In the Manage Jenkins page, click <b>Manage Plugins</b></li>
+                <li>Click the <b>Available</b> tab</li>
+                <li>In the Artifact Uploaders section, select <b>Microsoft Azure Storage plugin</b></li>
+                <li>Click either <b>Install without restart</b> or <b>Download now and install after restart</b></li>
+                <li>Restart Jenkins</li>
               </ul>
             </li>
 
-            <li>Configure the Azure Storage plugin to use your storage account
+            <li>Configure the Azure Storage plugin to use your storage account:
               <ul>
-                <li>Within the Jenkins dashboard, click Manage Jenkins.</li>
-                <li>In the Manage Jenkins page, click Configure System.</li>
+                <li>Within the Jenkins dashboard, click <b>Manage Jenkins</b></li>
+                <li>In the Manage Jenkins page, click <b>Configure System</b></li>
                 <li>In the Microsoft Azure Storage Account Configuration section:
                   <ul>
-                    <li>Enter your storage account name, which you can obtain from the Azure Portal.</li>
-                    <li>Enter your storage account key, also obtainable from the Azure Portal.</li>
-                    <li>Use the default value for Blob Service Endpoint URL if you are using the public Azure cloud. If you are using a different Azure cloud, use the endpoint as specified in the Azure Portal for your storage account.</li>
-                    <li>Click Validate storage credentials to validate your storage account.</li>
-                    <li>[Optional] If you have additional storage accounts that you want made available to your Jenkins CI, click Add more Storage Accounts.</li>
-                    <li>Click Save to save your settings.</li>
+                    <li>Enter your storage account name, which you can obtain from the Azure portal</li>
+                    <li>Enter your storage account key, also available on the Azure portal</li>
+                    <li>Use the default value for Blob service endpoint URL if you are using the public Azure cloud (if using a different Azure cloud, use the endpoint as specified in the Azure portal for your storage account)</li>
+                    <li>Click <b>Validate storage credentials</b> to validate your storage account</li>
+                    <li>[Optional] If you have additional storage accounts that you want made available to your Jenkins CI, click <b>Add more Storage Accounts</b></li>
+                    <li>Click <b>Save</b> to save your settings</li>
                   </ul>
                 </li>
               </ul>
             </li>
           </ul>
 
-          <p>For more information: <a href="https://github.com/jenkinsci/windows-azure-storage-plugin" target="_blank">Windows Azure Storage Plugin</a></p>
+          <p>For more information: <a href="https://github.com/jenkinsci/windows-azure-storage-plugin" target="_blank">https://github.com/jenkinsci/windows-azure-storage-plugin</a></p>
 
         </div>
 
         <div class="answer--details answer--details-M"> 
           <h1>Development environment</h1>
-          <p>With production on Azure, it’s a common use case to have both development and testing environments. There are several benefits to using Azure for development, including the ability to easily build and scale production identical environments on demand. This is in addition to savings on hardware purchases that remain unused when you are not doing development. The steps for deploying development environments are the same for deploying production environments.</p>
+          <p>With a test environment, it is important to build production-identical environments for different test scenarios that may occur. A test environment at production scale helps to identify and fix problems before you release into the production environment. You can easily clone production servers to build a test environment and gain a precise view into how your application will behave in the real world.</p>
+          <p>Steps for deploying development environment remains same as for production.</p>
         </div>
 
         <div class="answer--details answer--details-N"> 
           <h1>Test environment</h1>
 
           <p>With a test environment, it’s important to build a production identical environment for different test scenarios that may occur in a real production environment. Using a test environment at production scale helps you identify and fix problems before you release your applications into a production environment. You can easily clone production servers to build a test environment and gain a precise view into how your applications will behave in the real world.
-          <p>The steps for deploying a test environment are the same for deploying a production environment. To capture an image of your production servers from your Linux virtual machine and build test servers, follow these steps:
+          <p>Steps for deploying a test environment remain the same as for the production environment.</p>
           <ul>
-            <li>Connect to the virtual machine using an SSH client of your choice
-            <li>In the SSH window, type the following command: sudo waagent –deprovision<br />
-            <span style="display: block; font-style: italic; font-size: 12px; margin-top: 3px; color: #000;">(Note that the output from waagent may vary slightly depending on the version of this utility)</span>
-            <li>Type y to continue (you can add the -force parameter to avoid this confirmation step)
-            <li>To close the SSH client, type <span class="codesnip">Exit</span>
-            <li>From your client computer, open Azure CLI and sign in to your Azure subscription
-            <li>To make sure you are in Service Management mode, type the following command:  <span class="codesnip">azure config mode asm</span>
-            <li>To shut down the virtual machine that you deprovisioned in the steps above, type the following command: <span class="codesnip">azure vm shutdown <your-virtual-machine-name></span>
-            <li>When the virtual machine is stopped, capture the image by typing the following command: <span class="codesnip">azure vm capture -t <your-virtual-machine-name> <new-image-name></span>
+            <li>Connect to the virtual machine using an SSH client of your choice</li>
+            <li>In the SSH window, type the following command (note that the output from waagent may vary slightly depending on utility version):<br />
+            <span style="display: block; font-style: italic; font-size: 12px; margin-top: 3px; color: #000;">(Note that the output from waagent may vary slightly depending on the version of this utility)</span></li>
+            <li>Type <span class="codesnip">y</span> to continue, or you can add the <span class="codesnip">-force</span> parameter to avoid this confirmation step</li>
+            <li>Type <span class="codesnip">Exit</span> to close the SSH client</li>
+            <li>From your client computer, open Azure CLI and log on to your Azure subscription</li>
+            <li>Make sure you are in Service Management mode:  <span class="codesnip">azure config mode asm</span></li>
+            <li>Shut down the virtual machine that is already deprovisioned in the steps above with: <span class="codesnip">azure vm shutdown <your-virtual-machine-name></span></li>
+            <li>When the virtual machine is stopped, capture the image with the command: <span class="codesnip">azure vm capture -t <your-virtual-machine-name> <new-image-name></span></li>
+            <li>The new image is now available in the list of images that can be used to configure any new virtual machines</li>
           </ul>
-          <p>The new image is now available in the list of images that can be used to configure any new virtual machines.
-          <p>For more details: <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-capture-image/" target="_blank">Capture Linux Virtual Machine Image</a></p>
+          <p>The new image is now available in the list of images that can be used to configure any new virtual machines.</p>
+          <p>For more details: <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-capture-image/" target="_blank">Capture Linux virtual machine image</a></p>
         </div>
 
         <div class="answer--details answer--details-O"> 
