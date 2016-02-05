@@ -268,6 +268,9 @@ b {
       font-weight: 200;
       float: left;
       margin-right: 50px; }
+      @media all and (max-width: 697px) {
+        .hero--content__text {
+          width: auto; } }
       .hero--content__text h1 {
         font-size: 3.6rem;
         line-height: 4.2rem;
@@ -528,6 +531,9 @@ b {
       margin-left: 50px;
       color: #686868;
       z-index: 25; }
+      @media all and (max-width: 697px) {
+        .answer > div .answer--details {
+          display: none; } }
       .answer > div .answer--details h1 {
         font-size: 5rem;
         line-height: 6rem;
@@ -1094,6 +1100,14 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
       left: 491px; }
 .architecture-4 .answer--infographic7 {
   margin-bottom: 35px; }
+  .architecture-4 .answer--infographic7 .answer--details-E ul li {
+    font-size: 1.3rem; }
+  .architecture-4 .answer--infographic7 .answer--details-E > ul > li > ul {
+    margin-top: 7px;
+    list-style-type: lower-alpha; }
+    .architecture-4 .answer--infographic7 .answer--details-E > ul > li > ul > li > ul {
+      margin-top: 7px;
+      list-style-type: upper-roman; }
 .architecture-4 .question--infographic7 {
   margin-bottom: 50px;
   margin-top: 130px;
@@ -1180,6 +1194,20 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
     .architecture-4 .question--infographic7__content .icons.icons-N svg {
       width: 480px;
       height: 1275px; }
+  .architecture-4 .question--infographic7__content .icons.icons-E {
+    width: 650px;
+    height: 1245px; }
+    .architecture-4 .question--infographic7__content .icons.icons-E svg {
+      width: 650px;
+      height: 1245px; }
+    .architecture-4 .question--infographic7__content .icons.icons-E img {
+      width: 52px;
+      height: 83px;
+      position: absolute;
+      right: 65px;
+      bottom: 167px; }
+    .architecture-4 .question--infographic7__content .icons.icons-E svg path[style="fill:#010101;"] {
+      background: red; }
   .architecture-4 .question--infographic7__content .icons.icons-A {
     left: 380px;
     top: -158px;
@@ -1196,10 +1224,6 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
     left: 225px;
     top: -168px;
     z-index: 2; }
-  .architecture-4 .question--infographic7__content .icons.icons-E {
-    left: 262px;
-    top: -150px;
-    z-index: 3; }
   .architecture-4 .question--infographic7__content .icons.icons-F {
     left: 630px;
     top: -160px;
@@ -1228,12 +1252,16 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
     top: -231px;
     z-index: 4; }
   .architecture-4 .question--infographic7__content .icons.icons-M {
-    left: -40px;
-    top: -340px;
+    left: -80px;
+    top: -270px;
     z-index: 1; }
   .architecture-4 .question--infographic7__content .icons.icons-N {
-    right: -40px;
-    top: -340px;
+    right: -80px;
+    top: -270px;
+    z-index: 1; }
+  .architecture-4 .question--infographic7__content .icons.icons-E {
+    left: -80px;
+    top: -290px;
     z-index: 1; }
 .architecture-4 .question--infographic7left__content {
   height: 300px; }
@@ -1593,29 +1621,23 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
     .wrapper .hero {
       background: none; }
       .wrapper .hero--content {
-        /* Combination of flex-direction AND flex-wrap, default is row AND nowrap */
-        -webkit-flex-flow: column;
-        -moz-flex-flow: column;
-        -ms-flex-flow: column;
-        flex-flow: column;
         height: inherit;
         min-height: inherit;
-        padding: 15px 0; }
+        padding: 15px 0 0; }
         .wrapper .hero--content__text {
-          -webkit-box-flex: 1;
-          -moz-box-flex: 1;
-          -webkit-flex: 1;
-          -ms-flex: 1;
-          flex: 1;
+          width: auto;
           padding: 15px;
-          color: #686868; }
+          color: #686868;
+          margin-right: 0;
+          margin-bottom: 15px; }
           .wrapper .hero--content__text h1 {
             margin-bottom: 15px;
-            line-height: 5rem; }
+            font-size: 3rem;
+            line-height: 3.3rem; }
           .wrapper .hero--content__text p {
             font-weight: 400;
-            line-height: 2.4rem;
-            font-size: 1.6rem; }
+            line-height: 2rem;
+            font-size: 1.4rem; }
 
   .quotes {
     display: none; }
@@ -1626,8 +1648,13 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
   section[class*="info"] {
     display: none; }
 
-  .azuremediaplayer {
-    width: 100% !important;
-    height: auto !important; } }
+  .footer2 {
+    margin-top: -3px; }
+    .footer2--content {
+      padding: 15px; }
+      .footer2--content h1 {
+        margin-bottom: 15px;
+        font-size: 2.5rem;
+        line-height: 2.9rem; } }
 
 /*# sourceMappingURL=main.css.map */

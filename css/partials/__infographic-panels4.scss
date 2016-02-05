@@ -104,11 +104,32 @@
     }
   }
 
-  // [Custom] Question 7 ///////////////////////////////////////////////////////////////////////////////////////////
+  // [Custom] Answer 7 ///////////////////////////////////////////////////////////////////////////////////////////
   .answer--infographic7 {
     margin-bottom: 35px;
-  }
 
+    .answer--details-E {
+
+      ul li  {
+        font-size: 1.3rem;
+      }
+
+      > ul {
+
+        > li > ul {
+          margin-top: 7px;
+          list-style-type: lower-alpha;
+
+          > li > ul {
+            margin-top: 7px;
+            list-style-type: upper-roman;
+          }
+        }
+      }
+    }
+  }
+  
+  // [Custom] Question 7 ///////////////////////////////////////////////////////////////////////////////////////////
   .question--infographic7 {
     margin-bottom: 50px;
     margin-top: 130px;
@@ -234,12 +255,35 @@
         svg { width: 480px; height: 1275px; }
       }
 
+      &.icons-E {
+        width: 650px; 
+        height: 1245px;                            // this contains both the active, and inactive states of the icons 
+        
+                                             // Setting to standard sizing for each icon SVG file
+        svg { width: 650px; height: 1245px; }
+        img { 
+          width: 52px; 
+          height: 83px; 
+          position: absolute;
+          right: 65px;
+          bottom: 167px;
+        }
+
+
+        svg path[style="fill:#010101;"] {
+          background: red;
+        }
+
+        &:hover {
+
+        }
+      }
+
 
       &.icons-A { left: 380px; top: -158px; z-index: 5; }               // Custom positioning for each icon    
       &.icons-B { left: 171px; top: -225px; z-index: 2; }               // Custom positioning for each icon    
       &.icons-C { left: 192px; top: -144px; z-index: 2; }               // Custom positioning for each icon
       &.icons-D { left: 225px; top: -168px; z-index: 2; }               // Custom positioning for each icon
-      &.icons-E { left: 262px; top: -150px; z-index: 3;}    // Custom positioning for each icon
       &.icons-F { left: 630px; top: -160px; z-index: 2; }   // Custom positioning for each icon
       &.icons-G { left: 667px; top: -168px; z-index: 3;}    // Custom positioning for each icon 
       &.icons-H { left: 701px; top: -144px; z-index: 3; }    // Custom positioning for each icon
@@ -247,8 +291,9 @@
       &.icons-J { left: 346px; top: -175px; z-index: 3; }    // Custom positioning for each icon
       &.icons-K { left: 284px; top: -191px; }               // Custom positioning for each icon
       &.icons-O { left: 283px; top: -231px; z-index: 4; }               // Custom positioning for each icon
-      &.icons-M { left: -40px;  top: -340px; z-index: 1; }               // Custom positioning for each icon
-      &.icons-N { right: -40px;  top: -340px; z-index: 1; }               // Custom positioning for each icon
+      &.icons-M { left: -80px;  top: -270px; z-index: 1; }               // Custom positioning for each icon
+      &.icons-N { right: -80px;  top: -270px; z-index: 1; }               // Custom positioning for each icon
+      &.icons-E { left: -80px; top: -290px; z-index: 1;}    // Custom positioning for each icon
     }
   }
 

@@ -14,25 +14,28 @@
       
 
       &--content {
-        @include flex-flow(column);
+        
         height: inherit;
         min-height: inherit;
-        padding: 15px 0;
+        padding: 15px 0 0;
 
         &__text {
-          @include flex(1);
+          width: auto;  
           padding: 15px;
           color: #686868;
+          margin-right: 0;
+          margin-bottom: 15px;
 
           h1 {
             margin-bottom: 15px;
-            line-height: 5rem;
+            font-size: 3rem;
+            line-height: 3.3rem;
           }
 
           p {
             font-weight: 400;
-            line-height: 2.4rem;
-            font-size: 1.6rem;
+            line-height: 2rem;
+            font-size: 1.4rem;
           }
         }
       }
@@ -54,8 +57,18 @@
   }
 
 
-.azuremediaplayer {
-  width: 100% !important;
-  height: auto !important;
-}
+  // Bringing footer closer 
+  .footer2 {
+    margin-top: -3px;
+
+    &--content {
+      padding: 15px;
+
+      h1 {
+        margin-bottom: 15px;
+        font-size: 2.5rem;
+        line-height: 2.9rem;
+      }
+    }
+  }
 }
