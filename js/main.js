@@ -25,9 +25,9 @@ $(document).ready(function(){
     $(whichAnswerContainer).slideDown(500);
 
     // Scrolling the corresponding answer container to the top
-    // $('html, body').animate({
-    //     scrollTop: $(whichAnswerContainer).offset().top -0
-    // }, 0);
+    $('html, body').animate({
+        scrollTop: $(whichAnswerContainer).offset().top -0
+    }, 500);
 
     // Hiding the open answer, so that no more than 1 are open at a time
     $(whichAnswerContainer).find('.answer--details').hide()
