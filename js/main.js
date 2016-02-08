@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 
   // 'X' icon to close the answer panels
-  $('.fa-close').click(function() {
+  $('.close-panel').click(function() {
      $(this).closest('.answer').slideUp(500);
      $('.icons').removeClass('active');
   });
@@ -121,6 +121,12 @@ $(document).ready(function(){
       $(whichQuestionIcon).find('.icons-O').addClass('active').siblings().removeClass('active');                    // Setting active icon
       $(whichAnswerContainer).find('.answer--details-O').show();                                                    // Showing answer 
       $(whichAnswerContainer).find('.answer--nav__O').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
+    }
+
+    if(whichPanel.hasClass('icons-Triple') || whichPanel.hasClass('answer--nav__Triple')) {
+      $(whichQuestionIcon).find('.icons-Triple').addClass('active');                    // Setting active icon
+      $(whichAnswerContainer).find('.answer--details-Triple').show();                                                    // Showing answer 
+      $(whichAnswerContainer).find('.answer--nav__Triple').addClass('active-nav').siblings().removeClass('active-nav');  // Setting active side-nav
     }
   }
 

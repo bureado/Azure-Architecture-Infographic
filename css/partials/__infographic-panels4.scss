@@ -246,8 +246,8 @@
         }
       }
 
-      &.icons-M,
-      &.icons-N {
+      &.icons-O_left,
+      &.icons-O_right {
         width: 480px; 
         height: 1275px;                            // this contains both the active, and inactive states of the icons 
         
@@ -289,10 +289,10 @@
       &.icons-H { left: 701px; top: -144px; z-index: 3; }    // Custom positioning for each icon
       &.icons-I { left: 724px; top: -225px; z-index: 2; }               // Custom positioning for each icon
       &.icons-J { left: 346px; top: -175px; z-index: 3; }    // Custom positioning for each icon
-      &.icons-K { left: 284px; top: -191px; }               // Custom positioning for each icon
+      &.icons-K { left: 284px; top: -191px; z-index: 2; }               // Custom positioning for each icon
       &.icons-O { left: 283px; top: -231px; z-index: 4; }               // Custom positioning for each icon
-      &.icons-M { left: -80px;  top: -270px; z-index: 1; }               // Custom positioning for each icon
-      &.icons-N { right: -80px;  top: -270px; z-index: 1; }               // Custom positioning for each icon
+      &.icons-O_left { left: -80px;  top: -270px; z-index: 1; }               // Custom positioning for each icon
+      &.icons-O_right { left: 550px;  top: -270px; z-index: 1; }               // Custom positioning for each icon
       &.icons-E { left: -80px; top: -290px; z-index: 1;}    // Custom positioning for each icon
     }
   }

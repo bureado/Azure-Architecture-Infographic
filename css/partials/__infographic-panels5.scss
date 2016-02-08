@@ -4,6 +4,15 @@
 
 .architecture-5 {
 
+  // Nested list items
+  ul li ul {
+    list-style-type: lower-alpha !important;
+    margin-top: 7px !important;
+
+    li {
+      font-size: 1em !important;
+    }
+  }
  
   // [Custom] Question 2 ///////////////////////////////////////////////////////////////////////////////////////////
   .question--infographic2 {
@@ -318,7 +327,7 @@
 
 
       &.icons-A { top: -40px; left: 310px; z-index: 1;}   // Custom positioning for each icon
-      &.icons-B { top: -80px; left: 309px; }
+      &.icons-B { top: -80px; left: 297px; }
     }
   }
 

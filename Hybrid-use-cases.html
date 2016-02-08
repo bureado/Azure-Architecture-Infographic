@@ -64,7 +64,7 @@
     <section class="intro">
       <div class="intro--content">
         <div class="intro--content__text">
-          <h1>Solution Brief</h1>
+          <h1>Solution brief</h1>
           <p class="intro--content__text-first">This solution bundles different Azure services to offer best-in-class hybrid cloud infrastructure for your application. Whenever there is a spike in requests, additional user traffic is diverted to Azure-based application infrastructure. Even in the case of an on-premises datacenter failure, this solution ensures availability of your application by redirecting all traffic to Azure. Moreover, you can migrate application workload virtual machines from your datacenter to Azure without having to redeploy the application.</p>
           <p>In today’s world, businesses depend on information technology. A big challenge for any business is to keep business-critical applications available and responsive. When applications go down due to sudden request spikes or underlying infrastructure failure, business losses tend to follow. Traditionally, overcoming this required strategic planning and huge investments to provision additional resources.</p>
           <p>Microsoft Azure provides many opportunities to extend open source line-of-business applications to the cloud. You can easily build an extended datacenter on Azure for fault-proof application infrastructure. Without the expense of provisioning additional resources, you can handle sudden application spikes, fault tolerance, and disaster recovery with a hybrid cloud solution in Azure.</p>
@@ -86,18 +86,18 @@
 <!-- Panel 2 Answers -->
     <section class="answer answer--infographic2">
       <div class="answer--infographic2__content">
-        <i class="fa fa-close"></i>
+        <img class="close-panel" src="img/icon--close.svg" alt="Close Panel" />
 
         <div class="answer--nav">
           <ul>
-            <li class="answer--nav__A" style="border: 2px solid red;">Traffic Manager</li>
+            <li class="answer--nav__A">Traffic Manager</li>
             <li class="answer--nav__B">Azure Load Balancer</li>
           </ul>
         </div>
 
         <div class="answer--details answer--details-A">
-          <h1 style="border: 2px solid red;">Traffic Manager</h1>
-          <p>Where's my copy?</p>
+          <h1>Traffic Manager</h1>
+          <p>Web traffic thresholds for your app defined with on-premises Traffic Manager and cloud burst for additional traffic to Azure cloud</p>
         </div>
 
         <div class="answer--details answer--details-B">
@@ -130,12 +130,11 @@
 <!-- Panel 3 Answers -->
     <section class="answer answer--infographic3">
       <div class="answer--infographic3__content">
-        <i class="fa fa-close"></i>
+        <img class="close-panel" src="img/icon--close.svg" alt="Close Panel" />
 
         <div class="answer--nav">
           <ul>
             <li class="answer--nav__A">Web Tier</li>
-            <li class="answer--nav__B" style="border: 2px solid red;">Surplus Traffic</li>
           </ul>
         </div>
 
@@ -152,12 +151,6 @@
           </ul>
           <p>To create a virtual machine from a specialized VHD: <a href="https://azure.microsoft.com/en-in/documentation/templates/201-vm-from-specialized-vhd/" target="_blank">Azure Resource Manager template</a></p>
         </div>
-
-        <div class="answer--details answer--details-B">
-          <h1 style="border: 2px solid red;">Surplus traffic diverted to azure cloud</h1>
-          <p>Where's my copy?</p>
-        </div>
-
       </div>
     </section>
 
@@ -171,7 +164,7 @@
 <!-- Panel 4 Answers -->
     <section class="answer answer--infographic4">
       <div class="answer--infographic4__content">
-        <i class="fa fa-close"></i>
+        <img class="close-panel" src="img/icon--close.svg" alt="Close Panel" />
 
         <div class="answer--nav">
           <ul>
@@ -206,7 +199,7 @@
 <!-- Panel 5 Answers -->
     <section class="answer answer--infographic5">
       <div class="answer--infographic5__content">
-        <i class="fa fa-close"></i>
+        <img class="close-panel" src="img/icon--close.svg" alt="Close Panel" />
 
         <div class="answer--nav">
           <ul>
@@ -214,7 +207,7 @@
             <li class="answer--nav__B">Scale Cloud</li>
             <li class="answer--nav__D">Azure ExpressRoute</li>
             <li class="answer--nav__E">Azure VPN</li>
-            <li class="answer--nav__F">Azure Active Directory</li>
+            <li class="answer--nav__F">Azure Active Directory LDAP</li>
           </ul>
         </div>
 
@@ -268,16 +261,16 @@
             <li>Configure your VPN device</li>
             <li>Verify your local network ranges and VPN gateway IP address</li>
           </ul>
-          <p>For more information: Configuring a VPN gateway</a></p>
+          <p>For more information: <a href="https://azure.microsoft.com/en-in/documentation/articles/vpn-gateway-configure-vpn-gateway-mp/" target="_blank">Configuring a VPN gateway</a></p>
         </div>
 
         <div class="answer--details answer--details-F">
-          <h1>Active Directory LDAP</h1>
+          <h1>Azure Active Directory LDAP</h1>
           <p>If you have a Lightweight Directory Access Protocol (LDAP) service and you want to synchronize user identities between Azure and your on-premises environment, then you can deploy additional LDAP services on Azure virtual machines and synchronize with your on-premises LDAP directory. If you have Windows Active Directory, you can use Azure Active Directory (AD) Connect to integrate your on-premises Windows Server Active Directory with Azure Active Directory (AAD) and connect your users to Office 365, Azure, and thousands of software-as-a-service applications. Integrating your on-premises directories with AAD enables your users to be more productive by providing a common identity for accessing both cloud and on-premises resources.</p>
-          <p>For more information: <a href="https://azure.microsoft.com/en-in/documentation/articles/active-directory-whatis" target="_blank">What is Azure Active Directory?/</a></p>
+          <p>For more information: <a href="https://azure.microsoft.com/en-in/documentation/articles/active-directory-whatis" target="_blank">What is Azure Active Directory?</a></p>
           <p>To download and install Azure AD Connect, follow the steps below:</p>
           <ul>
-            <li>Download Azure AD Connect from <a href="https://www.microsoft.com/en-us/download/details.aspx?id=47594" target="_blank">https://www.microsoft.com/en-us/download/details.aspx?id=47594</a></li>
+            <li>Download <a href="https://www.microsoft.com/en-us/download/details.aspx?id=47594" target="_blank">Azure AD Connect</a></li>
             <li>Log on as a local administrator to the server you wish to install Azure AD Connect on (this server should be the sync server)</li>
             <li>Run the AzureADConnect.msi file</li>
             <li>On the Welcome screen, select the box agreeing to the licensing terms, and then click Continue</li>
@@ -303,7 +296,7 @@
 <!-- Panel 6 Answers -->
     <section class="answer answer--infographic6">
       <div class="answer--infographic6__content">
-        <i class="fa fa-close"></i>
+        <img class="close-panel" src="img/icon--close.svg" alt="Close Panel" />
 
         <div class="answer--nav">
           <ul>
@@ -566,9 +559,9 @@ AAAAAAAAAAAAYAL8vwADAE2w9GeHoFMeAAAAAElFTkSuQmCC" transform="matrix(.1128 0 0 -.
     <footer class="panel footer2">
       <div class="panel--content footer2--content">
         <div class="footer2--content__text">
-          <h1>Additional Resources:</h1>
+          <h1>Additional resources:</h1>
           <ul>
-            <li><a href="https://azure.microsoft.com/en-in/overview/choose-azure-opensource/" target="_blank">Choose Azure open source <img src="img/button--arrow.svg" /></a></li>
+            <li><a href="https://azure.microsoft.com/en-in/overview/choose-azure-opensource/" target="_blank">Azure Open Source <img src="img/button--arrow.svg" /></a></li>
             <li><a href="https://azure.microsoft.com/en-in/blog/expanding-linux-and-oss-support-on-azure/" target="_blank">Expanding Linux and OSS support <br />on Azure <img src="img/button--arrow.svg" /></a></li>
             <li><a href="https://azure.microsoft.com/en-in/documentation/articles/resource-group-overview/" target="_blank">Azure Resource Manager <img src="img/button--arrow.svg" /></a></li>
             <li><a href="https://azure.microsoft.com/en-in/services/" target="_blank">Azure Services <img src="img/button--arrow.svg" /></a></li>

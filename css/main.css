@@ -475,15 +475,26 @@ b {
   margin-bottom: 75px;
   z-index: 5;
   position: relative; }
-  .answer i {
-    font-size: 20px;
+  .answer img {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    display: block;
     position: absolute;
     right: 10%;
     top: 25px;
-    color: #686868; }
-    .answer i:hover {
-      cursor: pointer;
-      color: #000; }
+    filter: alpha(opactiy=70);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7; }
+    .answer img:hover {
+      filter: alpha(opactiy=100);
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      -moz-opacity: 1;
+      -khtml-opacity: 1;
+      opacity: 1;
+      cursor: pointer; }
   .answer > div {
     padding: 50px 0;
     width: 960px;
@@ -1186,12 +1197,12 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
     .architecture-4 .question--infographic7__content .icons.icons-O svg {
       width: 315px;
       height: 275px; }
-  .architecture-4 .question--infographic7__content .icons.icons-M, .architecture-4 .question--infographic7__content .icons.icons-N {
+  .architecture-4 .question--infographic7__content .icons.icons-O_left, .architecture-4 .question--infographic7__content .icons.icons-O_right {
     width: 480px;
     height: 1275px; }
-    .architecture-4 .question--infographic7__content .icons.icons-M img,
-    .architecture-4 .question--infographic7__content .icons.icons-M svg, .architecture-4 .question--infographic7__content .icons.icons-N img,
-    .architecture-4 .question--infographic7__content .icons.icons-N svg {
+    .architecture-4 .question--infographic7__content .icons.icons-O_left img,
+    .architecture-4 .question--infographic7__content .icons.icons-O_left svg, .architecture-4 .question--infographic7__content .icons.icons-O_right img,
+    .architecture-4 .question--infographic7__content .icons.icons-O_right svg {
       width: 480px;
       height: 1275px; }
   .architecture-4 .question--infographic7__content .icons.icons-E {
@@ -1246,17 +1257,18 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
     z-index: 3; }
   .architecture-4 .question--infographic7__content .icons.icons-K {
     left: 284px;
-    top: -191px; }
+    top: -191px;
+    z-index: 2; }
   .architecture-4 .question--infographic7__content .icons.icons-O {
     left: 283px;
     top: -231px;
     z-index: 4; }
-  .architecture-4 .question--infographic7__content .icons.icons-M {
+  .architecture-4 .question--infographic7__content .icons.icons-O_left {
     left: -80px;
     top: -270px;
     z-index: 1; }
-  .architecture-4 .question--infographic7__content .icons.icons-N {
-    right: -80px;
+  .architecture-4 .question--infographic7__content .icons.icons-O_right {
+    left: 550px;
     top: -270px;
     z-index: 1; }
   .architecture-4 .question--infographic7__content .icons.icons-E {
@@ -1377,6 +1389,11 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
 .architecture-4 .footer1 {
   margin-top: 400px; }
 
+.architecture-5 ul li ul {
+  list-style-type: lower-alpha !important;
+  margin-top: 7px !important; }
+  .architecture-5 ul li ul li {
+    font-size: 1em !important; }
 .architecture-5 .question--infographic2 {
   margin-top: -1px;
   margin-left: 0; }
@@ -1611,7 +1628,7 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
     z-index: 1; }
   .architecture-5 .question--infographic9__content .icons.icons-B {
     top: -80px;
-    left: 309px; }
+    left: 297px; }
 .architecture-5 .footer1 {
   margin-top: 400px; }
 
