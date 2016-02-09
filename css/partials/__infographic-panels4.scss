@@ -342,6 +342,17 @@
         height: 250px;    
       }
 
+      &.icons-A {                               // Custom sizing / position for the 'Azure Management Tools' image
+        width: 230px;
+        height: 250px;
+
+        img,
+        svg {
+          width: 230px;
+          height: 250px;
+        }
+      }
+
       &.icons-B {                               // Custom sizing / position for the 'Azure Management Tools' image
         width: 160px;
         height: 475px;
@@ -476,7 +487,7 @@
 
 
 
-      &.icons-A { top: -190px; left: 408px; z-index: 1;}   // Custom positioning for each icon
+      &.icons-A { top: -190px; left: 360px; z-index: 1;}   // Custom positioning for each icon
       &.icons-C { top: -100px; left: 197px; }
       &.icons-D { top: -100px; left: 334px; }
       &.icons-E { top: -101px; left: 587px; }
@@ -485,7 +496,5 @@
 
 
 
-  .footer1 {
-    margin-top: 400px;
-  }
+
 }

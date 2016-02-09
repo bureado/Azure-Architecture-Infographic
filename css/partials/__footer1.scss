@@ -3,39 +3,63 @@
 .footer1 {
   width: 100%;
   background: #00bcf2;
+  margin-top: 50px;
+
+  @include respond-to(mobile) {
+    margin-top: -1px;
+  }
 
   &--content {
-    padding: 75px 0;
+    padding: 55px 0 105px;
     
+    @include respond-to(mobile) {
+      padding: 30px 0 30px 0;
+    }
+
     &__text {
       color: #fff;
 
       h1 {
-        font-size: 4.4rem;
-        line-height: 6rem;
-        letter-spacing: -.2rem;
-        font-weight: 200;
+        font-size: 3.2rem;
+        line-height: 4.2rem;
+        font-weight: 100;
         display: inline-block;
+        float:left;
+
+        @include respond-to(mobile) {
+          float:none;
+          margin: 0 0 15px 15px;
+          margin-bottom: 15px;
+          font-size: 2.5rem;
+          line-height: 2.9rem;
+        }
       }
 
       a {
-        font-size: 2.5rem;
-        padding: 15px 40px 15px 25px;
+        font-size: 2.2rem;
+        padding: 15px 40px 15px 20px;
+        margin-left: 20px;
         display: block;
         background: #80c247;
         color: #fff;
         text-decoration: none;
         font-weight: 200;
-        margin-top: 9px;
-        float: right;
+        float: left;
         position: relative;
 
+        @include respond-to(mobile) {
+          float:none;
+          font-size: 1.8rem;
+          padding: 15px 40px 15px 20px;
+          margin: 15px 15px 15px 15px;
+        }
+
         img {
-          width: 16px;
+          width: 12px;
           margin-left: 5px;
           position: absolute;
-          right: 15px;
-          top: 15px;
+          right: 17px;
+          top: 17px;
         }
       }
     }

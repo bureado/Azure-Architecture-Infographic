@@ -351,67 +351,98 @@ b {
     max-width: 960px;
     margin: 0 auto; }
     .intro--content__text {
-      color: #fff;
-      -webkit-column-count: 2;
-      -moz-column-count: 2;
-      column-count: 2;
-      -webkit-column-gap: 2rem;
-      -moz-column-gap: 2rem;
-      column-gap: 2rem; }
+      color: #fff; }
       .intro--content__text h1 {
         font-size: 3.6rem;
         line-height: 4.2rem;
         font-weight: 100;
-        margin-bottom: 10px;
-        -webkit-column-span: all;
-        -moz-column-span: all;
-        column-span: all; }
+        margin-bottom: 10px; }
       .intro--content__text p {
         font-size: 1.6rem;
         line-height: 2.1rem;
         margin-bottom: 20px;
         font-weight: 200; }
         .intro--content__text p.intro--content__text-first {
-          font-size: 2.2rem;
-          line-height: 2.8rem;
+          font-size: 2.5rem;
+          line-height: 3.3rem;
           font-weight: 400;
           margin-bottom: 40px; }
+      .intro--content__text button {
+        background: none;
+        border: 0;
+        font-size: 2rem;
+        padding: 10px 0;
+        float: right; }
+        .intro--content__text button:hover {
+          text-decoration: underline; }
+        .intro--content__text button:focus {
+          outline: none; }
+    .intro--content .intro--content__collapsed {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+      -webkit-column-gap: 4rem;
+      -moz-column-gap: 4rem;
+      column-gap: 4rem;
+      display: none;
+      overflow: hidden; }
+      .intro--content .intro--content__collapsed.expanded {
+        display: block; }
 
 .footer1 {
   width: 100%;
-  background: #00bcf2; }
+  background: #00bcf2;
+  margin-top: 50px; }
+  @media all and (max-width: 697px) {
+    .footer1 {
+      margin-top: -1px; } }
   .footer1--content {
-    padding: 75px 0; }
+    padding: 55px 0 105px; }
+    @media all and (max-width: 697px) {
+      .footer1--content {
+        padding: 30px 0 30px 0; } }
     .footer1--content__text {
       color: #fff; }
       .footer1--content__text h1 {
-        font-size: 4.4rem;
-        line-height: 6rem;
-        letter-spacing: -.2rem;
-        font-weight: 200;
-        display: inline-block; }
+        font-size: 3.2rem;
+        line-height: 4.2rem;
+        font-weight: 100;
+        display: inline-block;
+        float: left; }
+        @media all and (max-width: 697px) {
+          .footer1--content__text h1 {
+            float: none;
+            margin: 0 0 15px 15px;
+            margin-bottom: 15px;
+            font-size: 2.5rem;
+            line-height: 2.9rem; } }
       .footer1--content__text a {
-        font-size: 2.5rem;
-        padding: 15px 40px 15px 25px;
+        font-size: 2.2rem;
+        padding: 15px 40px 15px 20px;
+        margin-left: 20px;
         display: block;
         background: #80c247;
         color: #fff;
         text-decoration: none;
         font-weight: 200;
-        margin-top: 9px;
-        float: right;
+        float: left;
         position: relative; }
+        @media all and (max-width: 697px) {
+          .footer1--content__text a {
+            float: none;
+            font-size: 1.8rem;
+            padding: 15px 40px 15px 20px;
+            margin: 15px 15px 15px 15px; } }
         .footer1--content__text a img {
-          width: 16px;
+          width: 12px;
           margin-left: 5px;
           position: absolute;
-          right: 15px;
-          top: 15px; }
+          right: 17px;
+          top: 17px; }
 
 .footer2 {
   width: 100%;
-  background: #686868;
-  margin-top: 50px; }
+  background: #686868; }
   .footer2--content {
     padding: 50px 0 40px; }
     .footer2--content__text {
@@ -985,6 +1016,13 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
       fill: #00bcf2; }
     .architecture-3 .question--infographic8__content .icons.icons-B.active svg g[stroke="#010101"] {
       stroke: #00bcf2; }
+  .architecture-3 .question--infographic8__content .icons.icons-A {
+    width: 230px;
+    height: 250px; }
+    .architecture-3 .question--infographic8__content .icons.icons-A img,
+    .architecture-3 .question--infographic8__content .icons.icons-A svg {
+      width: 230px;
+      height: 250px; }
   .architecture-3 .question--infographic8__content .icons.icons-C {
     width: 217px;
     height: 475px; }
@@ -1017,7 +1055,7 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
       fill: #00bcf2; }
   .architecture-3 .question--infographic8__content .icons.icons-A {
     top: -190px;
-    left: 431px;
+    left: 375px;
     z-index: 1; }
   .architecture-3 .question--infographic8__content .icons.icons-B {
     top: -100px;
@@ -1028,8 +1066,6 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
   .architecture-3 .question--infographic8__content .icons.icons-D {
     top: -101px;
     left: 605px; }
-.architecture-3 .footer1 {
-  margin-top: 400px; }
 
 .architecture-4 .question--infographic2 {
   margin-top: -1px; }
@@ -1309,6 +1345,13 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
   .architecture-4 .question--infographic8__content .icons svg {
     width: 127px;
     height: 250px; }
+  .architecture-4 .question--infographic8__content .icons.icons-A {
+    width: 230px;
+    height: 250px; }
+    .architecture-4 .question--infographic8__content .icons.icons-A img,
+    .architecture-4 .question--infographic8__content .icons.icons-A svg {
+      width: 230px;
+      height: 250px; }
   .architecture-4 .question--infographic8__content .icons.icons-B {
     width: 160px;
     height: 475px; }
@@ -1375,7 +1418,7 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
       fill: #00bcf2; }
   .architecture-4 .question--infographic8__content .icons.icons-A {
     top: -190px;
-    left: 408px;
+    left: 360px;
     z-index: 1; }
   .architecture-4 .question--infographic8__content .icons.icons-C {
     top: -100px;
@@ -1386,8 +1429,6 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
   .architecture-4 .question--infographic8__content .icons.icons-E {
     top: -101px;
     left: 587px; }
-.architecture-4 .footer1 {
-  margin-top: 400px; }
 
 .architecture-5 ul li ul {
   list-style-type: lower-alpha !important;
@@ -1629,8 +1670,6 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
   .architecture-5 .question--infographic9__content .icons.icons-B {
     top: -80px;
     left: 297px; }
-.architecture-5 .footer1 {
-  margin-top: 400px; }
 
 @media all and (max-width: 697px) {
   .wrapper {

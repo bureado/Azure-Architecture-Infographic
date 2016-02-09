@@ -17,6 +17,12 @@ $(document).ready(function(){
      $('.icons').removeClass('active');
   });
 
+  // Solution brief collapsing text 
+  $('.intro--content__button').click(function() {
+    $('.intro--content__collapsed').toggleClass("expanded");
+    $(this).hide();
+
+  });
 
 
   // Function to toggle the answers
