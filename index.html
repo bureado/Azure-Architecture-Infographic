@@ -128,6 +128,7 @@
             <li>Verify your local network ranges and VPN gateway IP address</li>
           </ul>
           <p>For more information: <a href="https://azure.microsoft.com/en-us/documentation/articles/vpn-gateway-configure-vpn-gateway-mp/" target="_blank">Configuring a VPN gateway</a></p>
+          <p>To create a virtual network with two subnets, a local network, and a VPN gateway: <a href="https://azure.microsoft.com/en-us/documentation/templates/arm-asm-s2s/" target="_blank">Azure Resource Manager template</a></p>
         </div>
 
         <div class="answer--details answer--details-D">
@@ -219,6 +220,7 @@
             <li>Modify the application to accept a security token, if required</li>
           </ul>
           <p>For more information: <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/" target="_blank">Azure AD on-premises identities</a></p>
+          <p>To create a new Azure AD domain with two domain controllers: <a href="https://azure.microsoft.com/en-us/documentation/templates/active-directory-new-domain-ha-2-dc/" target="_blank">Azure Resource Manager template</a></p>
         </div>
       </div>
     </section>
@@ -274,6 +276,12 @@
           <h1>Azure Web Apps</h1>
           <p>Azure Web Apps is a fully managed platform to quickly create and deploy mission-critical web apps for your development and test environment. Azure Web Apps allows developers to rapidly build, deploy, and manage business-critical applications built on .NET, Node.js, PHP, Python, and Java. With Azure, you have more choice of supported web development platforms including WordPress, Umbraco, Joomla, and Drupal. Azure Web Apps allows you to set up continuous integration and deployment workflows with VSO, GitHub, TeamCity, Hudson, or Bitbucket—enabling you to automatically build, test, and deploy your web app on each successful code check-in or integration test. Similar to production on Azure, development and testing web services can be provisioned.</p>
           <p>To create a web application or do a free trial: <a href="https://azure.microsoft.com/en-us/services/app-service/web/" target="_blank">Azure Web Apps</a></p>
+
+<p>To create a web app plus Redis Cache using a template: <a href="https://azure.microsoft.com/en-us/documentation/templates/201-web-app-with-redis-cache/" target="_blank">Azure Resource Manager template</a></p>
+<p>To create an Azure web app with GoLang extension using a template: <a href="https://azure.microsoft.com/en-us/documentation/templates/101-webapp-with-golang/" target="_blank">Azure Resource Manager template</a></p>
+<p>Create a scalable Umbraco CMS web app using a template: <a href="https://azure.microsoft.com/en-us/documentation/templates/umbraco-cms-webapp-redis-cache/" target="_blank">Azure Resource Manager template</a></p>
+
+
           <p>To configure Azure Web Apps and deploy web servers for your open source application:</p>
           <ul>
             <li>Set up the development environment for your PHP using Git</li>
@@ -441,6 +449,9 @@
           <p>Your application may use structured databases that can contain any type of data including image gallery, any type of list, or any other type of business application data. Azure provides preconfigured virtual machine images for different open source structure databases such as MySQL, MariaDB, PostgreSQL, SQLite, and other databases. With preconfigured virtual machine images for open source relation databases, you can develop your development and test environment and leverage your skill set over Azure infrastructure. This Azure solution gives you the flexibility of cloud infrastructure and allows you to build a database tier with minimum compute resources and the ability to scale up or down anytime to meet changing requirements.</p>
           <p>Different approaches are available to deploy database servers with high availability. A multi-master cluster or traditional master-slave cluster can be created to deploy a robust, scalable, and reliable database tier for your application on Azure Virtual Machines—to be run in your development and test environment.</p>
           <p>For more information: <a href="https://azure.microsoft.com/en-us/documentation/articles/store-php-create-mysql-database/" target="_blank">How to create a MySQL database in Azure</a> and <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-mariadb-cluster/" target="_blank">MariaDB (MySQL) cluster Azure tutorial</a></p>
+          <p>To deploy MySQL Server on an Ubuntu VM: <a href="https://azure.microsoft.com/en-us/documentation/templates/mysql-standalone-server-ubuntu/" target="_blank">Azure Resource Manager template</a></p>
+          <p>To deploy MariaDB Enterprise Cluster + MariaDB MaxScale: <a href="https://azure.microsoft.com/en-us/marketplace/partners/mariadb/cluster-maxscale/" target="_blank">Azure Resource Manager template</a></p>
+
           <p>To deploy a database for your application on Azure Virtual Machines using a pre-built database virtual machine image from Marketplace (you can also deploy manually on a base Linux virtual machine):</p>
           <ul>
             <li>Go to your Azure subscription</li>
@@ -608,7 +619,7 @@
 
         <div class="answer--nav">
           <ul>
-            <li class="answer--nav__A">Operational Management Tier</li>
+            <li class="answer--nav__A">Operational management tier</li>
             <li class="answer--nav__C">Azure management tools</li>
             <li class="answer--nav__D">Microsoft Operations Management Suite for Linux</li>
             <li class="answer--nav__E">Management tools for Docker</li>
@@ -616,7 +627,7 @@
         </div>
 
         <div class="answer--details answer--details-A">
-          <h1>Operational Management Tier</h1>
+          <h1>Operational management tier</h1>
           <p>Applications sent on PaaS over IaaS using Docker on Azure and other Azure services have a wide range of management tools to manage Azure resources, applications, and Linux with Docker. These management tools provide you with a simplified way to manage both your applications running on open source as well as your development and test environment on Azure infrastructure.</p>
         </div>
 
