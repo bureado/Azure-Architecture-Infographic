@@ -8,7 +8,7 @@
 .navigation--desktop {
   width: 100%;
   background: #fff;
-  padding: 50px 0;
+  padding: 50px 0 0;
   display: block;
 
   nav {
@@ -26,20 +26,22 @@
         a {
           text-decoration: none;
           color: #00bcf2;
+          border: 3px solid #00bcf2;
+          border-bottom: 0;
           font-weight: 600;
           font-size: 1.2rem;
           line-height: 1.5rem;
-          text-align: center;
+          text-align: left;
           padding: 10px;
           margin: 0;
           display: block;
           width: 230px;
-          height: 65px;
-          padding-top: 18px;
+          height: 59px;
+          padding-top: 11px;
         }
 
         &:hover a {
-          background: #EFFCFF;
+          
         }
 
         &:last-child a {

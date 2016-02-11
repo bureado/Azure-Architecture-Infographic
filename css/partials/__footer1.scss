@@ -36,8 +36,8 @@
       }
 
       a {
-        font-size: 2.2rem;
-        padding: 15px 40px 15px 20px;
+        font-size: 2rem;
+        padding: 15px 40px 15px 15px;
         margin-left: 20px;
         display: block;
         background: #80c247;
@@ -46,20 +46,31 @@
         font-weight: 200;
         float: left;
         position: relative;
+        line-height: 21px;
+
+        &:hover {
+          background: #71AD3E;
+        }
 
         @include respond-to(mobile) {
           float:none;
-          font-size: 1.8rem;
+          font-size: 1.6rem;
           padding: 15px 40px 15px 20px;
           margin: 15px 15px 15px 15px;
         }
 
         img {
-          width: 12px;
+          width: 13px;
           margin-left: 5px;
           position: absolute;
           right: 17px;
-          top: 17px;
+          top: 16px;
+          line-height: 49px;
+
+          @include respond-to(mobile) {
+            width: 15px;
+            top: 24px;
+          }
         }
       }
     }

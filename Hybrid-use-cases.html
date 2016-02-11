@@ -26,9 +26,9 @@
     <section class="navigation navigation--desktop">
       <nav>
         <ul>
-          <li><a href="index.html">Cloud-powered development and testing</a></li>
+          <li><a href="index.html">Cloud-powered <br />development and testing</a></li>
+          <li><a href="Container-based-application-architectures.html">Container-based <br />application architectures</a></li>
           <li class="navigation--active"><a>Hybrid use cases</a></li>
-          <li><a href="Container-based-application-architectures.html">Container-based application architectures</a></li>
           <li><a href="Flexible--IoT_backends.html">Flexible IoT backends</a></li>
         </ul>
       </nav>
@@ -53,9 +53,9 @@
           <h1>Hybrid use cases for open source-based line-of-business web applications</h1>
           <p>It seems that today’s marketplace offers no compromise. Either you go all in on the cloud, or you commit to a single development model. Microsoft Azure offers a hybrid, open cloud for use cases such as cloud bursting and workload mobility.</p>
         </div>
-
-        <iframe src="https://player.vimeo.com/video/153839239?title=0&byline=0&portrait=0" width="400" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        
+        <div class="videoWrapper">
+          <iframe src="https://player.vimeo.com/video/153839239?title=0&byline=0&portrait=0" width="400" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
         <div class="clearfix"></div>
       </div>
     </section>
@@ -66,26 +66,30 @@
         <div class="intro--content__text">
           <h1>Solution brief</h1>
           <p class="intro--content__text-first">
-            This solution bundles different Azure services to offer best-in-class hybrid cloud infrastructure for your application. Whenever there is a spike in requests, additional user traffic is diverted to Azure-based application infrastructure. Even in the case of an on-premises datacenter failure, this solution ensures availability of your application by redirecting all traffic to Azure. Moreover, you can migrate application workload virtual machines from your datacenter to Azure without having to redeploy the application.
-            <button class="intro--content__button">VIEW SOLUTION BRIEF</button>
+            <span class="summary">This solution bundles different Azure services to offer best-in-class hybrid cloud infrastructure for your application. Whenever there is a spike in requests...</span>
+            <span class="fulllength">This solution bundles different Azure services to offer best-in-class hybrid cloud infrastructure for your application. Whenever there is a spike in requests, additional user traffic is diverted to Azure-based application infrastructure.  Even in the case of an on-premises datacenter failure, this solution ensures availability of your application by redirecting all traffic to Azure. Moreover, you can migrate application workload virtual machines from your datacenter to Azure without having to redeploy the application.</span>
+            <button class="intro--content__button-open">VIEW SOLUTION BRIEF</button>
             <div class="clearfix"></div>
           </p>
-
-
 
           <div class="intro--content__collapsed">
             <p>In today’s world, businesses depend on information technology. A big challenge for any business is to keep business-critical applications available and responsive. When applications go down due to sudden request spikes or underlying infrastructure failure, business losses tend to follow. Traditionally, overcoming this required strategic planning and huge investments to provision additional resources.</p>
             <p>Microsoft Azure provides many opportunities to extend open source line-of-business applications to the cloud. You can easily build an extended datacenter on Azure for fault-proof application infrastructure. Without the expense of provisioning additional resources, you can handle sudden application spikes, fault tolerance, and disaster recovery with a hybrid cloud solution in Azure.</p>
+            <button class="intro--content__button-close">COLLAPSE SOLUTION BRIEF</button>
           </div>
         </div>
       </div>
     </section>
 
+<!-- Mobile: Read more -->
+    <section class="mobile-tooltip">
+      <p>For the full solutions architecture breakdown, view on desktop screen format!</p>
+    </section>
  
 <!-- Panel 1: Overview header -->
     <section class="panel infographic1">
       <div class="panel--content infographic1--content">
-        <h1>OVERVIEW</h1>
+        <h1>Overview</h1>
         <p>This scenario focuses on what the Azure hybrid value proposition means to Linux and open source users. The cloud bursting scenario is covered.</p>
         <img src="img/infographic2/fullwidth--infographic__1.svg" />
       </div>
@@ -310,13 +314,13 @@
 
         <div class="answer--nav">
           <ul>
-            <li class="answer--nav__A">Order Management Tier</li>
+            <li class="answer--nav__A">Operational management tier</li>
             <li class="answer--nav__B">Identity Tier</li>
           </ul>
         </div>
 
         <div class="answer--details answer--details-A">
-          <h1>Order Management Tier</h1>
+          <h1>Operational management tier</h1>
           <p>Microsoft provides a variety of tools for managing Azure resources. This section summarizes the different management tools for Azure.</p>
           <ul>
             <li><b>Azure portal:</b> Lets you build, manage, and monitor everything from simple web apps to complex cloud apps from a single, unified console.</li>
@@ -570,7 +574,7 @@ AAAAAAAAAAAAYAL8vwADAE2w9GeHoFMeAAAAAElFTkSuQmCC" transform="matrix(.1128 0 0 -.
       <div class="panel--content footer1--content">
         <div class="footer1--content__text">
           <h1>Download more information:</h1>
-          <a href="#">Visio and Word Doc Download <img src="img/button--arrow.svg" alt="Visio and Word Doc Download" /></a>
+          <a href="#">Architectural Blueprint and Reference Architecture <img src="img/button--arrow.svg" alt="Visio and Word Doc Download" /></a>
         </div>
       </div>
     </footer>

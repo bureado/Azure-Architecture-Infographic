@@ -7,7 +7,7 @@
   margin-top: -40px;
 
   &--content {
-    padding: 75px 0 75px 0;
+    padding: 75px 0 121px 0;
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
@@ -20,15 +20,15 @@
         font-size: 3.6rem;
         line-height: 4.2rem;
         font-weight: 100;
-        margin-bottom: 10px;
+        margin-bottom: 18px;
 
       }
 
       p {
         font-size: 1.6rem;
-        line-height: 2.1rem;
+        line-height: 2.2rem;
         margin-bottom: 20px;
-        font-weight: 200;
+        font-weight: 400;
 
         &.intro--content__text-first {
           font-size: 2.5rem;
@@ -36,18 +36,42 @@
           font-weight: 400;
           margin-bottom: 40px;
           position: relative;
+
+          .fulllength {
+            display: none;
+          }
         }
       }
 
-      button {
+      button.intro--content__button-open {
         background: none;
-        font-size: 1.6rem;
+        font-size: 17px;
         padding: 5px 15px;
-        float: right;
         border: 2px solid #fff;
         position: absolute;
-        bottom: -75px;
-        left: 357px;
+        bottom: -85px;
+        left: 0px;
+        height: 50px;
+        
+        &:hover {
+          background: #fff;
+          color: #21BBEE;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button.intro--content__button-close {
+        background: none;
+        font-size: 17px;
+        padding: 5px 15px;
+        border: 2px solid #fff;
+        position: absolute;
+        bottom: -85px;
+        left: 0px;
+        height: 50px;
 
         &:hover {
           background: #fff;
@@ -69,10 +93,32 @@
       -moz-column-gap: 4rem;
       column-gap: 4rem;
       display: none;
-      overflow: hidden;
+      height: auto;
+      position: relative;
 
       &.expanded {
         display: block;
+        height: auto;
+        
+
+        p {
+          position: relative;
+
+          .collapse {
+            position: absolute;
+            right: 15px;
+            bottom: -15px;
+            font-style: italic;
+            font-size: 12px;
+            @include opacity(.5);
+            background: red;
+
+            &:hover {
+              @include opacity(1);
+              cursor: pointer;
+            }
+          }
+        }
       }
     }
   }
