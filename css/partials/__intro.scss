@@ -35,19 +35,23 @@
           line-height: 3.3rem;
           font-weight: 400;
           margin-bottom: 40px;
-
+          position: relative;
         }
       }
 
       button {
         background: none;
-        border: 0;
-        font-size: 2rem;
-        padding: 10px 0;
+        font-size: 1.6rem;
+        padding: 5px 15px;
         float: right;
+        border: 2px solid #fff;
+        position: absolute;
+        bottom: -75px;
+        left: 357px;
 
         &:hover {
-          text-decoration: underline;
+          background: #fff;
+          color: #21BBEE;
         }
 
         &:focus {

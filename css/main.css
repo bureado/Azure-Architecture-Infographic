@@ -366,15 +366,20 @@ b {
           font-size: 2.5rem;
           line-height: 3.3rem;
           font-weight: 400;
-          margin-bottom: 40px; }
+          margin-bottom: 40px;
+          position: relative; }
       .intro--content__text button {
         background: none;
-        border: 0;
-        font-size: 2rem;
-        padding: 10px 0;
-        float: right; }
+        font-size: 1.6rem;
+        padding: 5px 15px;
+        float: right;
+        border: 2px solid #fff;
+        position: absolute;
+        bottom: -75px;
+        left: 357px; }
         .intro--content__text button:hover {
-          text-decoration: underline; }
+          background: #fff;
+          color: #21BBEE; }
         .intro--content__text button:focus {
           outline: none; }
     .intro--content .intro--content__collapsed {
@@ -1678,12 +1683,11 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
       background: none; }
       .wrapper .hero--content {
         height: inherit;
-        min-height: inherit;
         padding: 15px 0 0; }
         .wrapper .hero--content__text {
           width: auto;
           padding: 15px;
-          color: #686868;
+          color: #222;
           margin-right: 0;
           margin-bottom: 15px; }
           .wrapper .hero--content__text h1 {
@@ -1695,14 +1699,27 @@ svg.infographic--6__fullwidth .icons-A.active .button .circle {
             line-height: 2rem;
             font-size: 1.4rem; }
 
-  .quotes {
-    display: none; }
-
-  .intro {
+  .intro--content {
+    padding-top: 55px;
+    padding-bottom: 0; }
+    .intro--content__text {
+      padding: 20px; }
+  .intro p {
+    font-size: 1.4rem !important;
+    line-height: 2rem !important; }
+  .intro .intro--content__button,
+  .intro .intro--content__collapsed {
     display: none; }
 
   section[class*="info"] {
     display: none; }
+
+  section.infographic1 {
+    display: block; }
+    section.infographic1 p {
+      width: auto; }
+    section.infographic1 img {
+      display: none; }
 
   .footer2 {
     margin-top: -3px; }

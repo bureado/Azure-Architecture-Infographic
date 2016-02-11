@@ -11,18 +11,16 @@
 
     .hero {
       background: none;
-      
 
       &--content {
         
         height: inherit;
-        min-height: inherit;
         padding: 15px 0 0;
 
         &__text {
           width: auto;  
           padding: 15px;
-          color: #686868;
+          color: #222;
           margin-right: 0;
           margin-bottom: 15px;
 
@@ -42,13 +40,25 @@
     }
   }
 
-  // Hiding quotes panel
-  .quotes {
-    display: none;
-  }
-
   .intro {
-    display: none;
+
+    &--content {
+      padding-top: 55px;
+      padding-bottom: 0;
+      &__text {
+        padding: 20px;
+      }
+    }
+
+    p {
+      font-size: 1.4rem !important;
+      line-height: 2rem !important;
+    }
+
+    .intro--content__button,
+    .intro--content__collapsed {
+      display: none;
+    }
   }
 
   // Hiding all infographics
@@ -56,6 +66,18 @@
     display: none;
   }
 
+  // Showing only the info blurb from the first panel
+  section.infographic1 {
+    display: block;
+
+    p {
+      width: auto;
+    }
+
+    img {
+      display: none;
+    }
+  }
 
   // Bringing footer closer 
   .footer2 {
