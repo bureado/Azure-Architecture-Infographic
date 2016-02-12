@@ -12,6 +12,12 @@ $(document).ready(function(){
 
 
   // 'X' icon to close the answer panels
+  $('.close-brief').click(function() {
+     $('.intro').slideUp(400);
+     $('.intro--content__button-open').fadeIn(500);
+  });
+
+  // 'X' icon to close the solution brief panel
   $('.close-panel').click(function() {
      $(this).closest('.answer').slideUp(500);
      $('.icons').removeClass('active');
@@ -19,19 +25,9 @@ $(document).ready(function(){
 
   // Solution brief collapsing text 
   $('.intro--content__button-open').click(function() {
-    $('.intro--content__collapsed').addClass('expanded');
-    $(this).hide();
-    $('.summary').hide();
-    $('.fulllength').show();
+    $(this).fadeOut(300);
     $('.intro--content__button-close').show();
-  });
-
-  $('.intro--content__button-close').click(function() {
-    $('.expanded').removeClass("expanded");
-    $(this).hide();
-    $('.fulllength').hide();
-    $('.summary').show();
-    $('.intro--content__button-open').show();
+    $('.intro').slideDown();
   });
 
   // Function to toggle the answers

@@ -61,16 +61,24 @@
       </div>
     </section>
 
+<!-- Overview Blurb -->
+    <section class="overview">
+      <div class="overview--content">
+        <h1>Overview</h1>
+        <p>This scenario focuses on cloud development and testing. The use of containers is assumed, but the scenario is still valid even if you are not using containers.</p>
+        <button class="intro--content__button-open">VIEW SOLUTION BRIEF</button>
+      </div>
+    </section>
+
 <!-- Intro Copy -->
     <section class="intro">
       <div class="intro--content">
         <div class="intro--content__text">
+          <img class="close-brief" src="img/icon--close-white.svg" alt="Close Panel" />
+
           <h1>Solution brief</h1>
           <p class="intro--content__text-first">
-            <span class="summary">Azure provides a complete solution to build and deploy the development and test environment for Linux and open source applications. Docker containers...</span>
-            <span class="fulllength">Azure provides a complete solution to build and deploy the development and test environment for Linux and open source applications. Docker containers on Azure allow you to build a platform for your application, whether mobile or web. This solution, along with various Azure services, allows you to build a robust and flexible platform for your development and testing requirements.</span>
-            <button class="intro--content__button-open">VIEW SOLUTION BRIEF</button>
-            <div class="clearfix"></div>
+            Azure provides a complete solution to build and deploy the development and test environment for Linux and open source applications. Docker containers on Azure allow you to build a platform for your application, whether mobile or web. This solution, along with various Azure services, allows you to build a robust and flexible platform for your development and testing requirements.
           </p>
 
           <div class="intro--content__collapsed">
@@ -78,7 +86,6 @@
             <p>Organizations are searching for innovative solutions to maintain infrastructure for development and testing. Development and test environments should be scalable enough to match the application configuration in the production environment to test performance and functionality with a similar load. Moving forward from traditional application development and deployment, the industry is adopting cloud-based development for an easier packaging and deployment approach.</p>
             <p>Linux containers are the next-level approach over traditional virtual machine-based deployment. Containers can effectively isolate data and computing on shared resources and enable virtual machine capabilities with kernel containment rather than simulating and running a separate kernel with each virtual machine. Docker-based containers can help you rapidly provision application deployment for your development and test environment, and securely isolate these applications from other applications deployed on the same Docker host. With a distributed microservices model using Docker containers, your application can be quickly changed as needed to better serve the end user.</p>
             <p>Microsoft Azure provides a platform to build cloud-based applications, without having to manage a complex and expensive infrastructure deployment. You can create lightweight, private platform-as-a-service (PaaS) environments for development and testing, and also automate packaging of applications with Docker-based containers. Azure provides additional capabilities to simplify deployment of Docker Engine and manage remote communication with the virtual machine using Docker Virtual Machine Extension. Azure allows you to build your development and test environment with low compute capacity and provide flexibility to scale up to make a production-identical environment. With Azure, you pay only for what you use and eliminate the underutilization of resources in traditional development and test environments.</p>
-            <button class="intro--content__button-close">COLLAPSE SOLUTION BRIEF</button>
           </div>
         </div>
       </div>
@@ -92,8 +99,6 @@
 <!-- Panel 1: Overview header -->
     <section class="panel infographic1">
       <div class="panel--content infographic1--content">
-        <h1>Overview</h1>
-        <p>This scenario focuses on cloud development and testing. The use of containers is assumed, but the scenario is still valid even if you are not using containers.</p>
         <img src="img/infographic4/infographic--1__fullwidth.svg" />
       </div>
     </section>
@@ -290,12 +295,9 @@
           <h1>Azure Web Apps</h1>
           <p>Azure Web Apps is a fully managed platform to quickly create and deploy mission-critical web apps for your development and test environment. Azure Web Apps allows developers to rapidly build, deploy, and manage business-critical applications built on .NET, Node.js, PHP, Python, and Java. With Azure, you have more choice of supported web development platforms including WordPress, Umbraco, Joomla, and Drupal. Azure Web Apps allows you to set up continuous integration and deployment workflows with VSO, GitHub, TeamCity, Hudson, or Bitbucket—enabling you to automatically build, test, and deploy your web app on each successful code check-in or integration test. Similar to production on Azure, development and testing web services can be provisioned.</p>
           <p>To create a web application or do a free trial: <a href="https://azure.microsoft.com/en-us/services/app-service/web/" target="_blank">Azure Web Apps</a></p>
-
-<p>To create a web app plus Redis Cache using a template: <a href="https://azure.microsoft.com/en-us/documentation/templates/201-web-app-with-redis-cache/" target="_blank">Azure Resource Manager template</a></p>
-<p>To create an Azure web app with GoLang extension using a template: <a href="https://azure.microsoft.com/en-us/documentation/templates/101-webapp-with-golang/" target="_blank">Azure Resource Manager template</a></p>
-<p>Create a scalable Umbraco CMS web app using a template: <a href="https://azure.microsoft.com/en-us/documentation/templates/umbraco-cms-webapp-redis-cache/" target="_blank">Azure Resource Manager template</a></p>
-
-
+          <p>To create a web app plus Redis Cache using a template: <a href="https://azure.microsoft.com/en-us/documentation/templates/201-web-app-with-redis-cache/" target="_blank">Azure Resource Manager template</a></p>
+          <p>To create an Azure web app with GoLang extension using a template: <a href="https://azure.microsoft.com/en-us/documentation/templates/101-webapp-with-golang/" target="_blank">Azure Resource Manager template</a></p>
+          <p>To create a scalable Umbraco CMS web app using a template: <a href="https://azure.microsoft.com/en-us/documentation/templates/umbraco-cms-webapp-redis-cache/" target="_blank">Azure Resource Manager template</a></p>
           <p>To configure Azure Web Apps and deploy web servers for your open source application:</p>
           <ul>
             <li>Set up the development environment for your PHP using Git</li>
@@ -348,7 +350,7 @@
             <li class="answer--nav__K">Database Tier</li>
             <li class="answer--nav__A">Build environments</li>
             <li class="answer--nav__E">Azure storage plugin for Jenkins CI</li>
-            <li class="answer--nav__O">DevTest Production</li>
+            <li class="answer--nav__O">DevTest production</li>
           </ul>
         </div>
 
@@ -530,7 +532,7 @@
         </div>
 
         <div class="answer--details answer--details-O"> 
-          <h1>Production environment</h1>
+          <h1>DevTest production</h1>
           <p>After configuring all the required components under the network and identity tiers, you can start building a production environment.</p>
 
           <h2>Development environment</h2>
@@ -633,15 +635,15 @@
 
         <div class="answer--nav">
           <ul>
-            <li class="answer--nav__A">Operational management tier</li>
+            <li class="answer--nav__A">Operational Management Tier</li>
             <li class="answer--nav__C">Azure management tools</li>
-            <li class="answer--nav__D">Microsoft Operations Management Suite for Linux</li>
+            <li class="answer--nav__D">Microsoft Operations Management Suite</li>
             <li class="answer--nav__E">Management tools for Docker</li>
           </ul>
         </div>
 
         <div class="answer--details answer--details-A">
-          <h1>Operational management tier</h1>
+          <h1>Operational Management Tier</h1>
           <p>Applications sent on PaaS over IaaS using Docker on Azure and other Azure services have a wide range of management tools to manage Azure resources, applications, and Linux with Docker. These management tools provide you with a simplified way to manage both your applications running on open source as well as your development and test environment on Azure infrastructure.</p>
         </div>
 
@@ -657,7 +659,7 @@
           </ul>
         </div>
         <div class="answer--details answer--details-D">
-          <h1>Microsoft Operations Management Suite for Linux</h1>
+          <h1>Microsoft Operations Management Suite</h1>
           <p>Operations Management Suite provides an easy-to-install agent for Linux that allows you to collect Syslog events, performance metrics, and container data for log analytics.</p>
           <p>For more information: <a href="http://blogs.technet.com/b/momteam/archive/2015/11/04/oms-agent-for-linux-now-available.aspx" target="_blank">Operations Manager Engineering Blog</a></p>
 

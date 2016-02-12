@@ -4,29 +4,7 @@
 // Hero infographic, no interaction
 .infographic1 {
   width: 100%;
-  background: url('../img/intro--footer.svg') center top no-repeat transparent;
-  padding-top: 125px;
-
-  &--content {
-    padding-top: 0px;
-    padding-bottom: 0px;
-
-    h1 {
-      font-size: 3.6rem;
-      line-height: 4.2rem;
-      font-weight: 100;
-      color: #00bcf2;
-      margin-bottom: 15px;
-    }
-
-    p {
-      color: #00bcf2;
-      font-size: 1.4rem;
-      line-height: 2rem;
-      width: 450px;
-      margin-bottom: 50px;
-    }
-  }
+  padding-top: 75px;
 }
 
 
